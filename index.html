@@ -2,15 +2,23 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: &laquo;Глэйси&raquo;</title>
+    <title>HTML Academy: Проект «Глэйси»</title>
   </head>
   <body>
     <header class="main-header">
       <nav class="main-navigation">
-        <img src="img/index-logo.svg" alt="Логотип магазина &laquo;Глэйси&raquo;" width="154" height="64" class="logo">
+        <img src="img/index-logo.svg" alt="Логотип магазина «Глэйси»" width="154" height="64" class="logo">
         
         <ul class="site-navigation">
-          <li><a href="/catalog.html">Каталог</a></li>
+          <li><a href="/catalog.html">Каталог</a>
+            <ui class="site-navigation_att">
+              <li class="site-navigation_new"><a href="#">Новинки</a></li>
+              <li><a href="/catalog-creamy.html">Сливочное</a></li>
+              <li><a href="#">Щербеты</a></li>
+              <li><a href="#">Фруктовый лед</a></li>
+              <li><a href="#">Мелорин</a></li>
+            </ui>
+          </li>
           <li><a href="/shipping.html">Доставка и оплата</a></li>
           <li><a href="/about.html">О компании</a></li>
         </ul>
@@ -19,14 +27,14 @@
           <button class="button login-link">Вход</button>
           <button class="button basket">Корзина</button>
         </div>
-        <div class="main-contact">
-        <p>с 10 до 20, ежедневно</p>
-         <a href="tel:+78124502525">8 812 450-25-25</a>
-        </div>
       </nav>
+      <div class="main-contact">
+        <p>с 10 до 20, ежедневно</p>
+        <a href="tel:+78124502525">8 812 450-25-25</a>
+      </div>
     </header>
     <main>
-      <h1 class="visually-hidden">магазин мороженного &laquo;Глэйси&raquo;</h1>
+      <h1 class="visually-hidden">Магазин мороженного «Глэйси»</h1>
 
      <div class="main-slider">
         <img src="http://placehold.it/646x583" alt="Мороженое" width="646" height="583">
@@ -115,13 +123,13 @@
         <img src="" alt="">
 
         <div class="contact">
-          Адрес главного офиса<br>и офлайн-магазина:<address>ул. Большая Конюшенная 19/8, Санкт-Петербург</address>
+          Адрес главного офиса и офлайн-магазина:<address>ул. Большая Конюшенная 19/8, Санкт-Петербург</address>
 
-          <p>Для заказов по телефону:<br>
-          <a href="tel:+78124502525">8 812 450-25-25</a><br>
+          <p>Для заказов по телефону:
+          <a href="tel:+78124502525">8 812 450-25-25</a>
           (с 10 до 20 ежедневно)</p>
 
-          <button class="button">Форма обратной связи</button>
+          <a class="button" href="`">Форма обратной связи</a>
         </div>
 
       </section>     
