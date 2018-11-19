@@ -9,6 +9,9 @@
 node_modules/
 npm-debug.*
 Thumbs.db
+
+svg-gllacy/
+
 gllacy/
 desktop.ini
 TODO
