@@ -29,7 +29,7 @@
         <section class="user-navigation">
           <a class="a button search">Поиск</a>
           <a class="a login-link">Вход</a>
-          <a class="a basket">Корзина</a><!-- не поняла, нужно ли "2 товара" тоже выделывать, или это как то потом подругому создается -->
+          <a class="a basket">2 товара</a>
         </section>
 
       </nav>
@@ -177,5 +177,68 @@
         </a>
       </div>
     </footer>
+    <!--ПОИСК--><!--ВХОД--><!--СВЯЗЬ-->
+    <!--КОРЗИНА-->
+    <form action="https://echo.htmlacademy.ru" method="post">
+      <h2 class="visually-hidden">Корзина</h2>
+      
+<!--
+  * как то еще придумать скрытые пояснения для читалки   
+  ? нужно вставить маленькие мороженки в img или большие ужать css-ом
+-->
+
+<!--КАК 1 ВАРИАНТ-->
+    <table>
+      <tr>
+        <td>х</td>
+        <td><img src="#" alt="Мороженко"></td>
+        <td>Мороженко такое-то</td>
+        <td>1,5 кг х <span>200 руб.</span></td>
+        <td>300 руб.</td>
+      </tr>
+      <tr>
+        <td>х</td>
+        <td><img src="#" alt="Мороженко"></td>
+        <td>Мороженко такое-то</td>
+        <td>1,5 кг х <span>300 руб.</span></td>
+        <td>450 руб.</td>
+      </tr>
+    </table>
+<!--КАК 1 ВАРИАНТ-->
+
+<!--КАК 2 ВАРИАНТ-->
+    <ul>
+      <li>
+          <ul>
+            <li>х</li>
+            <li>
+              <img src="#" alt="Мороженко">
+            </li>
+            <li>Мороженко такое-то</li>
+            <li>1,5 кг х <span>200 руб.</span></li>
+            <li>300 руб.</li>
+          </ul>
+      </li>
+      <li>
+          <ul>
+            <li>х</li>
+            <li>
+              <img src="#" alt="Мороженко">
+            </li>
+            <li>Мороженко такое-то</li>
+            <li>1,5 кг х <span>300 руб.</span></li>
+            <li>450 руб.</li>
+          </ul>
+      </li>
+    </ul>
+<!--КАК 2 ВАРИАНТ-->
+
+
+    <dl>
+      <dt>Итого</dt>
+      <dd>750 руб.</dd>
+    </dl>
+    <input type="submit" value="Оформить заказ">
+    </form>
   </body>
 </html>

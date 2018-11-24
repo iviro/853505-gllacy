@@ -24,10 +24,11 @@
           <li><a href="/shipping.html">Доставка и оплата</a></li>
           <li><a href="/about.html">О компании</a></li>
         </ul>
+
         <div class="user-navigation">
-          <a class="button button_search">Поиск</a>
-          <a class="button login-link">Вход</a>
-          <a class="button basket">Корзина</a>
+          <a class="button button_search" href="#">Поиск</a>
+          <a class="button login-link" >Вход</a>
+          <a class="button basket" >Корзина</a>
         </div>
       </nav>
       <div class="main-contact">
@@ -186,6 +187,40 @@
           <p>Сделано в HTML Academy © 2017</p>
         </a>
       </div>
-    </footer>
+    </footer> 
+    <!--ПОИСК-->
+    <form action="https://echo.htmlacademy.ru" method="get">
+      <h2 class="visually-hidden">Поиск</h2>
+      <input type="search" name="search" placeholder="Что ищем" class="search">
+      <input type="submit" name="submit-search" value="Найти"   class="visually-hidden">
+    </form>
+
+    <!--ВХОД-->
+    <form action="https://echo.htmlacademy.ru" method="post">
+      <h2 class="visually-hidden">Вход</h2>
+<!--А нужен ли тут и далее label если есть placeholder???-->
+      <label for="email-login"></label>
+      <input type="email" name="email-login" id="email-login" placeholder="Электронная почта" >
+      <label for="password"></label>
+      <input type="password" name="password" id="password" placeholder="Пароль">
+      <input type="submit" name="submit-login" value="Войти">
+      <a href="#">Забыли пароль?</a>
+      <a href="#">Новая регистрация</a>
+    </form>
+
+    <!--СВЯЗЬ-->
+    <form action="https://echo.htmlacademy.ru" method="post">
+      <h2 class="reply">Мы обязательно вам ответим</h2>
+      <label for="reply-name"></label>
+      <input type="text" name="reply-name" id="reply-name" placeholder="Как вас зовут?">
+      <label for="reply-email"></label>
+      <input type="email" name="reply-email" id="reply-email" placeholder="Ваша почта для ответа?">
+      <label for="reply-text"></label>
+      <textarea name="reply-text" id="reply-text" cols="10" rows="3" placeholder="Напишите что-нибудь..."></textarea>
+      <input type="submit" value="Отправить">
+    </form>
+<!--если формы нормальны, вставлю и на вторую страницу-->
+
+<!--Нужно ли на этой странице вставлять разметку КОРЗИНЫ-->  
   </body>
 </html>
