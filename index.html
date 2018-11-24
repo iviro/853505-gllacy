@@ -201,10 +201,14 @@
     <section class="login">
       <h2 class="visually-hidden">Вход</h2>
       <form action="https://echo.htmlacademy.ru" method="post">
-        <label for="login-email">Электронная почта</label>
-        <input type="email" name="login-email" id="login-email" placeholder="Электронная почта" >
-        <label for="password">Пароль</label>
-        <input type="password" name="password" id="password" placeholder="Пароль">
+        <p class="login-input">
+          <label for="login-email">Электронная почта</label>
+          <input type="email" name="login-email" id="login-email" placeholder="Электронная почта" >
+        </p>
+        <p class="login-input">
+          <label for="password">Пароль</label>
+          <input type="password" name="password" id="password" placeholder="Пароль">
+        </p>
         <button type="submit" name="login-submit" value="">Войти</button>
         <a href="#">Забыли пароль?</a>
         <a href="#">Новая регистрация</a>
@@ -215,12 +219,18 @@
     <section class="reply">
       <h2 class="reply">Мы обязательно вам ответим</h2>
       <form action="https://echo.htmlacademy.ru" method="post">
-        <label for="reply-name">Имя</label>
-        <input type="text" name="reply-name" id="reply-name" placeholder="Как вас зовут?">
-        <label for="reply-email">Электронная почта</label>
-        <input type="email" name="reply-email" id="reply-email" placeholder="Ваша почта для ответа?">
+        <p class="reply-input">
+          <label for="reply-name">Имя</label>
+          <input type="text" name="reply-name" id="reply-name" placeholder="Как вас зовут?">
+        </p>
+        <p class="reply-input">
+          <label for="reply-email">Электронная почта</label>
+          <input type="email" name="reply-email" id="reply-email" placeholder="Ваша почта для ответа?">
+        </p>
+        <p class="reply-input-text>
         <label for="reply-text">Сообщение</label>
         <textarea name="reply-text" id="reply-text" cols="10" rows="3" placeholder="Напишите что-нибудь..."></textarea>
+        </p>
         <button type="submit" value="">Отправить</button>
       </form>
     </section>
