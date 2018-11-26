@@ -27,6 +27,7 @@
           <li><a href="about.html">О компании</a></li>
         </ul>
         <section class="user-navigation">
+          <h2 class="visually-hidden">Поиск по сайту</h2>
           <a class="a button search">Поиск</a>
           <a class="a login-link">Вход</a>
           <a class="a basket">2 товара</a>
@@ -35,6 +36,7 @@
       </nav>
 
       <section class="main-contact">
+        <h2 class="visually-hidden">Время работы</h2>
         <p>с 10 до 20, ежедневно</p>
         <a href="tel:88124502525">8 812 450-25-25</a>
        </section>
@@ -51,6 +53,7 @@
 
          <!-- Форма сортировки -->
          <section class="sort">
+            <h2 class="visually-hidden">Выбор</h2>
          
          </section>
 
@@ -180,12 +183,12 @@
 
     <!--ПОИСК-->
     <section class="search">
-        <h2class="visually-hidden">Поиск</h2> 
-          <form action="https://echo.htmlacademy.ru" method="get"> 
-           <input type="search" name="search" placeholder="Что ищем" class="search"> 
-           <button type="submit" name="submit-search" value="" class="visually-hidden">Найти</button>
-          </form>
-      </section>
+      <h2 class="visually-hidden">Форма поиска</h2> 
+      <form action="https://echo.htmlacademy.ru" method="get"> 
+        <input type="search" name="search" placeholder="Что ищем" class="search"> 
+        <button type="submit" name="submit-search" value="" class="visually-hidden">Найти</button>
+      </form>
+    </section>
   
       <!--ВХОД-->
       <section class="login">
@@ -212,28 +215,25 @@
 
 <!--
   * как то еще придумать скрытые пояснения для читалки   
-  если th  в сеердине - нормально? (Если вставить в начало, а потом задвинуть -- не правильно ж для доступности?)
+  если th  в середине - нормально? (Если вставить в начало, а потом задвинуть - не правильно ж для доступности?)
 -->
 
       <table>
+        <tfoot>Итого: 750 руб.</tfoot>
         <tr>
           <td><img src="img/fotm-cross-small.svg" alt="Удалить товар"></td> <!--А дальше как?-->
           <td><img src="img/cream-11-basket.png" alt="Пломбир с апельсиновым джемом"></td>
-          <th><a href="#" alt="Вернуться к товару">Пломбир с апельсиновым джемом</a></th>
+          <th><a href="#">Пломбир с апельсиновым джемом</a></th>
           <td>1,5 кг х <span>200 руб.</span></td>
           <td>300 руб.</td>
         </tr>
         <tr>
           <td><img src="img/fotm-cross-small.svg" alt="Удалить товар"></td>
           <td><img src="img/cream-13-basket.png" alt="Клубничный пломбир с присыпкой из белого шоколада"></td>
-          <th><a href="#" alt="Вернуться к товару">Клубничный пломбир с присыпкой из белого шоколада</a></th>
+          <th><a href="#">Клубничный пломбир с присыпкой из белого шоколада</a></th>
           <td>1,5 кг х <span>300 руб.</span></td>
           <td>450 руб.</td>
         </tr>
-        <tfoot>
-          <td>Итого</td>
-          <td>750 руб.</td>
-        </tfoot>
       </table>
       <button type="submit" value="">Оформить заказ</button>
       </form>
