@@ -177,7 +177,34 @@
         </a>
       </div>
     </footer>
-    <!--ПОИСК--><!--ВХОД--><!--СВЯЗЬ-->
+
+    <!--ПОИСК-->
+    <section class="search">
+        <h2class="visually-hidden">Поиск</h2> 
+          <form action="https://echo.htmlacademy.ru" method="get"> 
+           <input type="search" name="search" placeholder="Что ищем" class="search"> 
+           <button type="submit" name="submit-search" value="" class="visually-hidden">Найти</button>
+          </form>
+      </section>
+  
+      <!--ВХОД-->
+      <section class="login">
+        <h2 class="visually-hidden">Вход</h2>
+        <form action="https://echo.htmlacademy.ru" method="post">
+          <p class="login-input">
+            <label for="login-email">Электронная почта</label>
+            <input type="email" name="login-email" id="login-email" placeholder="Электронная почта" >
+          </p>
+          <p class="login-input">
+            <label for="password">Пароль</label>
+            <input type="password" name="password" id="password" placeholder="Пароль">
+          </p>
+          <button type="submit" name="login-submit" value="">Войти</button>
+          <a href="#">Забыли пароль?</a>
+          <a href="#">Новая регистрация</a>
+        </form>
+      </section>
+  
     <!--КОРЗИНА-->
     <section class="basket-buy">
       <h2 class="visually-hidden">Корзина</h2>
