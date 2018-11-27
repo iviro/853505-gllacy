@@ -1,11 +1,148 @@
 body {
-background-color: #849d8f;
-color: #ffffff;
-padding: 30px;
+    margin: 0;
+    padding: 0;
+
+    font-family: 'Roboto', 'Arial', sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 500;
+    color: #ffffff;
+
+    background-color: #849d8f;
 }
 
 a {
     color: #ffffff;
-    
+    text-decoration: none;  
+}
+.button {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 24px;
+    text-align: center;
+}
+/* БЛОК NAV */
+
+.social li,
+.about_us li,
+.site-navigation,
+.site-navigation_att,
+.user-navigation {
+    list-style: none;
 }
 
+.main-nav {
+    line-height: 18;
+    font-weight: bold;
+}
+
+.user-navigation {
+    font-size: 14px;
+}
+
+.main-contact {
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: bold;
+}
+
+.main-contact > a {
+    font-size: 22px;
+    line-height: 24px;
+}
+
+/* БЛОК slider */
+.main-slider > p {
+    font-size: 60px;
+    line-height: 60px;
+    font-weight: bold;
+}
+
+.main-slider > a {
+    font-size: 32px;
+    line-height: 44px;
+    font-weight: bold;
+}
+
+/* БЛОК promo */
+.promo > h3 {
+    font-size: 35px;
+    line-height: 41px;
+    font-weight: bold;
+}
+
+.promo > p {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* БЛОК ice_cream */
+p.price {
+    font-size: 45px;
+    line-height: 45px;
+    font-weight: bold;
+}
+
+/* БЛОК about */
+
+.about > h2 {
+    font-size: 24px;
+    line-height: 30px;
+}
+
+/* БЛОК blog_new */
+.blog_new > h2 {
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 500;
+}
+
+.blog_new  h3 {
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* БЛОК letters */
+
+/* БЛОК map */
+.contact {
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.contact a {
+    font-weight: bold;
+}
+
+.contact a.button {
+    font-weight: normal;
+}
+
+.contact > address {
+    font-size: 18px;
+    line-height: 25px;
+    font-style: normal;
+    font-weight: bold;
+}
+
+/* БЛОК footer */
+
+/* БЛОК social */
+
+/* БЛОК about_us */
+.about_us > li {
+    font-size: 13px;
+    line-height: 18px;
+}
+
+.about_us >ul > li:first-child {
+    font-weight: bold;
+}
+
+/* БЛОК copyright */
+.copyright > a {
+    font-size: 12px;
+    line-height: 18px;
+}
