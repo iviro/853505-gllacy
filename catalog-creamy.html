@@ -9,12 +9,12 @@
   <body>
     <header class="main-header">
       <nav class="main-navigation">
-        <a href="/index.html">
+        <a href="index.html">
             <img src="img/logo.svg" alt="Логотип магазина «Глэйси»" width="154" height="64" class="logo">
         </a>
         
         <ul class="site-navigation">
-          <li><a href="/catalog.html">Каталог</a>
+          <li><a href="catalog.html">Каталог</a>
             <ul class="site-navigation_att">
               <li class="site-navigation_new"><a href="#">Новинки</a></li>
               <li><a href="#">Сливочное</a></li>
@@ -23,26 +23,28 @@
               <li><a href="#">Мелорин</a></li>
             </ul>
           </li>
-          <li><a href="/shipping.html">Доставка и оплата</a></li>
-          <li><a href="/about.html">О компании</a></li>
+          <li><a href="shipping.html">Доставка и оплата</a></li>
+          <li><a href="about.html">О компании</a></li>
         </ul>
         <section class="user-navigation">
+          <h2 class="visually-hidden">Поиск по сайту</h2>
           <a class="a button search">Поиск</a>
           <a class="a login-link">Вход</a>
-          <a class="a basket">Корзина</a><!-- не поняла, нужно ли "2 товара" тоже выделывать, или это как то потом подругому создается -->
+          <a class="a basket">2 товара</a>
         </section>
 
       </nav>
 
       <section class="main-contact">
+        <h2 class="visually-hidden">Время работы</h2>
         <p>с 10 до 20, ежедневно</p>
         <a href="tel:88124502525">8 812 450-25-25</a>
        </section>
 
       <!-- Хлебные крошки -->
       <ul class="breadcrumbs">
-        <li><a href="/index.html">Главная</a></li>
-        <li><a href="/сatalog.html">Каталог</a></li>
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="сatalog.html">Каталог</a></li>
         <li><a href="#">Сливочное</a></li>
       </ul>
     </header>
@@ -51,6 +53,7 @@
 
          <!-- Форма сортировки -->
          <section class="sort">
+            <h2 class="visually-hidden">Выбор</h2>
          
          </section>
 
@@ -153,10 +156,10 @@
       <section class="social">
       <h2 class="visually-hidden">Соцсети</h2>
         <ul>
-          <li><a href="#">Twitter</a></li>
-          <li><a href="#">Instagram</a></li>
-          <li><a href="#">Facebook</a></li>
-          <li><a href="#">Вконтакте</a></li>
+          <li><a href="#"><span class="visually-hidden">Twitter</span></a></li>
+          <li><a href="#"><span class="visually-hidden">Instagram</span></a></li>
+          <li><a href="#"><span class="visually-hidden">Facebook</span></a></li>
+          <li><a href="#"><span class="visually-hidden">Вконтакте</span></a></li>
         </ul>
       </section>
       
@@ -177,5 +180,67 @@
         </a>
       </div>
     </footer>
+
+    <!--ПОИСК-->
+    <section class="search">
+      <h2 class="visually-hidden">Форма поиска</h2> 
+      <form action="https://echo.htmlacademy.ru" method="get"> 
+        <input type="search" name="search" placeholder="Что ищем" class="search"> 
+        <button type="submit" name="submit-search" value="" class="visually-hidden">Найти</button>
+      </form>
+    </section>
+  
+      <!--ВХОД-->
+      <section class="login">
+        <h2 class="visually-hidden">Вход</h2>
+        <form action="https://echo.htmlacademy.ru" method="post">
+          <p class="login-input">
+            <label for="login-email">Электронная почта</label>
+            <input type="email" name="login-email" id="login-email" placeholder="Электронная почта" >
+          </p>
+          <p class="login-input">
+            <label for="password">Пароль</label>
+            <input type="password" name="password" id="password" placeholder="Пароль">
+          </p>
+          <button type="submit" name="login-submit" value="">Войти</button>
+          <a href="#">Забыли пароль?</a>
+          <a href="#">Новая регистрация</a>
+        </form>
+      </section>
+  
+    <!--КОРЗИНА-->
+    <section class="basket-buy">
+      <h2 class="visually-hidden">Корзина</h2>
+      <form action="https://echo.htmlacademy.ru" method="post">
+
+<!--
+  * как то еще придумать скрытые пояснения для читалки   
+  ?если th  в середине столбца - нормально? (Если вставить в начало, а потом задвинуть - не правильно ж для доступности?)
+  ? caption как потом ДОСТУПНО отправить в низ?
+-->
+
+      <table>
+        <caption>
+          Итого: 750 руб.
+        </caption>
+        <tbody>
+          <tr>
+            <td><button class="button-delete" type="button" value="Удалить">Удалить товар</button></td>
+            <th><a href="#">Пломбир с апельсиновым джемом</a></th>
+            <td>1,5 кг х <span>200 руб.</span></td>
+            <td>300 руб.</td>
+          </tr>
+          <tr>
+            <td><button class="button-delete" type="button" value="Удалить">Удалить товар</button></td>
+            <td><img src="img/cream-13-basket.png" alt="Клубничный пломбир с присыпкой из белого шоколада"></td>
+            <th><a href="#">Клубничный пломбир с присыпкой из белого шоколада</a></th>
+            <td>1,5 кг х <span>300 руб.</span></td>
+            <td>450 руб.</td>
+          </tr>
+        </tbody>
+      </table>
+      <button type="submit" value="">Оформить заказ</button>
+      </form>
+  </section>
   </body>
 </html>
