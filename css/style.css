@@ -36,8 +36,24 @@ a {
     font-weight: bold;
 }
 
+.site-navigation_att {
+    background-color: #f8f7f4;
+}
+.site-navigation_new {
+    font-weight: bold;
+}
+
+.site-navigation_att a {
+    line-height: 16px;
+    color: #323232;
+}
+
 .user-navigation {
     font-size: 14px;
+}
+
+.button_search {
+    
 }
 
 .main-contact {
@@ -127,8 +143,7 @@ p.price {
     font-weight: bold;
 }
 
-/* БЛОК footer */
-
+/* __________ БЛОК footer */
 /* БЛОК social */
 
 /* БЛОК about_us */
@@ -147,12 +162,44 @@ p.price {
     line-height: 18px;
 }
 
+/* __________ ФОРМЫ */
 /* БЛОК search */
+.search {
+    background-color: #f8f7f4;
+
+    font-size: 14px;
+    line-height: 24px;
+    color: #999999;
+}
+
+.search > input {
+    background-color: #fff;
+}
 
 /* БЛОК login */
+.login {
+    background-color: #f8f7f8;
+
+    font-size: 14px;
+    line-height: 24px;
+    color: #999999;
+}
 
 /* БЛОК reply */
+.reply {
+    background-color: #f8f7f8;
 
+    color: #999999;
+}
 /* БЛОК basket */
+.basket-by_nav {
+    background-color: #f8f7f8;
+}
+
+.basket-by_nav > a {
+    font-size: 14px;
+    line-height: 16px;
+    color: #323232;
+}
 
 /* БЛОК sort */
