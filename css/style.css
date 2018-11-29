@@ -15,12 +15,27 @@ a {
     color: #ffffff;
     text-decoration: none;  
 }
+a:hover,
+a:focus,
+a:active {
+    color: #ffbc9e;
+}
+
 .button {
     font-size: 18px;
     font-weight: bold;
     line-height: 24px;
     text-align: center;
 }
+.button:hover,
+.button:focus {
+    color: #fefefe;
+}
+
+a.button:active {
+    color: #fceeec;
+}
+
 /* БЛОК NAV */
 
 .social li,
@@ -52,6 +67,33 @@ a {
     font-size: 14px;
 }
 
+.site-navigation a:hover,
+.site-navigation a:focus {
+    background-color: #fff;
+    color: blueviolet; /* ПРОВЕРКА*/
+}
+
+site-navigation a:active {
+
+}
+
+.site-navigation_active {
+
+}
+
+.site-navigation_att a:hover,
+.site-navigation_att a:focus {
+    color: #fa2686; /* ПРОВЕРКА*/
+}
+/*
+.site-navigation_att a:active {
+    color: #26fa86; 
+}
+.site-navigation_att_active a {
+    color: #fa6; 
+}
+*//* НЕ ПОЛУЧИЛОСЬ*/
+
 .button_search {
     
 }
@@ -78,6 +120,15 @@ a {
     font-size: 32px;
     line-height: 44px;
     font-weight: bold;
+}
+
+.main-slider .button:hover,
+.main-slider .button:focus {
+    color: #ffffff;
+}
+
+.main-slider .button:active {
+    color: #fceeec;
 }
 
 /* БЛОК promo */
