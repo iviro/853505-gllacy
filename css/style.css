@@ -252,11 +252,11 @@ p.price > span {
     color: #999999;
 }
 /* БЛОК basket */
-.basket-by_nav {
+.basket-nav-buy {
     background-color: #f8f7f4;
 }
 
-.basket-by_nav > a {
+.basket-nav-buy > a {
     font-size: 14px;
     line-height: 16px;
     color: #323232;
