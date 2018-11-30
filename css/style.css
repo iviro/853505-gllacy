@@ -15,6 +15,7 @@ a {
     color: #ffffff;
     text-decoration: none;  
 }
+
 a:hover,
 a:focus,
 a:active {
@@ -27,6 +28,7 @@ a:active {
     line-height: 24px;
     text-align: center;
 }
+
 .button:hover,
 .button:focus {
     color: #fefefe;
@@ -54,6 +56,7 @@ a.button:active {
 .site-navigation_att {
     background-color: #f8f7f4;
 }
+
 .site-navigation_new {
     font-weight: bold;
 }
@@ -89,6 +92,7 @@ site-navigation a:active {
 .site-navigation_att a:active {
     color: #26fa86; 
 }
+
 .site-navigation_att_active a {
     color: #fa6; 
 }
@@ -145,9 +149,13 @@ site-navigation a:active {
 
 /* БЛОК ice_cream */
 p.price {
-    font-size: 45px;
+    font-size: 30px;
     line-height: 45px;
     font-weight: bold;
+}
+
+p.price > span {
+    font-size: 45px;
 }
 
 /* БЛОК about */
