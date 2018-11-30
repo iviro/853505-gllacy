@@ -11,6 +11,10 @@ body {
     background-color: #849d8f;
 }
 
+.visually-hidden {
+    
+}
+
 a {
     color: #ffffff;
     text-decoration: none;  
@@ -262,4 +266,26 @@ p.price > span {
     color: #323232;
 }
 
+.basket-buy  {
+    background-color: #f8f7f4;
+}
+
+.basket-buy td,
+.basket-buy a {
+    font-size: 13px;
+    line-height: 16px;
+    font-weight: normal;
+    color: #323232;
+}
+
+.basket-price {
+    color: #999999;
+}
+
+.basket-price-total {
+    font-size: 15px;
+    line-height: 18px;
+    font-weight: bold;
+    color: #323232;
+}
 /* БЛОК sort */
