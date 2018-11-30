@@ -63,11 +63,12 @@ a.button:active {
 
 .site-navigation_att a {
     line-height: 14px;
+    font-weight: normal;
     color: #323232;
 }
 
 .user-navigation {
-    font-size: 14px;
+    font-size: 16px;
 }
 
 .site-navigation a:hover,
@@ -231,13 +232,13 @@ p.price > span {
     color: #999999;
 }
 
-.search > input {
+.search input {
     background-color: #fff;
 }
 
 /* БЛОК login */
 .login {
-    background-color: #f8f7f8;
+    background-color: #f8f7f4;
 
     font-size: 14px;
     line-height: 24px;
@@ -246,13 +247,13 @@ p.price > span {
 
 /* БЛОК reply */
 .reply {
-    background-color: #f8f7f8;
+    background-color: #f8f7f4;
 
     color: #999999;
 }
 /* БЛОК basket */
 .basket-by_nav {
-    background-color: #f8f7f8;
+    background-color: #f8f7f4;
 }
 
 .basket-by_nav > a {
