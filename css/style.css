@@ -5,7 +5,7 @@ body {
     font-family: 'Roboto', 'Arial', sans-serif;
     font-size: 16px;
     line-height: 22px;
-    font-weight: 500;
+    font-weight: 400;
     color: #ffffff;
 
     background-color: #849d8f;
@@ -49,7 +49,7 @@ a.button:active {
 }
 
 .main-nav {
-    line-height: 18;
+    line-height: 18px;
     font-weight: bold;
 }
 
@@ -62,7 +62,7 @@ a.button:active {
 }
 
 .site-navigation_att a {
-    line-height: 16px;
+    line-height: 14px;
     color: #323232;
 }
 
