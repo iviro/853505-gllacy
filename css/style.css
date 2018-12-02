@@ -17,7 +17,7 @@ body {
 
 a {
     color: #ffffff;
-    text-decoration: none;  
+    text-decoration: none;
 }
 
 a:hover,
@@ -53,7 +53,7 @@ a.button:active {
 }
 
 .main-navigation {
-    
+
 }
 
 /*МЕНЮ основное*/
@@ -100,11 +100,11 @@ site-navigation a:active {
 }
 
 .site-navigation-att a:active {
-    
+
 }
 
 .site-navigation-att-active a {
-    
+
 }
 
 /* БЛОК ПОЛЬЗОВАТЕЛЬ НАВИГАЦИИ*/
@@ -116,7 +116,7 @@ site-navigation a:active {
 }
 
 .button-search {
-    
+
 }
 
 .main-contact {
@@ -214,7 +214,7 @@ site-navigation a:active {
 }
 
 .contact a {
-    font-size: 18px; 
+    font-size: 18px;
     font-weight: bold;
 }
 
@@ -245,7 +245,7 @@ site-navigation a:active {
 /* БЛОК copyright */
 .copyright a {
     font-size: 12px;
-    line-height: 18px;                                                                                                                                                                                                                                                                                               
+    line-height: 18px;
 }
 
 /* ---------- ФОРМЫ */
