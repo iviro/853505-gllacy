@@ -6,16 +6,18 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+<!-- временно, для различения в браузере                                                                           -->
+<link rel="shortcut icon" href="i1.ico" type="image/x-icon">
   </head>
   <body>
     <header class="main-header">
       <nav class="main-navigation">
         <img src="img/logo.svg" alt="Логотип магазина «Глэйси»" width="154" height="64" class="logo">
         
-        <ul class="site-navigation site-navigation_active">
+        <ul class="site-navigation site-navigation-active">
           <li><a href="catalog.html">Каталог</a>
-            <ul class="site-navigation_att site-navigation_att_active">
-              <li class="site-navigation_new"><a href="#">Новинки</a></li>
+            <ul class="site-navigation-att site-navigation-att-active">
+              <li class="site-navigation-new"><a href="#">Новинки</a></li>
               <li><a href="catalog-creamy.html">Сливочное</a></li>
               <li><a href="#">Щербеты</a></li>
               <li><a href="#">Фруктовый лед</a></li>
@@ -27,7 +29,7 @@
         </ul>
 
         <div class="user-navigation">
-          <a class="button_search button-light" href="#">Поиск</a>
+          <a class="button-search button-light" href="#">Поиск</a>
           <a class="login-link button-light" >Вход</a>
           <section class="basket-nav button-light">
             <h2 class="visually-hidden">Корзина</h2>
@@ -105,28 +107,28 @@
 
       <section class="main-catalog">
         <h2 class="visually-hidden">Каталог</h2>
-        <div class="ice_cream">
+        <div class="ice-cream">
           <img class="ice" src="img/cream-11.png" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой" width="267" height="267">
-          <p class="price">310₽/кг</p>
+          <p class="price"><span>310₽</span>/кг</p>
           <p>Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
           <a href="#" class="button">Быстрый просмотр</a>
         </div>
 
-        <div class="ice_cream">
+        <div class="ice-cream">
           <img class="ice" src="img/cream-12.png" alt="Сливочно-кофейное с кусочками шоколада" width="267" height="267">
-          <p class="price"><span>310₽</span>/кг</p>
+          <p class="price"><span>380₽</span>/кг</p>
           <p>Сливочно-кофейное с кусочками шоколада</p>
           <a href="#" class="button">Быстрый просмотр</a>
         </div>
 
-        <div class="ice_cream">
+        <div class="ice-cream">
           <img class="ice" src="img/cream-13.png" alt="Сливочно-клубничное с присыпкой из белого шоколада" width="267" height="267">
           <p class="price"><span>355₽</span>/кг</p>
           <p>Сливочно-клубничное с присыпкой из белого шоколада</p>
           <a href="#" class="button">Быстрый просмотр</a>
         </div>
 
-        <div class="ice_cream">
+        <div class="ice-cream">
           <img class="ice" src="img/cream-14.png" alt="Сливочное крем-брюле с карамельной подливкой" width="267" height="267">
           <p class="price"><span>415₽</span>/кг</p>
           <p>Сливочное крем-брюле с карамельной подливкой</p>
@@ -146,7 +148,7 @@
         <p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
       </section>
 
-      <section class="blog_new">
+      <section class="blog-new">
         <h2>Новое в нашем блоге</h2>
         <a href="#">
           <h3>10 способов сервировки фруктовых щербетов к столу</h3>
@@ -192,10 +194,10 @@
         </ul>
       </section>
       
-      <section class="about_us">
+      <section class="about-us">
       <h2 class="visually-hidden">Партнерам</h2>
       <ul>
-        <li><a href="#">Для поставщиков</a></li>
+        <li class="about-us-provider"><a href="#">Для поставщиков</a></li>
         <li><a href="#">О производстве</a></li>
         <li><a href="#">Наши документы</a></li>
         <li><a href="#">Экологические стандарты</a></li>
@@ -257,6 +259,5 @@
       </form>
       <button class="button-delet" type="button" value="Закрыть>Закрыть</button>
     </section>
-
   </body>
 </html>
