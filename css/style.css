@@ -5,7 +5,7 @@ body {
     font-family: 'Roboto', 'Arial', sans-serif;
     font-size: 16px;
     line-height: 22px;
-    font-weight: 500;
+    font-weight: normal;
     color: #ffffff;
 
     background-color: #849d8f;
@@ -52,30 +52,17 @@ a.button:active {
     list-style: none;
 }
 
-.main-nav {
+.main-navigation {
+    
+}
+
+/*МЕНЮ основное*/
+.site-navigation{
     line-height: 18px;
     font-weight: bold;
 }
 
-.site-navigation-att {
-    background-color: #f8f7f4;
-}
-
-.site-navigation-new {
-    font-weight: bold;
-}
-
-.site-navigation-att a {
-    line-height: 14px;
-    font-weight: normal;
-    color: #323232;
-}
-
-.user-navigation {
-    font-size: 14px;
-    line-height: 16px;
-}
-
+/*АКТИВНОСТЬ*/
 .site-navigation a:hover,
 .site-navigation a:focus {
     background-color: #fff;
@@ -90,19 +77,43 @@ site-navigation a:active {
 
 }
 
+/*МЕНЮ выпадающее*/
+.site-navigation-att {
+    background-color: #f8f7f4;
+}
+
+.site-navigation-att a {
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: normal;
+    color: #323232;
+}
+
+.site-navigation-new a {
+    font-weight: bold;
+}
+
+/*АКТИВНОСТЬ*/
 .site-navigation-att a:hover,
 .site-navigation-att a:focus {
     color: #fa2686; /* ПРОВЕРКА*/
 }
-/*
+
 .site-navigation-att a:active {
-    color: #26fa86; 
+    
 }
 
 .site-navigation-att-active a {
-    color: #fa6; 
+    
 }
-*//* НЕ ПОЛУЧИЛОСЬ*/
+
+/* БЛОК ПОЛЬЗОВАТЕЛЬ НАВИГАЦИИ*/
+
+.user-navigation {
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 500;
+}
 
 .button-search {
     
@@ -164,11 +175,19 @@ site-navigation a:active {
     font-size: 45px;
 }
 
+.ice-about {
+    font-weight: 500;
+}
+
 /* БЛОК about */
 
 .about h2 {
     font-size: 24px;
     line-height: 30px;
+    font-weight: 500;
+}
+.about p {
+
 }
 
 /* БЛОК blog-new */
@@ -192,15 +211,15 @@ site-navigation a:active {
 .contact {
     font-size: 14px;
     line-height: 20px;
-    font-weight: 400;
 }
 
 .contact a {
+    font-size: 18px; 
     font-weight: bold;
 }
 
 .contact a.button {
-    font-weight: bold;
+    line-height: 24px;
 }
 
 .contact address {
@@ -217,7 +236,6 @@ site-navigation a:active {
 .about-us li {
     font-size: 13px;
     line-height: 18px;
-    font-weight: 400;
 }
 
 .about-us-provider {
@@ -227,8 +245,7 @@ site-navigation a:active {
 /* БЛОК copyright */
 .copyright a {
     font-size: 12px;
-    line-height: 18px;
-    font-weight: 400;                                                                                                                                                                                                                                                                                                
+    line-height: 18px;                                                                                                                                                                                                                                                                                               
 }
 
 /* ---------- ФОРМЫ */
@@ -254,12 +271,28 @@ site-navigation a:active {
     color: #999999;
 }
 
+.login a {
+    font-size: 13px;
+    line-height: 24px;
+    color: #323232;
+}
+
 /* БЛОК reply */
 .reply {
     background-color: #f8f7f4;
-
     color: #999999;
 }
+
+.reply input {
+    line-height: 24px; /*не работает*/
+}
+
+.reply h2 {
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 500;
+}
+
 /* БЛОК basket */
 .basket{
     line-height: 16px;
@@ -283,7 +316,6 @@ site-navigation a:active {
 .basket-buy a {
     font-size: 13px;
     line-height: 16px;
-    font-weight: normal;
     color: #323232;
 }
 
