@@ -3,18 +3,23 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Проект «Глэйси»</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+<!-- временно, для различения в браузере                                                                           -->
+<link rel="shortcut icon" href="i1.ico" type="image/x-icon">
   </head>
   <body>
     <header class="main-header">
       <nav class="main-navigation">
         <img src="img/logo.svg" alt="Логотип магазина «Глэйси»" width="154" height="64" class="logo">
         
-        <ul class="site-navigation">
+        <ul class="site-navigation site-navigation-active">
           <li><a href="catalog.html">Каталог</a>
-            <ul class="site-navigation_att">
-              <li class="site-navigation_new"><a href="#">Новинки</a></li>
+
+            <ul class="site-navigation-att site-navigation-att-active">
+
+              <li class="site-navigation-new"><a href="#">Новинки</a></li>
               <li><a href="catalog-creamy.html">Сливочное</a></li>
               <li><a href="#">Щербеты</a></li>
               <li><a href="#">Фруктовый лед</a></li>
@@ -26,9 +31,12 @@
         </ul>
 
         <div class="user-navigation">
-          <a class="button button_search" href="#">Поиск</a>
-          <a class="button login-link" >Вход</a>
-          <a class="button basket" >Корзина</a>
+          <a class="button-search button-light" href="#">Поиск</a>
+          <a class="login-link button-light" >Вход</a>
+          <section class="basket-nav button-light">
+            <h2 class="visually-hidden">Корзина</h2>
+            <a class=" basket" >Пусто</a>
+          </section>
         </div>
       </nav>
       <div class="main-contact">
@@ -81,6 +89,8 @@
      </div>
 -->
 
+<!-- ПЕРЕКЛЮЧАЛОЧКА-->
+
      <section class="promo">
         <h2 class="visually-hidden">Акции</h2>
 
@@ -99,31 +109,31 @@
 
       <section class="main-catalog">
         <h2 class="visually-hidden">Каталог</h2>
-        <div class="ice_cream">
+        <div class="ice-cream">
           <img class="ice" src="img/cream-11.png" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой" width="267" height="267">
-          <p><span class="price">310₽</span>/кг</p>
-          <p>Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
+          <p class="price"><span>310₽</span>/кг</p>
+          <p class="ice-about">Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
           <a href="#" class="button">Быстрый просмотр</a>
         </div>
 
-        <div class="ice_cream">
+        <div class="ice-cream">
           <img class="ice" src="img/cream-12.png" alt="Сливочно-кофейное с кусочками шоколада" width="267" height="267">
-          <p><span class="price">380₽</span>/кг</p>
-          <p>Сливочно-кофейное с кусочками шоколада</p>
+          <p class="price"><span>380₽</span>/кг</p>
+          <p class="ice-about">Сливочно-кофейное с кусочками шоколада</p>
           <a href="#" class="button">Быстрый просмотр</a>
         </div>
 
-        <div class="ice_cream">
+        <div class="ice-cream">
           <img class="ice" src="img/cream-13.png" alt="Сливочно-клубничное с присыпкой из белого шоколада" width="267" height="267">
-          <p><span class="price">355₽</span>/кг</p>
-          <p>Сливочно-клубничное с присыпкой из белого шоколада</p>
+          <p class="price"><span>355₽</span>/кг</p>
+          <p class="ice-about">Сливочно-клубничное с присыпкой из белого шоколада</p>
           <a href="#" class="button">Быстрый просмотр</a>
         </div>
 
-        <div class="ice_cream">
+        <div class="ice-cream">
           <img class="ice" src="img/cream-14.png" alt="Сливочное крем-брюле с карамельной подливкой" width="267" height="267">
-          <p><span class="price">415₽</span>/кг</p>
-          <p>Сливочное крем-брюле с карамельной подливкой</p>
+          <p class="price"><span>415₽</span>/кг</p>
+          <p class="ice-about">Сливочное крем-брюле с карамельной подливкой</p>
           <a href="#" class="button">Быстрый просмотр</a>
         </div>
       </section>
@@ -140,7 +150,7 @@
         <p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
       </section>
 
-      <section class="blog_new">
+      <section class="blog-new">
         <h2>Новое в нашем блоге</h2>
         <a href="#">
           <h3>10 способов сервировки фруктовых щербетов к столу</h3>
@@ -153,7 +163,7 @@
           <form action="https://echo.htmlacademy.ru" method="post">
             <p class="letters-input">
               <label for="letters-email">Электронная почта</label>
-              <input type="email" name="letters-email" id="letters-email" placeholder="Ваша почта для ответа?">
+              <input type="email" name="letters-email" id="letters-email" placeholder="Электронная почта">
             </p>
             <button type="submit" value="">Отправить</button>
           </form>
@@ -186,10 +196,10 @@
         </ul>
       </section>
       
-      <section class="about_us">
+      <section class="about-us">
       <h2 class="visually-hidden">Партнерам</h2>
       <ul>
-        <li><a href="#">Для поставщиков</a></li>
+        <li class="about-us-provider"><a href="#">Для поставщиков</a></li>
         <li><a href="#">О производстве</a></li>
         <li><a href="#">Наши документы</a></li>
         <li><a href="#">Экологические стандарты</a></li>
@@ -203,6 +213,7 @@
         </a>
       </div>
     </footer> 
+
     <!--ПОИСК-->
     <section class="search">
       <h2 class="visually-hidden">Форма поиск</h2> 
@@ -240,7 +251,7 @@
         </p>
         <p class="reply-input">
           <label for="reply-email">Электронная почта</label>
-          <input type="email" name="reply-email" id="reply-email" placeholder=">Ваша почта для ответа?">
+          <input type="email" name="reply-email" id="reply-email" placeholder="Ваша почта для ответа?">
         </p>
         <p class="reply-input-text">
           <label for="reply-text">Сообщение</label>
@@ -248,8 +259,7 @@
         </p>
         <button type="submit" value="">Отправить</button>
       </form>
-      <button class="button-delet" type="button" value="Закрыть>Закрыть</button>
+      <button class="button-delete" type="button" value="Закрыть">Закрыть</button>
     </section>
-
   </body>
 </html>

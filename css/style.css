@@ -1,11 +1,332 @@
 body {
-background-color: #849d8f;
-color: #ffffff;
-padding: 30px;
+    margin: 0;
+    padding: 0;
+
+    font-family: 'Roboto', 'Arial', sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: normal;
+    color: #ffffff;
+
+    background-color: #849d8f;
+}
+
+.visually-hidden {
+
 }
 
 a {
     color: #ffffff;
+    text-decoration: none;  
+}
+
+a:hover,
+a:focus,
+a:active {
+    color: #ffbc9e;
+}
+
+.button {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 24px;
+    text-align: center;
+}
+
+.button:hover,
+.button:focus {
+    color: #fefefe;
+}
+
+a.button:active {
+    color: #fceeec;
+}
+
+/* БЛОК NAV */
+
+.social li,
+.about-us li,
+.site-navigation,
+.site-navigation-att,
+.user-navigation {
+    list-style: none;
+}
+
+.main-navigation {
     
 }
 
+/*МЕНЮ основное*/
+.site-navigation{
+    line-height: 18px;
+    font-weight: bold;
+}
+
+/*АКТИВНОСТЬ*/
+.site-navigation a:hover,
+.site-navigation a:focus {
+    background-color: #fff;
+    color: blueviolet; /* ПРОВЕРКА*/
+}
+
+site-navigation a:active {
+
+}
+
+.site-navigation-active {
+
+}
+
+/*МЕНЮ выпадающее*/
+.site-navigation-att {
+    background-color: #f8f7f4;
+}
+
+.site-navigation-att a {
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: normal;
+    color: #323232;
+}
+
+.site-navigation-new a {
+    font-weight: bold;
+}
+
+/*АКТИВНОСТЬ*/
+.site-navigation-att a:hover,
+.site-navigation-att a:focus {
+    color: #fa2686; /* ПРОВЕРКА*/
+}
+
+.site-navigation-att a:active {
+    
+}
+
+.site-navigation-att-active a {
+    
+}
+
+/* БЛОК ПОЛЬЗОВАТЕЛЬ НАВИГАЦИИ*/
+
+.user-navigation {
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 500;
+}
+
+.button-search {
+    
+}
+
+.main-contact {
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: bold;
+}
+
+.main-contact a {
+    font-size: 22px;
+    line-height: 24px;
+}
+
+/* БЛОК slider */
+.main-slider p {
+    font-size: 60px;
+    line-height: 60px;
+    font-weight: bold;
+}
+
+.main-slider a {
+    font-size: 32px;
+    line-height: 44px;
+    font-weight: bold;
+}
+
+.main-slider .button:hover,
+.main-slider .button:focus {
+    color: #ffffff;
+}
+
+.main-slider .button:active {
+    color: #fceeec;
+}
+
+/* БЛОК promo */
+.promo h3 {
+    font-size: 35px;
+    line-height: 41px;
+    font-weight: bold;
+}
+
+.promo p {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* БЛОК ice-cream */
+.price {
+    font-size: 30px;
+    line-height: 45px;
+    font-weight: bold;
+}
+
+.price span {
+    font-size: 45px;
+}
+
+.ice-about {
+    font-weight: 500;
+}
+
+/* БЛОК about */
+
+.about h2 {
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 500;
+}
+.about p {
+
+}
+
+/* БЛОК blog-new */
+.blog-new h2 {
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 500;
+    color: #323232;
+}
+
+.blog-new  h3 {
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* БЛОК letters */
+
+/* БЛОК map */
+.contact {
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.contact a {
+    font-size: 18px; 
+    font-weight: bold;
+}
+
+.contact a.button {
+    line-height: 24px;
+}
+
+.contact address {
+    font-size: 18px;
+    line-height: 24px;
+    font-style: normal;
+    font-weight: bold;
+}
+
+/* ---------- БЛОК footer */
+/* БЛОК social */
+
+/* БЛОК about-us */
+.about-us li {
+    font-size: 13px;
+    line-height: 18px;
+}
+
+.about-us-provider {
+    font-weight: bold;
+}
+
+/* БЛОК copyright */
+.copyright a {
+    font-size: 12px;
+    line-height: 18px;                                                                                                                                                                                                                                                                                               
+}
+
+/* ---------- ФОРМЫ */
+/* БЛОК search */
+.search {
+    background-color: #f8f7f4;
+
+    font-size: 14px;
+    line-height: 24px;
+    color: #999999;
+}
+
+.search input {
+    background-color: #fff;
+}
+
+/* БЛОК login */
+.login {
+    background-color: #f8f7f4;
+
+    font-size: 14px;
+    line-height: 24px;
+    color: #999999;
+}
+
+.login a {
+    font-size: 13px;
+    line-height: 24px;
+    color: #323232;
+}
+
+/* БЛОК reply */
+.reply {
+    background-color: #f8f7f4;
+    color: #999999;
+}
+
+.reply input {
+    line-height: 24px; /*не работает*/
+}
+
+.reply h2 {
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 500;
+}
+
+/* БЛОК basket */
+.basket{
+    line-height: 16px;
+}
+
+.basket-nav-buy {
+    background-color: #f8f7f4;
+}
+
+.basket-nav-buy a {
+    font-size: 14px;
+    line-height: 16px;
+    color: #323232;
+}
+
+.basket-buy  {
+    background-color: #f8f7f4;
+}
+
+.basket-buy td,
+.basket-buy a {
+    font-size: 13px;
+    line-height: 16px;
+    color: #323232;
+}
+
+.basket-price {
+    color: #999999;
+}
+
+.basket-price-total {
+    font-size: 15px;
+    line-height: 18px;
+    font-weight: bold;
+    color: #323232;
+}
+/* БЛОК sort */
