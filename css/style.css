@@ -280,6 +280,9 @@ top: 79px;
 /* БЛОК letters */
 
 /* БЛОК map */
+.map {
+
+}
 .contact {
     font-size: 14px;
     line-height: 20px;
@@ -302,11 +305,37 @@ top: 79px;
 }
 
 /* ---------- БЛОК footer */
+.footer-wrapper {
+  display: flex;
+  width: 1146px;
+  justify-content: space-between;
+}
 .
+/* БЛОК social */ /* ну никак не работает */
+.social-wrapper {
+  display: flex;
+  width: 267px;
+  padding: 0;
+  margin: 0;
+  flex-direction: row;
+  justify-content: space-between;
 
-/* БЛОК social */
+  background-color: rgb(53, 172, 93);
+}
+
+.social {
+  width: 247;
+}
+
+.social-wrapper li {
+  width: 32px;
+}
 
 /* БЛОК about-us */
+.about-us-wrapper {
+  display: flex;
+  width: 350px;
+}
 .about-us li {
     font-size: 13px;
     line-height: 18px;
@@ -317,6 +346,10 @@ top: 79px;
 }
 
 /* БЛОК copyright */
+.copyright {
+  width: 267px;
+  padding-left: 76px;
+}
 .copyright a {
     font-size: 12px;
     line-height: 18px;
