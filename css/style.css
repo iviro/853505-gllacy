@@ -195,22 +195,22 @@ top: 79px;
 }
 
 
+/* Хлебные крошки */
+.breadcrumbs {
+  /* Временно для сетки */
+  display: flex;
+  min-height: 300px;
+}
+
+
 /* обертка для ПРОМО и БЛОГ-РАССЫЛКИ */
 .wraper-2 {
   display: flex;
   width: 1146px
 }
+
 .card-1, .card-2 {
   width: 560px;
-  width: 1146px
-}
-
-.wraper-4 {
-  display: flex;
-}
-
-.catalog-card {
-  width: 267px;
 }
 
 /* БЛОК promo */
@@ -223,6 +223,17 @@ top: 79px;
 .promo p {
     font-size: 18px;
     font-weight: bold;
+}
+
+/* обертка для КАТАЛОГА */
+.wraper-4 {
+  display: flex;
+  width: 1146px;
+  flex-wrap: wrap;
+}
+
+.catalog-card {
+  width: 267px;
 }
 
 /* БЛОК ice-cream */
@@ -291,6 +302,8 @@ top: 79px;
 }
 
 /* ---------- БЛОК footer */
+.
+
 /* БЛОК social */
 
 /* БЛОК about-us */
