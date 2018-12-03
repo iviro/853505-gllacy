@@ -42,6 +42,12 @@ a.button:active {
     color: #fceeec;
 }
 
+/* БЛОК header */
+.main-header {
+  /* Временно для сетки */
+  min-height: 73px;
+}
+
 /* БЛОК NAV */
 
 .social li,
