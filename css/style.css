@@ -1,14 +1,14 @@
 body {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 
-    font-family: 'Roboto', 'Arial', sans-serif;
-    font-size: 16px;
-    line-height: 22px;
-    font-weight: normal;
-    color: #ffffff;
+  font-family: 'Roboto', 'Arial', sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: normal;
+  color: #ffffff;
 
-    background-color: #849d8f;
+  background-color: #849d8f;
 }
 
 .visually-hidden {
@@ -16,36 +16,41 @@ body {
 }
 
 a {
-    color: #ffffff;
-    text-decoration: none;
+  color: #ffffff;
+  text-decoration: none;
 }
 
 a:hover,
 a:focus,
 a:active {
-    color: #ffbc9e;
+  color: #ffbc9e;
 }
 
 .button {
-    font-size: 18px;
-    font-weight: bold;
-    line-height: 24px;
-    text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 24px;
+  text-align: center;
 }
 
 .button:hover,
 .button:focus {
-    color: #fefefe;
+  color: #fefefe;
 }
 
 a.button:active {
-    color: #fceeec;
+  color: #fceeec;
 }
 
 /* БЛОК header */
 .main-header {
-  /* Временно для сетки */
-  min-height: 73px;
+  margin-bottom: 10px;
+
+
+/* Временно для сетки */
+height: 73px;
+width: 1146px;
+margin: 0 27px;
 }
 
 /* БЛОК NAV */
@@ -55,17 +60,36 @@ a.button:active {
 .site-navigation,
 .site-navigation-att,
 .user-navigation {
-    list-style: none;
+  list-style: none;
 }
 
 .main-navigation {
+  display: flex;
+  /justify-content: space-around;
+
+
+/* Временно для сетки */
 
 }
 
+/* БЛОК ЛОГО */
+.logo {
+/* Временно для сетки */
+display: block;
+justify-self: flex-start;
+width: 154px;
+margin-top: 9px;
+}
+
+
 /*МЕНЮ основное*/
 .site-navigation{
-    line-height: 18px;
-    font-weight: bold;
+  display: flex;
+
+
+
+  line-height: 18px;
+  font-weight: bold;
 }
 
 /*АКТИВНОСТЬ*/
@@ -86,6 +110,9 @@ a.button:active {
 /*МЕНЮ выпадающее*/
 .site-navigation-att {
     background-color: #f8f7f4;
+/* Временно для сетки */
+position: absolute;
+top: 79px;
 }
 
 .site-navigation-att a {
@@ -116,6 +143,10 @@ a.button:active {
 /* БЛОК ПОЛЬЗОВАТЕЛЬ НАВИГАЦИИ*/
 
 .user-navigation {
+  display: flex;
+
+  width: 267px;
+
     font-size: 14px;
     line-height: 16px;
     font-weight: 500;
@@ -156,6 +187,25 @@ a.button:active {
 
 .main-slider .button:active {
     color: #fceeec;
+}
+
+
+/* обертка для ПРОМО и БЛОГ-РАССЫЛКИ */
+.wraper-2 {
+  display: flex;
+  width: 1146px
+}
+.card-1, .card-2 {
+  width: 560px;
+  width: 1146px
+}
+
+.wraper-4 {
+  display: flex;
+}
+
+.catalog-card {
+  width: 267px;
 }
 
 /* БЛОК promo */
