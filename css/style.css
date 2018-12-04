@@ -63,6 +63,7 @@ margin: 0 27px;
 .social ul,
 .social li,
 .about-us li,
+.about-us ul,
 .site-navigation,
 .site-navigation-att,
 .user-navigation {
@@ -313,12 +314,8 @@ top: 79px;
   width: 1146px;
   justify-content: space-between;
 }
-.
-/* БЛОК social */ /* ну никак не работает */
-.social {
 
-}
-
+/* БЛОК social */
 .social-wrapper {
   display: flex;
   width: 267px;
@@ -330,21 +327,42 @@ top: 79px;
   background-color: rgb(53, 172, 93);
 }
 
-
+.social ul {
+  margin-top: 37px;
+  margin-bottom: 31px;
+}
 
 .social-wrapper li {
   width: 38px;
   background-color: rgba(85, 151, 204, 0.397);
 }
 
+.social a {
+  background: url(img/soc-vk.svg)
+}
+
 /* БЛОК about-us */
 .about-us-wrapper {
   display: flex;
-  width: 350px;
+  width: 360px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
 }
+.about-us ul {
+  margin-top: 37px;
+  margin-bottom: 32px;
+}
+
 .about-us li {
-    font-size: 13px;
-    line-height: 18px;
+  font-size: 13px;
+  line-height: 18px;
+  padding-bottom: 8px
+
+}
+.about-us a {
+
+ margin-right: 33px;
 }
 
 .about-us-provider {
