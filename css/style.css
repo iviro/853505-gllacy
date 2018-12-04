@@ -6,7 +6,7 @@ body {
   font-size: 16px;
   line-height: 22px;
   font-weight: normal;
-  color: #c0b7b7;
+  color: #fefefe;
 
   background-color: #849d8f;
 }
@@ -287,6 +287,7 @@ top: 79px;
 .map {
 
 }
+
 .contact {
     font-size: 14px;
     line-height: 20px;
@@ -313,6 +314,7 @@ top: 79px;
   display: flex;
   width: 1146px;
   justify-content: space-between;
+  margin: 0 27px;
 }
 
 /* БЛОК social */
@@ -324,21 +326,55 @@ top: 79px;
   justify-content: space-between;
   padding-right: 81px;
 
-  background-color: rgb(53, 172, 93);
+  /background-color: rgb(53, 172, 93);
 }
 
 .social ul {
-  margin-top: 37px;
-  margin-bottom: 31px;
+  margin-top: 36px;
+  margin-bottom: 29px;
 }
 
-.social-wrapper li {
+.social-wrapper li:nth-child(1) {
+  box-sizing: border-box;
+  /border: 1px solid #323232;
   width: 38px;
-  background-color: rgba(85, 151, 204, 0.397);
+  height: 38px;
+  background-image: url(/img/soc-twitter.svg);
+  background-repeat: no-repeat;
+  opacity: 0.8;
+}
+
+.social-wrapper li:nth-child(2) {
+  box-sizing: border-box;
+  /border: 1px solid #323232;
+  width: 38px;
+  height: 38px;
+  background-image: url(/img/soc-instagram.svg);
+  background-repeat: no-repeat;
+  opacity: 0.8;
+}
+
+.social-wrapper li:nth-child(3) {
+  box-sizing: border-box;
+  /border: 1px solid #323232;
+  width: 38px;
+  height: 38px;
+  background-image: url(/img/soc-fb.svg);
+  background-repeat: no-repeat;
+  opacity: 0.8;
+}
+
+.social-wrapper li:nth-child(4) {
+  box-sizing: border-box;
+  /border: 1px solid #323232;
+  width: 38px;
+  height: 38px;
+  background-image: url(/img/soc-vk.svg);
+  background-repeat: no-repeat;
+  opacity: 0.8;
 }
 
 .social a {
-  background: url(img/soc-vk.svg)
 }
 
 /* БЛОК about-us */
@@ -346,37 +382,56 @@ top: 79px;
   display: flex;
   width: 360px;
   flex-wrap: wrap;
-  justify-content: space-between;
+  /justify-content: space-between;
+  position: relative;
 
 }
 .about-us ul {
   margin-top: 37px;
-  margin-bottom: 32px;
 }
 
 .about-us li {
   font-size: 13px;
   line-height: 18px;
-  padding-bottom: 8px
+  padding-bottom: 9px
 
 }
 .about-us a {
-
- margin-right: 33px;
+  margin-right: 32px;
 }
 
 .about-us-provider {
-    font-weight: bold;
+  font-weight: bold;
+}
+
+.about-us-provider::after {
+  content: "";
+  width: 15px;
+  height: 13px;
+  position: absolute;
+  left: -20px; /* если .about-us-wrapper задать position: relative; */
+  /left: 402px;
+  background-image: url(/img/footter-heart.svg);
 }
 
 /* БЛОК copyright */
 .copyright {
   width: 267px;
   padding-left: 76px;
+  margin-top: 18px;
+  margin-bottom: 25px;
 }
-.copyright a {
-    font-size: 12px;
-    line-height: 18px;
+
+.copyright img {
+
+}
+
+.copyright p {
+  font-size: 12px;
+  line-height: 18px;
+
+  margin-top: 5px;
+  margin-bottom: 0px;
 }
 
 /* ---------- ФОРМЫ */
