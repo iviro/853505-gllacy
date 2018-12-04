@@ -315,23 +315,26 @@ top: 79px;
 }
 .
 /* БЛОК social */ /* ну никак не работает */
+.social {
+
+}
+
 .social-wrapper {
   display: flex;
   width: 267px;
   padding: 0;
   margin: 0;
-  flex-direction: row;
   justify-content: space-between;
+  padding-right: 81px;
 
   background-color: rgb(53, 172, 93);
 }
 
-.social {
-  width: 247;
-}
+
 
 .social-wrapper li {
-  width: 32px;
+  width: 38px;
+  background-color: rgba(85, 151, 204, 0.397);
 }
 
 /* БЛОК about-us */
