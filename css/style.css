@@ -71,6 +71,12 @@ a.button:active {
 
 /* БЛОК header */
 .main-header {
+  display: flex;
+  flex-direction: column;
+  width: 1146px;
+  margin: 0 auto;
+  padding-right: 27px;
+  padding-left: 27px;
   margin-bottom: 10px;
 
 
@@ -84,6 +90,7 @@ min-height: 73px;
 .main-navigation {
   display: flex;
   /justify-content: space-around;
+
 
 
 /* Временно для сетки */
@@ -102,15 +109,20 @@ margin-right: 24px;
 
 
 /*МЕНЮ основное*/
-.site-navigation{
+.site-navigation {
   display: flex;
 
-  width: 1146px;
+  flex-grow: 1;
+  width: 349px;
   margin-top: 32px;
 
   line-height: 18px;
   font-weight: bold;
 }
+
+.site-navigation>li {
+  padding-right: 30px;
+  }
 
 /*АКТИВНОСТЬ*/
 .site-navigation a:hover,
@@ -146,6 +158,7 @@ top: 79px;
   font-weight: bold;
 }
 
+
 /*АКТИВНОСТЬ*/
 .site-navigation-att a:hover,
 .site-navigation-att a:focus {
@@ -163,7 +176,7 @@ top: 79px;
 /* БЛОК ПОЛЬЗОВАТЕЛЬ НАВИГАЦИИ*/
 
 .user-navigation {
-  justify-items: end;
+  justify-self: end;
 
   display: flex;
 
@@ -260,12 +273,19 @@ background-color: #9FB3A8;
   background-repeat: no-repeat;
 }
 
+/* КОНТАКТЫ  */
+
 .main-contact {
+  align-self: flex-end;
   font-size: 14px;
   line-height: 16px;
   font-weight: bold;
+  margin: 0;
 }
-
+.main-contact p{
+  padding-left: 17px;
+  margin-bottom: 6px;
+}
 .main-contact a {
   font-size: 22px;
   line-height: 24px;
