@@ -33,6 +33,20 @@ a:active {
   color: #ffbc9e;
 }
 
+.social ul,
+.social li,
+.about-us li,
+.about-us ul,
+.breadcrumbs ul,
+.breadcrumbs li,
+.site-navigation,
+.site-navigation-att,
+.user-navigation {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
 .button {
   font-size: 18px;
   font-weight: bold;
@@ -61,25 +75,12 @@ a.button:active {
 
 
 /* Временно для сетки */
-height: 73px;
+min-height: 73px;
 
 
 }
 
 /* БЛОК NAV */
-
-.social ul,
-.social li,
-.about-us li,
-.about-us ul,
-.site-navigation,
-.site-navigation-att,
-.user-navigation {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
 .main-navigation {
   display: flex;
   /justify-content: space-around;
@@ -112,8 +113,8 @@ margin-top: 9px;
 /*АКТИВНОСТЬ*/
 .site-navigation a:hover,
 .site-navigation a:focus {
-    background-color: #fff;
-    color: blueviolet; /* ПРОВЕРКА*/
+  background-color: #fff;
+  color: blueviolet; /* ПРОВЕРКА*/
 }
 
 .site-navigation a:active {
@@ -126,21 +127,21 @@ margin-top: 9px;
 
 /*МЕНЮ выпадающее*/
 .site-navigation-att {
-    background-color: #f8f7f4;
+  background-color: #f8f7f4;
 /* Временно для сетки */
 position: absolute;
 top: 79px;
 }
 
 .site-navigation-att a {
-    font-size: 14px;
-    line-height: 16px;
-    font-weight: normal;
-    color: #323232;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: normal;
+  color: #323232;
 }
 
 .site-navigation-new a {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 /*АКТИВНОСТЬ*/
@@ -160,13 +161,13 @@ top: 79px;
 /* БЛОК ПОЛЬЗОВАТЕЛЬ НАВИГАЦИИ*/
 
 .user-navigation {
-  display: flex;
+display: flex;
 
-  width: 267px;
+width: 267px;
 
-    font-size: 14px;
-    line-height: 16px;
-    font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
 }
 
 .button-search {
@@ -174,46 +175,44 @@ top: 79px;
 }
 
 .main-contact {
-    font-size: 14px;
-    line-height: 16px;
-    font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: bold;
 }
 
 .main-contact a {
-    font-size: 22px;
-    line-height: 24px;
+  font-size: 22px;
+  line-height: 24px;
+}
+
+/* БЛОК Хлебных крошек */
+.breadcrumbs {
+  display: flex;
+/* Временно для сетки */
+background-color: rgb(223, 140, 140);
 }
 
 /* БЛОК slider */
 .main-slider p {
-    font-size: 60px;
-    line-height: 60px;
-    font-weight: bold;
+  font-size: 60px;
+  line-height: 60px;
+  font-weight: bold;
 }
 
 .main-slider a {
-    font-size: 32px;
-    line-height: 44px;
-    font-weight: bold;
+  font-size: 32px;
+  line-height: 44px;
+  font-weight: bold;
 }
 
 .main-slider .button:hover,
 .main-slider .button:focus {
-    color: #ffffff;
+  color: #ffffff;
 }
 
 .main-slider .button:active {
-    color: #fceeec;
+  color: #fceeec;
 }
-
-
-/* Хлебные крошки */
-.breadcrumbs {
-  /* Временно для сетки */
-  display: flex;
-  min-height: 300px;
-}
-
 
 /* обертка для ПРОМО и БЛОГ-РАССЫЛКИ */
 .wraper-2 {
@@ -227,14 +226,14 @@ top: 79px;
 
 /* БЛОК promo */
 .promo h3 {
-    font-size: 35px;
-    line-height: 41px;
-    font-weight: bold;
+  font-size: 35px;
+  line-height: 41px;
+  font-weight: bold;
 }
 
 .promo p {
-    font-size: 18px;
-    font-weight: bold;
+  font-size: 18px;
+  font-weight: bold;
 }
 
 /* обертка для КАТАЛОГА */
@@ -250,25 +249,25 @@ top: 79px;
 
 /* БЛОК ice-cream */
 .price {
-    font-size: 30px;
-    line-height: 45px;
-    font-weight: bold;
+  font-size: 30px;
+  line-height: 45px;
+  font-weight: bold;
 }
 
 .price span {
-    font-size: 45px;
+  font-size: 45px;
 }
 
 .ice-about {
-    font-weight: 500;
+  font-weight: 500;
 }
 
 /* БЛОК about */
 
 .about h2 {
-    font-size: 24px;
-    line-height: 30px;
-    font-weight: 500;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 500;
 }
 .about p {
 
@@ -276,17 +275,17 @@ top: 79px;
 
 /* БЛОК blog-new */
 .blog-new h2 {
-    font-size: 16px;
-    line-height: 22px;
-    font-weight: 500;
-    color: #323232;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 500;
+  color: #323232;
 }
 
 .blog-new  h3 {
-    font-size: 24px;
-    line-height: 30px;
-    font-weight: bold;
-    text-decoration: underline;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: bold;
+  text-decoration: underline;
 }
 
 /* БЛОК letters */
@@ -346,7 +345,7 @@ top: 79px;
   /border: 1px solid #323232;
   width: 38px;
   height: 38px;
-  background-image: url(/img/soc-twitter.svg);
+  background-image: url(../img/soc-twitter.svg);
   background-repeat: no-repeat;
   opacity: 0.8;
 }
@@ -356,7 +355,7 @@ top: 79px;
   /border: 1px solid #323232;
   width: 38px;
   height: 38px;
-  background-image: url(/img/soc-instagram.svg);
+  background-image: url(../img/soc-instagram.svg);
   background-repeat: no-repeat;
   opacity: 0.8;
 }
@@ -366,7 +365,7 @@ top: 79px;
   /border: 1px solid #323232;
   width: 38px;
   height: 38px;
-  background-image: url(/img/soc-fb.svg);
+  background-image: url(../img/soc-fb.svg);
   background-repeat: no-repeat;
   opacity: 0.8;
 }
@@ -376,7 +375,7 @@ top: 79px;
   /border: 1px solid #323232;
   width: 38px;
   height: 38px;
-  background-image: url(/img/soc-vk.svg);
+  background-image: url(../img/soc-vk.svg);
   background-repeat: no-repeat;
   opacity: 0.8;
 }
@@ -417,7 +416,7 @@ top: 79px;
   position: absolute;
   left: -20px; /* если .about-us-wrapper задать position: relative; */
   /left: 402px;
-  background-image: url(/img/footter-heart.svg);
+  background-image: url(../img/footter-heart.svg);
 }
 
 /* БЛОК copyright */
