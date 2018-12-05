@@ -12,12 +12,14 @@ body {
 }
 
 .visually-hidden {
-  position: absolute !important;
-  height: 1px; width: 1px;
-  overflow: hidden;
-  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
-  clip: rect(1px, 1px, 1px, 1px);
-  clip-path: polygon(0px 0px, 0px 0px,0px 0px, 0px 0px);
+  position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
 a {
@@ -47,6 +49,12 @@ a.button:active {
   color: #fceeec;
 }
 
+.wrapper {
+  width: 1146px;
+  margin: 0 auto;
+  padding: 0 27px;
+}
+
 /* БЛОК header */
 .main-header {
   margin-bottom: 10px;
@@ -54,8 +62,8 @@ a.button:active {
 
 /* Временно для сетки */
 height: 73px;
-width: 1146px;
-margin: 0 27px;
+
+
 }
 
 /* БЛОК NAV */
@@ -312,9 +320,8 @@ top: 79px;
 /* ---------- БЛОК footer */
 .footer-wrapper {
   display: flex;
-  width: 1146px;
   justify-content: space-between;
-  margin: 0 27px;
+/margin: 0;   /* почему, если я его убираю совсем, исчезают иконки svg)  Перестали исчезать....*/
 }
 
 /* БЛОК social */
