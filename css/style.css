@@ -383,8 +383,6 @@ top: 79px;
   width: 360px;
   flex-wrap: wrap;
   /justify-content: space-between;
-  position: relative;
-
 }
 .about-us ul {
   margin-top: 37px;
@@ -401,6 +399,7 @@ top: 79px;
 }
 
 .about-us-provider {
+  position: relative;
   font-weight: bold;
 }
 
