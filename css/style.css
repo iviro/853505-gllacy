@@ -97,6 +97,7 @@ display: block;
 justify-self: flex-start;
 width: 154px;
 margin-top: 9px;
+margin-right: 24px;
 }
 
 
@@ -104,7 +105,8 @@ margin-top: 9px;
 .site-navigation{
   display: flex;
 
-
+  width: 1146px;
+  margin-top: 32px;
 
   line-height: 18px;
   font-weight: bold;
@@ -161,9 +163,11 @@ top: 79px;
 /* БЛОК ПОЛЬЗОВАТЕЛЬ НАВИГАЦИИ*/
 
 .user-navigation {
-display: flex;
+  justify-items: end;
 
-width: 267px;
+  display: flex;
+
+  margin-top: 22px;
 
   font-size: 14px;
   line-height: 16px;
@@ -171,7 +175,89 @@ width: 267px;
 }
 
 .button-search {
+  position: relative;
+  display: inline-block;
+  width: 33px;
+  height: 33px;
+  margin-right: 10px;
 
+  background-color: #9FB3A8;
+}
+
+.button-search::before {
+  content: "";
+  position: absolute;
+  width: 17px;
+  height: 17px;
+  margin-right: 10px;
+  top: 8px;
+  left: 8px;
+  background-image: url(../img/header-seach.svg);
+  background-repeat: no-repeat;
+}
+
+.login-link {
+  display: inline-block;
+  position: relative;
+  width: 93px;
+  height: 33px;
+  margin-right: 10px;
+  padding-top: 9px;
+  padding-left: 44px;
+
+background-color: #9FB3A8;
+}
+
+.login-link::before {
+  content: "";
+  position: absolute;
+  width: 21px;
+  height: 19px;
+  margin-top: 9px;
+  top: -3px;
+  left: 16px;
+  background-image: url(../img/header-entrance.svg);
+  background-repeat: no-repeat;
+}
+
+.basket-nav {
+  position: relative;
+  width: 100px;
+  height: 33px;
+  padding-top: 9px;
+  padding-left: 45px;
+
+background-color: #9FB3A8;
+}
+
+.basket-nav::before {
+  content: "";
+  position: absolute;
+  width: 21px;
+  height: 20px;
+  margin-top: 9px;
+  top: -3px;
+  left: 16px;
+  background-image: url(../img/header-basket.svg);
+  background-repeat: no-repeat;
+}
+
+.basket-nav-buy {
+  position: relative;
+  width: 100px;
+  height: 33px;
+  padding-left: 45px;
+}
+
+.basket-nav-buy::before {
+  content: "";
+  position: absolute;
+  width: 21px;
+  height: 20px;
+  top: -2px;
+  left: 16px;
+  background-image: url(../img/header-basket-red.svg);
+  background-repeat: no-repeat;
 }
 
 .main-contact {
