@@ -1,75 +1,137 @@
 body {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 
-    font-family: 'Roboto', 'Arial', sans-serif;
-    font-size: 16px;
-    line-height: 22px;
-    font-weight: normal;
-    color: #ffffff;
+  font-family: 'Roboto', 'Arial', sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: normal;
+  color: #fefefe;
 
-    background-color: #849d8f;
+  background-color: #849d8f;
 }
 
 .visually-hidden {
-
+  position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
 a {
-    color: #ffffff;
-    text-decoration: none;  
+  color: #ffffff;
+  text-decoration: none;
 }
 
 a:hover,
 a:focus,
 a:active {
-    color: #ffbc9e;
+  color: #ffbc9e;
+}
+
+.social ul,
+.social li,
+.about-us li,
+.about-us ul,
+.breadcrumbs ul,
+.breadcrumbs li,
+.site-navigation,
+.site-navigation-att,
+.user-navigation {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .button {
-    font-size: 18px;
-    font-weight: bold;
-    line-height: 24px;
-    text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 24px;
+  text-align: center;
 }
 
 .button:hover,
 .button:focus {
-    color: #fefefe;
+  color: #fefefe;
 }
 
 a.button:active {
-    color: #fceeec;
+  color: #fceeec;
+}
+
+.wrapper {
+  width: 1146px;
+  margin: 0 auto;
+  padding: 0 27px;
+}
+
+/* БЛОК header */
+.main-header {
+  display: flex;
+  flex-direction: column;
+  width: 1146px;
+  margin: 0 auto;
+  padding-right: 27px;
+  padding-left: 27px;
+  margin-bottom: 10px;
+
+
+/* Временно для сетки */
+min-height: 73px;
+
+
 }
 
 /* БЛОК NAV */
-
-.social li,
-.about-us li,
-.site-navigation,
-.site-navigation-att,
-.user-navigation {
-    list-style: none;
-}
-
 .main-navigation {
-    
+  display: flex;
+  /justify-content: space-around;
+
+
+
+/* Временно для сетки */
+
 }
+
+/* БЛОК ЛОГО */
+.logo {
+/* Временно для сетки */
+display: block;
+justify-self: flex-start;
+width: 154px;
+margin-top: 9px;
+margin-right: 24px;
+}
+
 
 /*МЕНЮ основное*/
-.site-navigation{
-    line-height: 18px;
-    font-weight: bold;
+.site-navigation {
+  display: flex;
+
+  flex-grow: 1;
+  width: 349px;
+  margin-top: 32px;
+
+  line-height: 18px;
+  font-weight: bold;
 }
+
+.site-navigation>li {
+  padding-right: 30px;
+  }
 
 /*АКТИВНОСТЬ*/
 .site-navigation a:hover,
 .site-navigation a:focus {
-    background-color: #fff;
-    color: blueviolet; /* ПРОВЕРКА*/
+  background-color: #fff;
+  color: blueviolet; /* ПРОВЕРКА*/
 }
 
-site-navigation a:active {
+.site-navigation a:active {
 
 }
 
@@ -79,19 +141,23 @@ site-navigation a:active {
 
 /*МЕНЮ выпадающее*/
 .site-navigation-att {
-    background-color: #f8f7f4;
+  background-color: #f8f7f4;
+/* Временно для сетки */
+position: absolute;
+top: 79px;
 }
 
 .site-navigation-att a {
-    font-size: 14px;
-    line-height: 16px;
-    font-weight: normal;
-    color: #323232;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: normal;
+  color: #323232;
 }
 
 .site-navigation-new a {
-    font-weight: bold;
+  font-weight: bold;
 }
+
 
 /*АКТИВНОСТЬ*/
 .site-navigation-att a:hover,
@@ -100,91 +166,214 @@ site-navigation a:active {
 }
 
 .site-navigation-att a:active {
-    
+
 }
 
 .site-navigation-att-active a {
-    
+
 }
 
 /* БЛОК ПОЛЬЗОВАТЕЛЬ НАВИГАЦИИ*/
 
 .user-navigation {
-    font-size: 14px;
-    line-height: 16px;
-    font-weight: 500;
+  justify-self: end;
+
+  display: flex;
+
+  margin-top: 22px;
+
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
 }
 
 .button-search {
-    
+  position: relative;
+  display: inline-block;
+  width: 33px;
+  height: 33px;
+  margin-right: 10px;
+
+  background-color: #9FB3A8;
 }
+
+.button-search::before {
+  content: "";
+  position: absolute;
+  width: 17px;
+  height: 17px;
+  margin-right: 10px;
+  top: 8px;
+  left: 8px;
+  background-image: url(../img/header-seach.svg);
+  background-repeat: no-repeat;
+}
+
+.login-link {
+  display: inline-block;
+  position: relative;
+  width: 93px;
+  height: 33px;
+  margin-right: 10px;
+  padding-top: 9px;
+  padding-left: 44px;
+
+background-color: #9FB3A8;
+}
+
+.login-link::before {
+  content: "";
+  position: absolute;
+  width: 21px;
+  height: 19px;
+  margin-top: 9px;
+  top: -3px;
+  left: 16px;
+  background-image: url(../img/header-entrance.svg);
+  background-repeat: no-repeat;
+}
+
+.basket-nav {
+  position: relative;
+  width: 100px;
+  height: 33px;
+  padding-top: 9px;
+  padding-left: 45px;
+
+background-color: #9FB3A8;
+}
+
+.basket-nav::before {
+  content: "";
+  position: absolute;
+  width: 21px;
+  height: 20px;
+  margin-top: 9px;
+  top: -3px;
+  left: 16px;
+  background-image: url(../img/header-basket.svg);
+  background-repeat: no-repeat;
+}
+
+.basket-nav-buy {
+  position: relative;
+  width: 100px;
+  height: 33px;
+  padding-left: 45px;
+}
+
+.basket-nav-buy::before {
+  content: "";
+  position: absolute;
+  width: 21px;
+  height: 20px;
+  top: -2px;
+  left: 16px;
+  background-image: url(../img/header-basket-red.svg);
+  background-repeat: no-repeat;
+}
+
+/* КОНТАКТЫ  */
 
 .main-contact {
-    font-size: 14px;
-    line-height: 16px;
-    font-weight: bold;
+  align-self: flex-end;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: bold;
+  margin: 0;
+}
+.main-contact p{
+  padding-left: 17px;
+  margin-bottom: 6px;
+}
+.main-contact a {
+  font-size: 22px;
+  line-height: 24px;
 }
 
-.main-contact a {
-    font-size: 22px;
-    line-height: 24px;
+/* БЛОК Хлебных крошек */
+.breadcrumbs {
+  display: flex;
+/* Временно для сетки */
+background-color: rgb(223, 140, 140);
 }
 
 /* БЛОК slider */
 .main-slider p {
-    font-size: 60px;
-    line-height: 60px;
-    font-weight: bold;
+  font-size: 60px;
+  line-height: 60px;
+  font-weight: bold;
 }
 
 .main-slider a {
-    font-size: 32px;
-    line-height: 44px;
-    font-weight: bold;
+  font-size: 32px;
+  line-height: 44px;
+  font-weight: bold;
 }
 
 .main-slider .button:hover,
 .main-slider .button:focus {
-    color: #ffffff;
+  color: #ffffff;
 }
 
 .main-slider .button:active {
-    color: #fceeec;
+  color: #fceeec;
+}
+
+/* обертка для ПРОМО и БЛОГ-РАССЫЛКИ */
+.wraper-2 {
+  display: flex;
+  width: 1146px
+}
+
+.card-1, .card-2 {
+  width: 560px;
 }
 
 /* БЛОК promo */
 .promo h3 {
-    font-size: 35px;
-    line-height: 41px;
-    font-weight: bold;
+  font-size: 35px;
+  line-height: 41px;
+  font-weight: bold;
 }
 
 .promo p {
-    font-size: 18px;
-    font-weight: bold;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* обертка для КАТАЛОГА */
+.wraper-4 {
+  display: flex;
+  width: 1146px;
+  flex-wrap: wrap;
+}
+
+.catalog-card {
+  width: 267px;
 }
 
 /* БЛОК ice-cream */
 .price {
-    font-size: 30px;
-    line-height: 45px;
-    font-weight: bold;
+  font-size: 30px;
+  line-height: 45px;
+  font-weight: bold;
 }
 
 .price span {
-    font-size: 45px;
+  font-size: 45px;
 }
 
 .ice-about {
-    font-weight: 500;
+  font-weight: 500;
 }
 
 /* БЛОК about */
 
 .about h2 {
-    font-size: 24px;
-    line-height: 30px;
-    font-weight: 500;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 500;
 }
 .about p {
 
@@ -192,29 +381,33 @@ site-navigation a:active {
 
 /* БЛОК blog-new */
 .blog-new h2 {
-    font-size: 16px;
-    line-height: 22px;
-    font-weight: 500;
-    color: #323232;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 500;
+  color: #323232;
 }
 
 .blog-new  h3 {
-    font-size: 24px;
-    line-height: 30px;
-    font-weight: bold;
-    text-decoration: underline;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: bold;
+  text-decoration: underline;
 }
 
 /* БЛОК letters */
 
 /* БЛОК map */
+.map {
+
+}
+
 .contact {
     font-size: 14px;
     line-height: 20px;
 }
 
 .contact a {
-    font-size: 18px; 
+    font-size: 18px;
     font-weight: bold;
 }
 
@@ -230,22 +423,126 @@ site-navigation a:active {
 }
 
 /* ---------- БЛОК footer */
+.footer-wrapper {
+  display: flex;
+  justify-content: space-between;
+/margin: 0;   /* почему, если я его убираю совсем, исчезают иконки svg)  Перестали исчезать....*/
+}
+
 /* БЛОК social */
+.social-wrapper {
+  display: flex;
+  width: 267px;
+  padding: 0;
+  margin: 0;
+  justify-content: space-between;
+  padding-right: 81px;
+
+  /background-color: rgb(53, 172, 93);
+}
+
+.social ul {
+  margin-top: 36px;
+  margin-bottom: 29px;
+}
+
+.social-wrapper li:nth-child(1) {
+  box-sizing: border-box;
+  /border: 1px solid #323232;
+  width: 38px;
+  height: 38px;
+  background-image: url(../img/soc-twitter.svg);
+  background-repeat: no-repeat;
+  opacity: 0.8;
+}
+
+.social-wrapper li:nth-child(2) {
+  box-sizing: border-box;
+  /border: 1px solid #323232;
+  width: 38px;
+  height: 38px;
+  background-image: url(../img/soc-instagram.svg);
+  background-repeat: no-repeat;
+  opacity: 0.8;
+}
+
+.social-wrapper li:nth-child(3) {
+  box-sizing: border-box;
+  /border: 1px solid #323232;
+  width: 38px;
+  height: 38px;
+  background-image: url(../img/soc-fb.svg);
+  background-repeat: no-repeat;
+  opacity: 0.8;
+}
+
+.social-wrapper li:nth-child(4) {
+  box-sizing: border-box;
+  /border: 1px solid #323232;
+  width: 38px;
+  height: 38px;
+  background-image: url(../img/soc-vk.svg);
+  background-repeat: no-repeat;
+  opacity: 0.8;
+}
+
+.social a {
+}
 
 /* БЛОК about-us */
+.about-us-wrapper {
+  display: flex;
+  width: 360px;
+  flex-wrap: wrap;
+  /justify-content: space-between;
+}
+.about-us ul {
+  margin-top: 37px;
+}
+
 .about-us li {
-    font-size: 13px;
-    line-height: 18px;
+  font-size: 13px;
+  line-height: 18px;
+  padding-bottom: 9px
+
+}
+.about-us a {
+  margin-right: 32px;
 }
 
 .about-us-provider {
-    font-weight: bold;
+  position: relative;
+  font-weight: bold;
+}
+
+.about-us-provider::after {
+  content: "";
+  width: 15px;
+  height: 13px;
+  position: absolute;
+  left: -20px; /* если .about-us-wrapper задать position: relative; */
+  /left: 402px;
+  background-image: url(../img/footter-heart.svg);
 }
 
 /* БЛОК copyright */
-.copyright a {
-    font-size: 12px;
-    line-height: 18px;                                                                                                                                                                                                                                                                                               
+.copyright {
+  width: 267px;
+  padding-left: 76px;
+  margin-top: 18px;
+  margin-bottom: 25px;
+}
+
+.copyright img {
+
+}
+
+.copyright p {
+  font-size: 12px;
+  line-height: 18px;
+
+  margin-top: 5px;
+  margin-bottom: 0px;
 }
 
 /* ---------- ФОРМЫ */
