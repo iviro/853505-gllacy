@@ -331,15 +331,21 @@ background-color: rgb(223, 140, 140);
 
 .promo-1, .promo-2,
 .blog-new, .letters {
+  display: flex;
+  flex-direction: column;
   width: 560px;
+  padding-bottom: 23px;
+  margin-bottom: 40px;
 }
 .promo-1 {
+  height: 229px;
   margin-right: 26px;
   background-image: url(/img/promo-raspberry-m.jpg);
   background-repeat: no-repeat;
 }
 
 .promo-2 {
+  height: 229px;
   background-image: url(/img/promo-chocolate-m.jpg);
   background-repeat: no-repeat;
 }
@@ -352,6 +358,7 @@ background-color: rgb(223, 140, 140);
   line-height: 41px;
   font-weight: bold;
 }
+
 .promo p {
   margin: 0 23px;
   margin-top: 20px;
@@ -359,6 +366,16 @@ background-color: rgb(223, 140, 140);
   font-weight: bold;
 }
 
+.promo .button {
+  align-self: flex-end;
+  margin-top: 43px;
+  margin-bottom: 23px;
+  margin-right: 21px;
+}
+
+.promo  a {
+
+}
 /* обертка для КАТАЛОГА */
 .wraper-4 {
   display: flex;
