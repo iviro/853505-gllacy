@@ -601,6 +601,61 @@ top: 79px;
   font-weight: bold;
 }
 
+
+/* БЛОК листалки*/
+.catalog-paginator {
+  display: flex;
+  justify-content: flex-end;
+  width: 1146px;
+}
+
+.catalog-paginator a {
+  display: block;
+}
+.catalog-paginator-current {
+  width: 26px;
+  height: 26px;
+  padding-right: 20px;
+  text-align: center;
+}
+
+.catalog-paginator-c-active {
+  width: 26px;
+  height: 26px;
+  text-align: center;
+  color: #333333;
+
+background-color: #ffffff;
+}
+
+.catalog-paginator-prev,
+.catalog-paginator-next {
+  position: relative;
+}
+
+.catalog-paginator-prev::before {
+  position: absolute;
+  content: "";
+  width: 7px;
+  height: 12px;
+  background-image: url(/img/soc-twitter.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+  background-color: #e74a35;
+}
+.catalog-paginator-next::after {
+  position: absolute;
+  content: "";
+  width: 26px;
+  height: 26px;
+  left: -10px;
+  background-image: url(/img/icon-right-small.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+}
+
 /* ---------- БЛОК footer */
 .footer-wrapper {
   display: flex;

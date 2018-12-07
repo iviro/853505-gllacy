@@ -226,11 +226,20 @@
               <p class="ice-about">Сливочное с мятным сиропом</p>
               <a href="#" class="button">Быстрый просмотр</a>
           </div>
-
+              <!-- можно ли тут min-height классу ice-about задать (одна строчка если)-->
           </section>
 
 <!-- листалки для СТРАНИЦ КАТАЛОГА-->
-
+          <section class="catalog-paginator">
+            <a class="catalog-paginator-prev visually-hidden" href="#prev">Назад</a>
+            <a class="catalog-paginator-current catalog-paginator-c-active" href="#">1</a>
+            <a class="catalog-paginator-current " href="#">2</a>
+            <a class="catalog-paginator-current " href="#">3</a>
+            <a class="catalog-paginator-current " href="#">4</a>
+            <a class="catalog-paginator-current " href="#">5</a>
+            <a class="catalog-paginator-next visually-hidden" href="#">Вперед</a>
+<!--Как лучше назвать этот класс catalog-paginator-c-active или ...-->
+          </section>
 
       </main>
 
@@ -262,7 +271,8 @@
               <p>Сделано в HTML Academy © 2017</p>
             </a>
           </div>
-        </footer>
+      </footer>
+    </div> <!-- .wrapper-->
 
         <!--ПОИСК-->
         <section class="search">
@@ -326,6 +336,6 @@
           <button type="submit" value="">Оформить заказ</button>
           </form>
       </section>
-    </div> <!-- .wrapper-->
+
   </body>
 </html>
