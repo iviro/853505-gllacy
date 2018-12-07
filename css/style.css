@@ -97,11 +97,6 @@ min-height: 73px;
 .main-navigation {
   display: flex;
   /justify-content: space-around;
-
-
-
-/* Временно для сетки */
-
 }
 
 /* БЛОК ЛОГО */
@@ -242,9 +237,9 @@ background-color: #9FB3A8;
 
 .basket-nav {
   position: relative;
-  width: 100px;
+  /width: 100px;
   height: 33px;
-  padding-top: 9px;
+  padding:  10px 16px;
   padding-left: 45px;
 
 background-color: #9FB3A8;
@@ -264,8 +259,9 @@ background-color: #9FB3A8;
 
 .basket-nav-buy {
   position: relative;
-  width: 100px;
+  /width: 100px;
   height: 33px;
+  padding:  10px 16px;
   padding-left: 45px;
 }
 
@@ -274,7 +270,7 @@ background-color: #9FB3A8;
   position: absolute;
   width: 21px;
   height: 20px;
-  top: -2px;
+  top: 8px;
   left: 16px;
   background-image: url(../img/header-basket-red.svg);
   background-repeat: no-repeat;
@@ -365,7 +361,7 @@ background-color: #9FB3A8;
 .promo-1 {
   height: 229px;
   margin-right: 26px;
-  background-image: url(.../img/promo-raspberry-m.jpg);
+  background-image: url(/img/promo-raspberry-m.jpg);
   background-repeat: no-repeat;
 }
 
