@@ -11,6 +11,11 @@ body {
   background-color: #849d8f;
 }
 
+.body-wrapper {
+  position: relative;
+  width: 1200px;
+}
+
 .visually-hidden {
   position: absolute;
     width: 1px;
@@ -781,21 +786,68 @@ background-color: #ffffff;
 }
 
 /* ---------- ФОРМЫ */
-/* БЛОК search */
-.search {
-    background-color: #f8f7f4;
+.search input,
+.login input,
+.reply input {
+  height: 44px;
+  padding: 12px 15px;
+  /?
+  object-fit: contain;
+  border-radius: 5px;
+  /box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
+}
 
-    font-size: 14px;
-    line-height: 24px;
-    color: #999999;
+
+.login section,
+.reply section {
+
+  /?
+  object-fit: contain;
+  border-radius: 5px;
+  box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
+}
+
+/* БЛОК search */
+section.search {
+  position: absolute;
+  display: flex;
+  width: 340px;
+  padding: 20px 15px;
+  top: 59px;
+  left: 593px;
+
+  /?
+  object-fit: contain;
+  border-radius: 5px;
+  box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
+
+
+  background-color: #f8f7f4;
+
+  font-size: 14px;
+  line-height: 24px;
+  color: #999999;
 }
 
 .search input {
-    background-color: #fff;
+  width: 310px;
+  background-color: #fff;
+
 }
 
 /* БЛОК login */
-.login {
+section.login {
+  /position: absolute;
+  display: flex;
+  flex-direction: column;
+
+  top: 59px;
+  left: 593px;
+
+  width: 277px;
+  height: 216px;
+  border-radius: 10px;
+
     background-color: #f8f7f4;
 
     font-size: 14px;
@@ -810,19 +862,70 @@ background-color: #ffffff;
 }
 
 /* БЛОК reply */
-.reply {
+section.reply {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+
+  top: 337px;
+  left: 349px;
+
+  width: 478px;
+  height: 443px;
+  padding: 24px;
+  border-radius: 10px;
+
     background-color: #f8f7f4;
     color: #999999;
 }
 
+.reply textarea,
 .reply input {
+  width: 267px;
+  padding-top: 12px;
+  padding-bottom: 9px;
+  margin-top: 20px;
     line-height: 24px; /*не работает*/
+
 }
 
+.reply textarea {
+  width: 428px;
+  height: 151px;
+  padding: 11px 15px;
+
+
+  object-fit: contain;
+  border-radius: 5px;
+}
+
+
+section.reply .button {
+  align-self: flex-end;
+  margin: auto;
+}/* не работает */
+
+
+.button-close {
+  position: absolute;
+  background-image: url(/img/fotm-cross-big.svg);
+  background-repeat: no-repeat;
+  width: 18px;
+  height: 18px;
+  left: 443px;
+}/* КАК скрыть button "Закрыть" */
+
+
 .reply h2 {
+  margin: 0;
     font-size: 24px;
     line-height: 28px;
     font-weight: 500;
+    color: #323232;
+}
+
+.reply p {
+  margin: 0;
 }
 
 /* БЛОК basket */
