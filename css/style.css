@@ -372,6 +372,7 @@ top: 79px;
 }
 
 
+/* ПОМЕНЯТЬ ИЗОБРАЖЕНИЯ */
 .promo-1, .promo-2,
 .blog-new, .letters {
   display: flex;
@@ -497,12 +498,15 @@ top: 79px;
   font-weight: 500;
   margin: 0;
 }
+
+/* ПРОВЕРИТЬ РАЗМЕРЫ */
 .about p {
   position: relative;
   display: block;
-  width: 552px;
+  width: 507px;
   margin-top: 22px;
   padding-left: 56px;
+  padding-right: 10px;
 }
 
 /* тут должны быть иконки на все 4 абзаца, но:
