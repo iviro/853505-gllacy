@@ -375,26 +375,26 @@ top: 79px;
 .promo-1, .promo-2,
 .blog-new, .letters {
   display: flex;
-  flex-direction: column;
-  /justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: stretch;
   width: 560px;
   padding-bottom: 23px;
   margin-bottom: 40px;
-  object-fit: contain;
   border-radius: 15px;
 }
 
 .promo-1 {
-  height: 229px;
+  /height: 229px;
   margin-right: 26px;
   background-image: url(../img/promo-raspberry-m.jpg);
-  background-repeat: no-repeat;
+  background-repeat:
 }
 
 .promo-2 {
-  height: 229px;
+  /height: 229px;
   background-image: url(../img/promo-chocolate-m.jpg);
-  background-repeat: no-repeat;
+
 }
 
 /* БЛОК promo */
@@ -415,10 +415,8 @@ top: 79px;
 
 .promo .button {
   align-self: flex-end;
-  /justify-self: flex-end;
- / так же ж нелзя ж?
- margin-top: 38px;
-  margin-bottom: 23px;
+  margin-top: auto;
+  margin-left: auto;
   margin-right: 21px;
 }
 
@@ -446,6 +444,7 @@ top: 79px;
 .ice-cream-hit {
   position: relative;
 }
+
 .ice-cream-hit::after {
   position: absolute;
   content: "";
@@ -525,14 +524,16 @@ top: 79px;
 
 /* БЛОК blog-new */
 .blog-new {
-  height: 220px;
+  min-height: 220px;
   margin-top: 40px;
   margin-right: 26px;
   padding: 24px 20px;
   background-image: url(../img/promo-filling-m.jpg);
 
 }
+
 .blog-new h2 {
+  width: 100%;
   margin: 0;
   font-size: 16px;
   line-height: 22px;
@@ -541,8 +542,10 @@ top: 79px;
 }
 
 .blog-new  h3 {
+  display: block;
   width: 290px;
   margin: 13px 0;
+  text-align: left;
   font-size: 24px;
   line-height: 30px;
   font-weight: bold;
@@ -553,7 +556,7 @@ top: 79px;
 
 /* БЛОК letters */
 .letters {
-  height: 220px;
+  min-height: 220px;
   margin-top: 40px;
   padding: 27px 35px;
   background-image: url(../img/promo-mail.png);
