@@ -75,8 +75,68 @@
           <section class="sort">
               <h2 class="visually-hidden">Выбор</h2>
 
+                <div class="sort-wrapper">
+                  <form action="https://echo.htmlacademy.ru" method="get">
+
+                    <div class="catalog-sort catalog-sort-wrapper">
+                      <p><label for="catalog-sort">Соритровка:</label></p>
+                      <select name="catalog-sort" id="catalog-sort" multiple size="1">
+                        <optition value="1" selected>по популярности</optition>
+                        <optition value="2">по цене</optition>
+                        <optition value="3">по жирности</optition>
+                        <optition value="4">по наполнителю</optition>
+                      </select>
+                    </div>
+
+                    <div class="catalog-sort-prise catalog-sort-wrapper">
+                      <p><label for="catalog-sort-prise">Цена:</label></p>
+                      <input name="catalog-sort-prise" id="catalog-sort-prise"
+                             type="range" min="50" max="800" step="50" value="" multiple>
+                    </div>
+
+                    <div class="catalog-sort-fat catalog-sort-wrapper">
+                      <p>Жирность:</p>
+                      <p><label for="fat-0">0%</label></p>
+                      <input type="radio" name="catalog-sort-fat" id="fat-0">
+
+                      <p><label for="fat-10">до 10%</label></p>
+                      <input type="radio" name="catalog-sort-fat" id="fat-10"checked>
+
+                      <p><label for="fat-30">до 30%</label></p>
+                      <input type="radio" name="catalog-sort-fat" id="fat-30">
+
+                      <p><label for="fat-30max">выше 30%</label></p>
+                      <input type="radio" name="catalog-sort-fat" id="fat-30max">
+                    </div>
+                    <!-- /.fat -->
+
+                    <div class="catalog-sort-fil catalog-sort-wrapper">
+                      <p>Наполнители:</p>
+                      <p><label for="fil-chocolate">шоколадные</label></p>
+                      <input type="checkbox" name="catalog-sort-fil" id="fil-chocolate" checked>
+
+                      <p><label for="fil-sugar">сахарные присыпки</label></p>
+                      <input type="checkbox" name="catalog-sort-fil" id="fil-sugar" checked>
+
+                      <p><label for="fil-fruit">фрукты</label></p>
+                      <input type="checkbox" name="catalog-sort-fil" id="fil-fruit">
+
+                      <p><label for="fil-syrup">сиропы</label></p>
+                      <input type="checkbox" name="catalog-sort-fil" id="fil-syrup">
+
+                      <p><label for="fil-jam">джемы</label></p>
+                      <input type="checkbox" name="catalog-sort-fil" id="fil-jam">
+                    </div>
+                    <!-- /.fil -->
+
+                    <button class="button-light" tipe="submit" name="catalog-sort-button" value="">Применить</button>
+
+                  </form>
+                </div>
+
+
           </section>
-  <!-- Каталог -->
+<!-- Каталог -->
           <section class="main-catalog wraper-4">
 
             <h2 class="visually-hidden">Каталог</h2>
@@ -169,7 +229,7 @@
 
           </section>
 
-          <!-- листалки для СТРАНИЦ КАТАЛОГА-->
+<!-- листалки для СТРАНИЦ КАТАЛОГА-->
 
       </main>
 

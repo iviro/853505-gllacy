@@ -70,6 +70,10 @@ a.button:active {
   color: #fceeec;
 }
 
+.button-light {
+  background-color: hsla(0, 0%, 100%, 0.2);
+}
+
 .wrapper {
   width: 1146px;
   margin: 0 auto;
@@ -195,8 +199,6 @@ top: 79px;
   width: 33px;
   height: 33px;
   margin-right: 10px;
-
-  background-color: #9FB3A8;
 }
 
 .button-search::before {
@@ -219,8 +221,6 @@ top: 79px;
   margin-right: 10px;
   padding-top: 9px;
   padding-left: 44px;
-
-background-color: #9FB3A8;
 }
 
 .login-link::before {
@@ -241,8 +241,6 @@ background-color: #9FB3A8;
   height: 33px;
   padding:  10px 16px;
   padding-left: 45px;
-
-background-color: #9FB3A8;
 }
 
 .basket-nav::before {
@@ -340,11 +338,34 @@ background-color: #9FB3A8;
   color: #fceeec;
 }
 
+
+/* БЛОК  сортировка*/
+.sort-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.catalog-sort-wrapper {
+  display: inline-block;
+}
+
+.catalog-sort-wrapper p {
+  display: inline-block;
+}
+
+.catalog-sort-wrapper p:nth-child(1) {
+  display: block;
+}
+
+
+
 /* обертка для ПРОМО и БЛОГ-РАССЫЛКИ */
 .wraper-2 {
   display: flex;
   width: 1146px
 }
+
 
 .promo-1, .promo-2,
 .blog-new, .letters {
