@@ -316,7 +316,7 @@ top: 79px;
   top: 3px;
   right: 4px;
   padding: 0;
-  background-image: url(/img/icon-right-small.svg);
+  background-image: url(../img/icon-right-small.svg);
   background-repeat: repeat-x;
   color: #fefefe;
 }
@@ -387,13 +387,13 @@ top: 79px;
 .promo-1 {
   height: 229px;
   margin-right: 26px;
-  background-image: url(/img/promo-raspberry-m.jpg);
+  background-image: url(../img/promo-raspberry-m.jpg);
   background-repeat: no-repeat;
 }
 
 .promo-2 {
   height: 229px;
-  background-image: url(/img/promo-chocolate-m.jpg);
+  background-image: url(../img/promo-chocolate-m.jpg);
   background-repeat: no-repeat;
 }
 
@@ -449,7 +449,7 @@ top: 79px;
 .ice-cream-hit::after {
   position: absolute;
   content: "";
-  background-image: url(/img/cat-hit.svg);
+  background-image: url(../img/cat-hit.svg);
   width: 61px;
   height: 61px;
   top: 0;
@@ -477,7 +477,7 @@ top: 79px;
 
 /* БЛОК about */
 .about {
-  background-image: url(/img/promo-waffle-pat.jpg);
+  background-image: url(../img/promo-waffle-pat.jpg);
   width: 1146px;
   margin-top: 40px;
   padding: 25px 21px;
@@ -518,7 +518,7 @@ top: 79px;
   height: 49px;
   top: -13px;
   left: -1px;
-  background-image: url(/img/about-cream.svg);
+  background-image: url(../img/about-cream.svg);
   background-repeat: no-repeat;
 
 }
@@ -529,7 +529,7 @@ top: 79px;
   margin-top: 40px;
   margin-right: 26px;
   padding: 24px 20px;
-  background-image: url(/img/promo-filling-m.jpg);
+  background-image: url(../img/promo-filling-m.jpg);
 
 }
 .blog-new h2 {
@@ -556,7 +556,7 @@ top: 79px;
   height: 220px;
   margin-top: 40px;
   padding: 27px 35px;
-  background-image: url(/img/promo-mail.png);
+  background-image: url(../img/promo-mail.png);
   color: #5a5a5a;
 }
 
@@ -643,7 +643,7 @@ background-color: #ffffff;
   content: "";
   width: 7px;
   height: 12px;
-  background-image: url(/img/soc-twitter.svg);
+  background-image: url(../img/soc-twitter.svg);
   background-repeat: no-repeat;
   background-position: 0 0;
 
@@ -655,7 +655,7 @@ background-color: #ffffff;
   width: 26px;
   height: 26px;
   left: -10px;
-  background-image: url(/img/icon-right-small.svg);
+  background-image: url(../img/icon-right-small.svg);
   background-repeat: no-repeat;
   background-position: 0 0;
 
@@ -908,7 +908,7 @@ section.reply .button {
 
 .button-close {
   position: absolute;
-  background-image: url(/img/fotm-cross-big.svg);
+  background-image: url(../img/fotm-cross-big.svg);
   background-repeat: no-repeat;
   width: 18px;
   height: 18px;
