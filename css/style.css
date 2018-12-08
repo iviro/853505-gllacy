@@ -13,7 +13,9 @@ body {
 
 .body-wrapper {
   position: relative;
-  width: 1200px;
+  width: 1146px;
+  margin: 0 auto;
+
 }
 
 .visually-hidden {
@@ -60,8 +62,6 @@ a:active {
   line-height: 24px;
   text-align: center;
   background-color: #e74a35;
-
-/?
 
   border-radius: 30px;
 }
@@ -389,7 +389,7 @@ top: 79px;
   /height: 229px;
   margin-right: 26px;
   background-image: url(../img/promo-raspberry-m.jpg);
-  background-repeat:
+  background-repeat: no-repeat;
 }
 
 .promo-2 {
@@ -797,7 +797,7 @@ background-color: #ffffff;
 .reply input {
   height: 44px;
   padding: 12px 15px;
-  /?
+
  border-radius: 5px;
   /box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
 }
@@ -806,7 +806,7 @@ background-color: #ffffff;
 .login section,
 .reply section {
 
-  /?
+
   border-radius: 5px;
   box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
 }
@@ -818,9 +818,9 @@ section.search {
   width: 340px;
   padding: 20px 15px;
   top: 59px;
-  left: 593px;
+  left: 569px;
 
-  /?
+
   border-radius: 5px;
   box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
 
@@ -840,28 +840,53 @@ section.search {
 
 /* БЛОК login */
 section.login {
-  /position: absolute;
+  position: absolute;
   display: flex;
-  flex-direction: column;
+
 
   top: 59px;
-  left: 593px;
+  left: 733px;
 
   width: 277px;
-  height: 216px;
+  min-height: 216px;
+  padding: 20px 19px;
+  padding-left: 17px;
+
+  background-color: #f8f7f4;
   border-radius: 10px;
+  box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
 
-    background-color: #f8f7f4;
+  font-size: 14px;
+  line-height: 24px;
+  color: #999999;
+}
 
-    font-size: 14px;
-    line-height: 24px;
-    color: #999999;
+.login-wrapper {
+  display: flex;
+  padding: 0;
+}
+
+.login input {
+  width: 241px;
+}
+
+.login-input-password {
+  margin: 20px 0;
 }
 
 .login a {
     font-size: 13px;
     line-height: 24px;
     color: #323232;
+    text-decoration-line: underline;
+}
+
+.login .button {
+  width: 100px;
+  height: 44px;
+  padding: 12px 23px;
+  padding-top: 10px;
+  margin-right: 20px;
 }
 
 /* БЛОК reply */
@@ -878,8 +903,11 @@ section.reply {
   padding: 24px;
   border-radius: 10px;
 
-    background-color: #f8f7f4;
-    color: #999999;
+  background-color: #f8f7f4;
+  border-radius: 10px;
+  box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
+
+  color: #999999;
 }
 
 .reply textarea,
