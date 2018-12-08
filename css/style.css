@@ -901,7 +901,6 @@ section.reply {
   width: 478px;
   height: 443px;
   padding: 24px;
-  border-radius: 10px;
 
   background-color: #f8f7f4;
   border-radius: 10px;
@@ -960,7 +959,7 @@ section.reply .button {
 
 /* БЛОК basket */
 .basket{
-    line-height: 16px;
+  line-height: 16px;
 }
 
 .basket-nav-buy {
@@ -973,8 +972,29 @@ section.reply .button {
     color: #323232;
 }
 
+
+/* БЛОК корзина basket-buy */
+
+
 .basket-buy  {
-    background-color: #f8f7f4;
+position: relative;       /* спрятать кнопки  Х для сетки */
+
+
+  width: 540px;
+  padding: 16px 20px;
+
+
+  background-color: #f8f7f4;
+  border-radius: 5px;
+  box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
+
+  color: #999999;
+}
+
+.basket-buy .button-delete {
+  position: absolute;
+left: -100px;           /* для сетки */
+
 }
 
 .basket-buy td,
@@ -984,7 +1004,7 @@ section.reply .button {
     color: #323232;
 }
 
-.basket-price {
+.basket-buy-price {
     color: #999999;
 }
 
@@ -994,4 +1014,35 @@ section.reply .button {
     font-weight: bold;
     color: #323232;
 }
-/* БЛОК sort */
+
+.basket-buy tr {
+  display: flex;
+  justify-content: space-between;
+  width: 510px;
+}
+
+.basket-buy-weight,
+.basket-buy-cost {
+  flex-grow: 1;
+}
+
+.basket-buy-img {
+  display: box;
+  position: relative;
+  width: 33px;
+  height: 33px;
+  margin: 0 14px;
+  margin-left: 25px;
+}
+
+.basket-buy img {
+  position: absolute;
+
+}
+
+.basket-buy-ice {
+  width: 230px;
+  margin-left: 14px;
+  margin-right: auto;
+  text-align: left;
+}

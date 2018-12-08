@@ -275,68 +275,70 @@
           </footer>
         </div> <!-- .wrapper-->
 
-        <!--ПОИСК-->
-        <section class="search">
-          <h2 class="visually-hidden">Форма поиска</h2>
+      <!--ПОИСК-->
+      <section class="search">
+        <h2 class="visually-hidden">Форма поиск</h2>
           <form action="https://echo.htmlacademy.ru" method="get">
-            <input type="search" name="search" placeholder="Что ищем" class="search">
-            <button type="submit" name="submit-search" value="" class="visually-hidden">Найти</button>
+          <input type="search" name="search" placeholder="Что ищем" class="search">
+          <button type="submit" name="submit-search" value="" class="visually-hidden">Найти</button>
           </form>
-        </section>
+      </section>
 
-          <!--ВХОД-->
-          <section class="login">
-            <h2 class="visually-hidden">Вход</h2>
-            <form action="https://echo.htmlacademy.ru" method="post">
-              <p class="login-input">
-                <label for="login-email">Электронная почта</label>
-                <input type="email" name="login-email" id="login-email" placeholder="Электронная почта" >
-              </p>
-              <p class="login-input">
-                <label for="password">Пароль</label>
-                <input type="password" name="password" id="password" placeholder="Пароль">
-              </p>
-              <button type="submit" name="login-submit" value="">Войти</button>
-              <a href="#">Забыли пароль?</a>
-              <a href="#">Новая регистрация</a>
-            </form>
-          </section>
+      <!--ВХОД-->
+      <section class="login">
+        <h2 class="visually-hidden">Вход</h2>
+        <form action="https://echo.htmlacademy.ru" method="post">
+          <p class="login-input-email">
+            <label class="visually-hidden" for="login-email">Электронная почта</label>
+            <input type="email" name="login-email" id="login-email" placeholder="Электронная почта" >
+          </p>
+          <p class="login-input-password">
+            <label class="visually-hidden" for="password">Пароль</label>
+            <input type="password" name="password" id="password" placeholder="Пароль">
+          </p>
+          <div class="login-wrapper">
+            <button class="button" type="submit" name="login-submit" value="">Войти</button>
+            <p><a href="#">Забыли пароль?</a>
+            <a href="#">Новая регистрация</a></p>
+          </div>
+        </form>
+      </section>
 
-        <!--КОРЗИНА-->
-        <section class="basket-buy">
-          <h2 class="visually-hidden">Корзина</h2>
-          <form action="https://echo.htmlacademy.ru" method="post">
+      <!--КОРЗИНА-->
+      <section class="basket-buy">
+        <h2 class="visually-hidden">Корзина</h2>
+        <form action="https://echo.htmlacademy.ru" method="post">
 
-    <!--
-      * как то еще придумать скрытые пояснения для читалки
-      ?если th  в середине столбца - нормально? (Если вставить в начало, а потом задвинуть - не правильно ж для доступности?)
-      ? caption как потом ДОСТУПНО отправить в низ?
-    -->
+  <!--
+    * как то еще придумать скрытые пояснения для читалки
+    ?если th  в середине столбца - нормально? (Если вставить в начало, а потом задвинуть - не правильно ж для доступности?)
+    ? caption как потом ДОСТУПНО отправить в низ?
+  -->
 
-          <table>
-            <caption class="basket-price-total">
-              Итого: 750 руб.
-            </caption>
-            <tbody>
-              <tr>
-                <td><button class="button-delete" type="button" value="Удалить">Удалить товар</button></td>
-                <td><img src="img/cream-11-basket.png" alt="Клубничный пломбир с присыпкой из белого шоколада"></td>
-                <th><a href="#">Пломбир с апельсиновым джемом</a></th>
-                <td>1,5 кг х <span class="basket-price">200 руб.</span></td>
-                <td>300 руб.</td>
-              </tr>
-              <tr>
-                <td><button class="button-delete" type="button" value="Удалить">Удалить товар</button></td>
-                <td><img src="img/cream-13-basket.png" alt="Клубничный пломбир с присыпкой из белого шоколада"></td>
-                <th><a href="#">Клубничный пломбир с присыпкой из белого шоколада</a></th>
-                <td>1,5 кг х <span class="basket-price">300 руб.</span></td>
-                <td>450 руб.</td>
-              </tr>
-            </tbody>
-          </table>
-          <button type="submit" value="">Оформить заказ</button>
-          </form>
-        </section>
+        <table>
+          <caption class="basket-price-total">
+            <h3 class="visually-hidden">Общая сумма покупки:</h3>Итого: 750 руб.
+          </caption>
+          <tbody>
+            <tr>
+              <td class="basket-buy-delete"><button class="button-delete" type="button" value="Удалить">Удалить товар</button></td>
+              <td class="basket-buy-img"><img src="img/cream-11-basket.png" alt="Клубничный пломбир с присыпкой из белого шоколада"></td>
+              <th class="basket-buy-ice"><a href="#">Пломбир с апельсиновым джемом</a></th>
+              <td class="basket-buy-weight">1,5 кг х <span class="basket-buy-price">200 руб.</span></td>
+              <td class="basket-buy-cost">300 руб.</td>
+            </tr>
+            <tr>
+              <td class="basket-buy-delete" ><button class="button-delete" type="button" value="Удалить">Удалить товар</button></td>
+              <td class="basket-buy-img"><img src="img/cream-13-basket.png" alt="Клубничный пломбир с присыпкой из белого шоколада"></td>
+              <th class="basket-buy-ice"><a href="#">Клубничный пломбир с присыпкой из белого шоколада</a></th>
+              <td class="basket-buy-weight">1,5 кг х <span class="basket-buy-price">300 руб.</span></td>
+              <td class="basket-buy-cost">450 руб.</td>
+            </tr>
+          </tbody>
+        </table>
+        <button type="submit" value="">Оформить заказ</button>
+        </form>
+      </section>
     </div>    <!-- /.body-wrapper -->
   </body>
 </html>
