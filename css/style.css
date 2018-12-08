@@ -1046,3 +1046,19 @@ left: -100px;           /* для сетки */
   margin-right: auto;
   text-align: left;
 }
+
+.basket-buy-weight,
+.basket-buy-cost {
+  text-align: right;
+}
+
+.basket-buy-button {
+
+  /* для сетки */
+display: flex;
+justify-content: flex-end;
+
+color: #fa2686;
+
+
+}
