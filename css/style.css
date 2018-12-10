@@ -310,15 +310,12 @@ top: 79px;
 /* НЕПОНЯТНО, не работает */
 .breadcrumbs li::after {
   position: absolute;
-  content: "";
-  width: 7px;
-  height: 7px;
-  top: 3px;
-  right: 4px;
+  content: "»";
+
+  top: px;
+  right: 5px;
   padding: 0;
-  background-image: url(../img/icon-right-small.svg);
-  background-repeat: repeat-x;
-  color: #fefefe;
+
 }
 
 /* БЛОК slider */
