@@ -304,18 +304,16 @@ top: 79px;
 }
 .breadcrumbs li {
   position: relative;
-  padding-right: 20px;
+  padding-right: 22px;
 }
 
 /* НЕПОНЯТНО, не работает */
 .breadcrumbs li::after {
   position: absolute;
   content: "»";
-
   top: px;
-  right: 5px;
+  right: 8px;
   padding: 0;
-
 }
 
 /* БЛОК slider */
@@ -380,17 +378,18 @@ top: 79px;
   padding-bottom: 23px;
   margin-bottom: 40px;
   border-radius: 15px;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .promo-1 {
-  /height: 229px;
+ min-height: 229px;
   margin-right: 26px;
   background-image: url(../img/promo-raspberry-m.jpg);
-  background-repeat: no-repeat;
 }
 
 .promo-2 {
-  /height: 229px;
+  min-height: 229px;
   background-image: url(../img/promo-chocolate-m.jpg);
 
 }
@@ -476,11 +475,13 @@ top: 79px;
 .about {
   background-image: url(../img/promo-waffle-pat.jpg);
   width: 1146px;
+  min-height: 306px;
   margin-top: 40px;
   padding: 25px 21px;
   border-radius: 15px;
   color: #323232;
-
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .about-wrapper {
   display: flex;
@@ -529,7 +530,6 @@ top: 79px;
   margin-right: 26px;
   padding: 24px 20px;
   background-image: url(../img/promo-filling-m.jpg);
-
 }
 
 .blog-new h2 {
