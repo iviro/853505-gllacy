@@ -237,54 +237,60 @@
       </div>  <!-- .wrapper-->
 
       <!--ПОИСК-->
-      <section class="search">
-        <h2 class="visually-hidden">Форма поиск</h2>
-          <form action="https://echo.htmlacademy.ru" method="get">
-          <input type="search" name="search" placeholder="Что ищем" class="search">
-          <button type="submit" name="submit-search" value="" class="visually-hidden">Найти</button>
-          </form>
-      </section>
+        <div  class=" display-popup">
+          <section class="search display-popup">
+            <h2 class="visually-hidden">Форма поиск</h2>
+              <form action="https://echo.htmlacademy.ru" method="get">
+              <input type="search" name="search" placeholder="Что ищем" class="search">
+              <button type="submit" name="submit-search" value="" class="visually-hidden">Найти</button>
+              </form>
+          </section>
+        </div>
 
       <!--ВХОД-->
-      <section class="login">
-        <h2 class="visually-hidden">Вход</h2>
-        <form action="https://echo.htmlacademy.ru" method="post">
-          <p class="login-input-email">
-            <label class="visually-hidden" for="login-email">Электронная почта</label>
-            <input type="email" name="login-email" id="login-email" placeholder="Электронная почта" >
-          </p>
-          <p class="login-input-password">
-            <label class="visually-hidden" for="password">Пароль</label>
-            <input type="password" name="password" id="password" placeholder="Пароль">
-          </p>
-          <div class="login-wrapper">
-            <button class="button" type="submit" name="login-submit" value="">Войти</button>
-            <p><a href="#">Забыли пароль?</a>
-            <a href="#">Новая регистрация</a></p>
-          </div>
-        </form>
-      </section>
+        <div  class=" display-popup">
+          <section class="login display-popup">
+            <h2 class="visually-hidden">Вход</h2>
+            <form action="https://echo.htmlacademy.ru" method="post">
+              <p class="login-input-email">
+                <label class="visually-hidden" for="login-email">Электронная почта</label>
+                <input type="email" name="login-email" id="login-email" placeholder="Электронная почта" >
+              </p>
+              <p class="login-input-password">
+                <label class="visually-hidden" for="password">Пароль</label>
+                <input type="password" name="password" id="password" placeholder="Пароль">
+              </p>
+              <div class="login-wrapper">
+                <button class="button" type="submit" name="login-submit" value="">Войти</button>
+                <p><a href="#">Забыли пароль?</a>
+                <a href="#">Новая регистрация</a></p>
+              </div>
+            </form>
+          </section>
+        </div>
 
       <!--СВЯЗЬ-->
-      <section class="reply">
-        <h2 class="reply">Мы обязательно вам ответим</h2>
-        <form action="https://echo.htmlacademy.ru" method="post">
-          <p class="reply-input">
-            <label class="visually-hidden" for="reply-name">Имя</label>
-            <input type="text" name="reply-name" id="reply-name" placeholder="Как вас зовут?">
-          </p>
-          <p class="reply-input">
-            <label class="visually-hidden" for="reply-email">Электронная почта</label>
-            <input type="email" name="reply-email" id="reply-email" placeholder="Ваша почта для ответа?">
-          </p>
-          <p class="reply-input-text">
-            <label class="visually-hidden" for="reply-text">Сообщение</label>
-            <textarea name="reply-text" id="reply-text" cols="10" rows="3" placeholder="Напишите что-нибудь..."></textarea>
-          </p>
-          <button class="button" type="submit" value="">Отправить</button>
-        </form>
-        <button class="button-close" type="button" value="Закрыть">Закрыть</button>
-      </section>
+        <div class=" display-popup">
+          <section class="reply">
+            <h2 class="reply">Мы обязательно вам ответим</h2>
+            <form action="https://echo.htmlacademy.ru" method="post">
+              <p class="reply-input">
+                <label class="visually-hidden" for="reply-name">Имя</label>
+                <input type="text" name="reply-name" id="reply-name" placeholder="Как вас зовут?">
+              </p>
+              <p class="reply-input">
+                <label class="visually-hidden" for="reply-email">Электронная почта</label>
+                <input type="email" name="reply-email" id="reply-email" placeholder="Ваша почта для ответа?">
+              </p>
+              <p class="reply-input-text">
+                <label class="visually-hidden" for="reply-text">Сообщение</label>
+                <textarea name="reply-text" id="reply-text" cols="10" rows="3" placeholder="Напишите что-нибудь..."></textarea>
+              </p>
+              <button class="button" type="submit" value="">Отправить</button>
+            </form>
+            <button class="button-close" type="button" value="Закрыть">Закрыть</button>
+          </section>
+        </div>
     </div>    <!-- /.body-wrapper -->
   </body>
 </html>

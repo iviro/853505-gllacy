@@ -61,8 +61,11 @@ a:active {
   font-weight: bold;
   line-height: 24px;
   text-align: center;
-  background-color: #e74a35;
-
+    vertical-align: middle;
+  color: #fefefe;
+  background: linear-gradient(to top, #e74a35, #f26843);
+  box-shadow: 0px 1px 2px 0 #ac1000;
+  border: none;
   border-radius: 30px;
 }
 
@@ -77,6 +80,7 @@ a.button:active {
 
 .button-light {
   background-color: hsla(0, 0%, 100%, 0.2);
+  border-radius: 16px;
 }
 
 .wrapper {
@@ -221,6 +225,7 @@ top: 79px;
 .login-link {
   display: inline-block;
   position: relative;
+  box-sizing: border-box;
   width: 93px;
   height: 33px;
   margin-right: 10px;
@@ -242,7 +247,8 @@ top: 79px;
 
 .basket-nav {
   position: relative;
-  /width: 100px;
+  box-sizing: border-box;
+  width: 100px;
   height: 33px;
   padding:  10px 16px;
   padding-left: 45px;
@@ -262,6 +268,7 @@ top: 79px;
 
 .basket-nav-buy {
   position: relative;
+  box-sizing: border-box;
   /width: 100px;
   height: 33px;
   padding:  10px 16px;
@@ -273,7 +280,7 @@ top: 79px;
   position: absolute;
   width: 21px;
   height: 20px;
-  top: 8px;
+  top: 6px;
   left: 16px;
   background-image: url(../img/header-basket-red.svg);
   background-repeat: no-repeat;
@@ -973,25 +980,40 @@ section.reply .button {
 /* БЛОК корзина basket-buy */
 
 
-.basket-buy  {
-position: relative;       /* спрятать кнопки  Х для сетки */
-
-
+.basket-buy {
+  position: absolute;
   width: 540px;
-  padding: 16px 20px;
-
-
+min-height: 242px;
+  padding: 0px 0px;
+  padding-left: 0;
+  top: 59px;
+  right: 27px;
   background-color: #f8f7f4;
   border-radius: 5px;
   box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
-
   color: #999999;
 }
 
-.basket-buy .button-delete {
-  position: absolute;
-left: -100px;           /* для сетки */
+.basket-buy form {
+  margin: 0;
+}
 
+.basket-buy table{
+  position: relative;
+  margin: 0;
+}
+
+.basket-buy tr {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 510px;
+  margin: 0;
+  margin-top: 25px;
+
+}
+.basket-buy tr:nth-child(1) {
+  margin-top: 29px;
 }
 
 .basket-buy td,
@@ -1001,21 +1023,37 @@ left: -100px;           /* для сетки */
     color: #323232;
 }
 
-.basket-buy-price {
-    color: #999999;
+.basket-buy .button-delete {
+  position: absolute;
+  width: 11px;
+  height: 11px;
+  top: 3px;
+  left: 16px;
+  text-indent: -9999px;
+  line-height: 0px;
+  border: 0;
+  background-color: hsla(100, 100%, 100%, 0);
+  background-image: url(../img/fotm-cross-small.svg);
+
+  cursor: pointer;
 }
 
-.basket-price-total {
-    font-size: 15px;
-    line-height: 18px;
-    font-weight: bold;
-    color: #323232;
+
+.basket-buy-img {
+  position: absolute;
+  width: 33px;
+  height: 33px;
+  top: -8px;
+  left: 21px;
+  margin: 0 20px;
 }
 
-.basket-buy tr {
-  display: flex;
-  justify-content: space-between;
-  width: 510px;
+.basket-buy-ice {
+  width: 230px;
+  margin-left: 88px;
+  margin-right: 20px;
+  font-size: 13px;
+  line-height: 16px;
 }
 
 .basket-buy-weight,
@@ -1023,39 +1061,53 @@ left: -100px;           /* для сетки */
   flex-grow: 1;
 }
 
-.basket-buy-img {
-  display: box;
-  position: relative;
-  width: 33px;
-  height: 33px;
-  margin: 0 14px;
-  margin-left: 25px;
-}
-
-.basket-buy img {
-  position: absolute;
-
-}
-
-.basket-buy-ice {
-  width: 230px;
-  margin-left: 14px;
-  margin-right: auto;
-  text-align: left;
-}
 
 .basket-buy-weight,
 .basket-buy-cost {
   text-align: right;
 }
 
-.basket-buy-button {
+.basket-buy-price {
+  color: #999999;
+}
+
+.basket-buy hr {
+  position: absolute;
+  width: 510px;
+  height: 1px;
+  bottom: 111px;
+  left: 15px;
+  margin: 16px auto;
+
+  background-color: #cacac7;
+}
+
+caption.basket-price-total {
+  position: absolute;
+  display: block;
+  margin: 0;
+  /*top: 148px;*/
+  bottom: -58px;
+  right: 1px;
+    font-size: 15px;
+    line-height: 18px;
+    font-weight: bold;
+    color: #323232;
+}
+
+
+.basket-buy button {
+position: absolute;
+display: block;
+margin: 0;
+bottom: 18px;
+right: 15px;
 
   /* для сетки */
-display: flex;
-justify-content: flex-end;
-
-color: #fa2686;
 
 
+}
+
+.display-popup {
+  display: none;
 }
