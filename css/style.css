@@ -125,6 +125,7 @@ margin-right: 24px;
 
 /*МЕНЮ основное*/
 .site-navigation {
+  position: relative;
   display: flex;
 
   flex-grow: 1;
@@ -156,13 +157,21 @@ margin-right: 24px;
 
 /*МЕНЮ выпадающее*/
 .site-navigation-att {
+  position: absolute;
+  top: 33px;
+  left: -6px;
+  padding: 12px 20px;
+  padding-bottom: 2px;
+  border-radius: 5px;
   background-color: #f8f7f4;
-/* Временно для сетки */
-position: absolute;
-top: 79px;
+  box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
+
+
 }
 
 .site-navigation-att a {
+  display: inline-block;
+  margin-bottom: 13px;
   font-size: 14px;
   line-height: 16px;
   font-weight: normal;
@@ -170,9 +179,22 @@ top: 79px;
 }
 
 .site-navigation-new a {
+  position: relative;
   font-weight: bold;
 }
 
+.site-navigation-new::after {
+  position: absolute;
+  content: "";
+  flex-grow: 1;
+  flex-shrink: 0;
+  width: 128px;
+  height: 1px;
+  top: 38px;
+  left: 6px;
+  opacity: 0.2;
+  background: #000;
+}
 
 /*АКТИВНОСТЬ*/
 .site-navigation-att a:hover,
@@ -673,6 +695,7 @@ background-color: #ffffff;
 
 /* ---------- БЛОК footer */
 .footer-wrapper {
+  position: relative;
   display: flex;
   justify-content: space-between;
 /margin: 0;   /* почему, если я его убираю совсем, исчезают иконки svg)  Перестали исчезать....*/
