@@ -703,6 +703,7 @@ background-color: #ffffff;
   position: relative;
   display: flex;
   justify-content: space-between;
+  width: 1146px;
 }
 
 .footer-wrapper::before {
@@ -721,13 +722,6 @@ background-color: #ffffff;
   width: 267px;
   padding: 0;
   margin: 0;
-  justify-content: space-between;
-  padding-right: 81px;
-
- /*background-color: rgb(53, 172, 93);*/
-}
-
-.social ul {
   margin-top: 36px;
   margin-bottom: 29px;
 }
@@ -736,6 +730,9 @@ background-color: #ffffff;
   box-sizing: border-box;
   width: 38px;
   height: 38px;
+  margin-right: 11px;
+  border: 3px solid hsla(0, 0%, 100%, 0.5);
+  border-radius: 19px;
   background-image: url(../img/soc-twitter.svg);
   background-repeat: no-repeat;
   opacity: 0.8;
@@ -745,6 +742,9 @@ background-color: #ffffff;
   box-sizing: border-box;
   width: 38px;
   height: 38px;
+  margin-right: 11px;
+  border: 3px solid hsla(0, 0%, 100%, 0.5);
+  border-radius: 19px;
   background-image: url(../img/soc-instagram.svg);
   background-repeat: no-repeat;
   opacity: 0.8;
@@ -754,6 +754,9 @@ background-color: #ffffff;
   box-sizing: border-box;
   width: 38px;
   height: 38px;
+  margin-right: 11px;
+  border: 3px solid hsla(0, 0%, 100%, 0.5);
+  border-radius: 19px;
   background-image: url(../img/soc-fb.svg);
   background-repeat: no-repeat;
   opacity: 0.8;
@@ -763,13 +766,13 @@ background-color: #ffffff;
   box-sizing: border-box;
   width: 38px;
   height: 38px;
+  border: 3px solid hsla(0, 0%, 100%, 0.5);
+  border-radius: 19px;
   background-image: url(../img/soc-vk.svg);
   background-repeat: no-repeat;
   opacity: 0.8;
 }
 
-.social a {
-}
 
 /* БЛОК about-us */
 .about-us-wrapper {
