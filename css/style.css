@@ -40,12 +40,10 @@ a:active {
   color: #ffbc9e;
 }
 
-.social ul,
 .social li,
 .about-us li,
-.about-us ul,
-.breadcrumbs ul,
 .breadcrumbs li,
+.catalog-paginator-list li,
 .site-navigation,
 .site-navigation-att,
 .user-navigation {
@@ -109,7 +107,6 @@ min-height: 73px;
 /* БЛОК NAV */
 .main-navigation {
   display: flex;
-  /justify-content: space-around;
 }
 
 /* БЛОК ЛОГО */
@@ -291,7 +288,6 @@ margin-right: 24px;
 .basket-nav-buy {
   position: relative;
   box-sizing: border-box;
-  /width: 100px;
   height: 33px;
   padding:  10px 16px;
   padding-left: 45px;
@@ -578,7 +574,6 @@ margin-right: 24px;
   font-size: 24px;
   line-height: 30px;
   font-weight: bold;
-  /?text-decoration: underline;
   color: #323232;
 }
 
@@ -641,19 +636,27 @@ margin-right: 24px;
 
 /* БЛОК листалки*/
 .catalog-paginator {
+
+  width: 1146px;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.catalog-paginator-list {
   display: flex;
   justify-content: flex-end;
-  width: 1146px;
 }
 
 .catalog-paginator a {
   display: block;
 }
 .catalog-paginator-current {
-  width: 26px;
-  height: 26px;
-  padding-right: 20px;
+  width: 27px;
+  height: 27px;
+  margin-right: 15px;
+  padding-top: 3px;
   text-align: center;
+  border-radius: 15px;
 }
 
 .catalog-paginator-c-active {
@@ -673,23 +676,25 @@ background-color: #ffffff;
 .catalog-paginator-prev::before {
   position: absolute;
   content: "";
-  width: 7px;
-  height: 12px;
-  background-image: url(../img/soc-twitter.svg);
+  width: 26px;
+  height: 26px;
+  top: -8px;
+  left: -44px;
+  background-image: url(../img/icon-right-small.svg);
   background-repeat: no-repeat;
-  background-position: 0 0;
+  transform: rotate(180deg)
 
-  background-color: #e74a35;
 }
+
 .catalog-paginator-next::after {
   position: absolute;
   content: "";
   width: 26px;
   height: 26px;
-  left: -10px;
+  top: 8px;
+  right: -24px;
   background-image: url(../img/icon-right-small.svg);
   background-repeat: no-repeat;
-  background-position: 0 0;
 
 }
 
@@ -698,7 +703,16 @@ background-color: #ffffff;
   position: relative;
   display: flex;
   justify-content: space-between;
-/margin: 0;   /* почему, если я его убираю совсем, исчезают иконки svg)  Перестали исчезать....*/
+}
+
+.footer-wrapper::before {
+  position: absolute;
+  content: "";
+  width: 1146px;
+  height: 1px;
+  margin: 0 auto;
+  opacity: 0.3;
+  background: #ffffff;
 }
 
 /* БЛОК social */
@@ -710,7 +724,7 @@ background-color: #ffffff;
   justify-content: space-between;
   padding-right: 81px;
 
-  /background-color: rgb(53, 172, 93);
+ /*background-color: rgb(53, 172, 93);*/
 }
 
 .social ul {
@@ -720,7 +734,6 @@ background-color: #ffffff;
 
 .social-wrapper li:nth-child(1) {
   box-sizing: border-box;
-  /border: 1px solid #323232;
   width: 38px;
   height: 38px;
   background-image: url(../img/soc-twitter.svg);
@@ -730,7 +743,6 @@ background-color: #ffffff;
 
 .social-wrapper li:nth-child(2) {
   box-sizing: border-box;
-  /border: 1px solid #323232;
   width: 38px;
   height: 38px;
   background-image: url(../img/soc-instagram.svg);
@@ -740,7 +752,6 @@ background-color: #ffffff;
 
 .social-wrapper li:nth-child(3) {
   box-sizing: border-box;
-  /border: 1px solid #323232;
   width: 38px;
   height: 38px;
   background-image: url(../img/soc-fb.svg);
@@ -750,7 +761,6 @@ background-color: #ffffff;
 
 .social-wrapper li:nth-child(4) {
   box-sizing: border-box;
-  /border: 1px solid #323232;
   width: 38px;
   height: 38px;
   background-image: url(../img/soc-vk.svg);
@@ -766,7 +776,6 @@ background-color: #ffffff;
   display: flex;
   width: 360px;
   flex-wrap: wrap;
-  /justify-content: space-between;
 }
 .about-us ul {
   margin-top: 37px;
@@ -793,7 +802,6 @@ background-color: #ffffff;
   width: 15px;
   height: 13px;
   left: -20px; /* если .about-us-wrapper задать position: relative; */
-  /left: 402px;
   background-image: url(../img/footter-heart.svg);
   background-repeat: no-repeat;
 }
@@ -826,7 +834,6 @@ background-color: #ffffff;
   padding: 12px 15px;
 
  border-radius: 5px;
-  /box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
 }
 
 

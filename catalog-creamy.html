@@ -233,14 +233,15 @@
     <!-- листалки для СТРАНИЦ КАТАЛОГА-->
               <section class="catalog-paginator">
                 <h3 class="visually-hidden">Переход по страницам каталога</h3>
-                <a class="catalog-paginator-prev visually-hidden" href="#prev">Назад</a>
-                <a class="catalog-paginator-current catalog-paginator-c-active" href="#">1</a>
-                <a class="catalog-paginator-current " href="#">2</a>
-                <a class="catalog-paginator-current " href="#">3</a>
-                <a class="catalog-paginator-current " href="#">4</a>
-                <a class="catalog-paginator-current " href="#">5</a>
-                <a class="catalog-paginator-next visually-hidden" href="#">Вперед</a>
-    <!--Как лучше назвать этот класс catalog-paginator-c-active или ...-->
+                <ul class="catalog-paginator-list">
+                  <li><a class="catalog-paginator-prev" href="#prev"><span class="visually-hidden">Назад</span></a></li>
+                  <li><a class="catalog-paginator-current catalog-paginator-c-active" href="#">1</a></li>
+                  <li><a class="catalog-paginator-current" href="#">2</a></li>
+                  <li><a class="catalog-paginator-current" href="#">3</a></li>
+                  <li><a class="catalog-paginator-current" href="#">4</a></li>
+                  <li><a class="catalog-paginator-current" href="#">5</a></li>
+                  <li><a class="catalog-paginator-next" href="#"><span class="visually-hidden">Вперед</span></a></li>
+                </ul>
               </section>
 
           </main>
