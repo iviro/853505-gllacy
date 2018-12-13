@@ -18,6 +18,31 @@ body {
 
 }
 
+.site-wrapper {
+  min-width: 940px;
+  background-color: #849d8f;
+  background-image: url(../img/slider-cream-1.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+  transition: background-image 0.5s ease, background-color 0.5s ease;
+}
+
+.site-wrapper::before,
+.site-wrapper::after {
+  content: "";
+
+  visibility: hidden;
+}
+
+.site-wrapper::before {
+  background-image: url(../img/slider-cream-2.png);
+}
+
+.site-wrapper::after {
+  background-image: url(../img/slider-cream-3.png);
+}
+
+
 .visually-hidden {
   position: absolute;
     width: 1px;
@@ -44,6 +69,7 @@ a:active {
 .about-us li,
 .breadcrumbs li,
 .catalog-paginator-list li,
+.main-slider li,
 .site-navigation,
 .site-navigation-att,
 .user-navigation {
@@ -59,12 +85,13 @@ a:active {
   font-weight: bold;
   line-height: 24px;
   text-align: center;
-    vertical-align: middle;
+  vertical-align: middle;
   color: #fefefe;
   background: linear-gradient(to top, #e74a35, #f26843);
   box-shadow: 0px 1px 2px 0 #ac1000;
   border: none;
   border-radius: 30px;
+  cursor: pointer;
 }
 
 .button:hover,
@@ -79,6 +106,7 @@ a.button:active {
 .button-light {
   background-color: hsla(0, 0%, 100%, 0.2);
   border-radius: 16px;
+  cursor: pointer;
 }
 
 .wrapper {
@@ -342,16 +370,37 @@ margin-right: 24px;
 }
 
 /* БЛОК slider */
-.main-slider p {
+.main-slider {
+  position: relative;
+
+  padding-top: 523px;
+
+  text-align: center;
+  color: #ffffff;
+}
+
+.main-slide {
+  display: none;
+}
+
+.main-slide h3 {
+  width: 700px;
+  margin: 0 auto;
+  margin-bottom: 27px;
   font-size: 60px;
   line-height: 60px;
   font-weight: bold;
 }
 
-.main-slider a {
+.main-slide a {
+  display: inline-block;
+  padding: 12px 44px;
+  padding-left: 41px;
   font-size: 32px;
   line-height: 44px;
   font-weight: bold;
+  text-emphasis: none;
+  border-radius: 50px;
 }
 
 .main-slider .button:hover,
@@ -360,7 +409,56 @@ margin-right: 24px;
 }
 
 .main-slider .button:active {
-  color: #fceeec;
+}
+
+.slider-bottom {
+  position: absolute;
+  top: 555px;
+  left: 27px;
+  z-index: 20;
+
+  font-size: 0;
+}
+
+.slider-bottom  label {
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  margin-right: 8px;
+
+  vertical-align: top;
+
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#slide-product-1:checked ~ .site-wrapper {
+  background-color: #849d8f;
+  background-image: url(../img/slider-cream-1.png);
+}
+
+#slide-product-2:checked ~ .site-wrapper {
+  background-color: #8996a6;
+  background-image: url(../img/slider-cream-2.png);
+}
+
+#slide-product-3:checked ~ .site-wrapper {
+  background-color: #9d8b84;
+  background-image: url(../img/slider-cream-3.png);
+}
+
+#slide-product-1:checked ~ .site-wrapper #main-slide-1,
+#slide-product-2:checked ~ .site-wrapper #main-slide-2,
+#slide-product-3:checked ~ .site-wrapper #main-slide-3 {
+  display: block;
+}
+
+#slide-product-1:checked ~ .site-wrapper label[for="slide-product-1"],
+#slide-product-2:checked ~ .site-wrapper label[for="slide-product-2"],
+#slide-product-3:checked ~ .site-wrapper label[for="slide-product-3"] {
+  display: block;
 }
 
 
