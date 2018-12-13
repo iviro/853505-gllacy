@@ -342,13 +342,35 @@ margin-right: 24px;
 }
 
 /* БЛОК slider */
+.mine-slider {
+
+}
+
+.main-slide {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  top: -130px;
+  z-index: -1;
+}
+
 .main-slider p {
+  position: absolute;
+  display: inline-block;
+  top: 400px;
+  text-align: center;
   font-size: 60px;
   line-height: 60px;
   font-weight: bold;
 }
 
 .main-slider a {
+  position: absolute;
+  display: block;
+  top: 540px;
+  min-width: 280px;
+  margin: 0 auto;
+  text-align: center;
   font-size: 32px;
   line-height: 44px;
   font-weight: bold;
@@ -361,6 +383,29 @@ margin-right: 24px;
 
 .main-slider .button:active {
   color: #fceeec;
+}
+
+.slider-button {
+  position: absolute;
+  bottom: 163px;
+  left: 0;
+  z-index: 20;
+
+  font-size: 0;
+}
+
+.slider-button label {
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  margin-right: 8px;
+
+  vertical-align: top;
+
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  cursor: pointer;
 }
 
 
