@@ -895,7 +895,7 @@ fieldset.catalog-sort-prise {
   padding: 25px 21px;
   border-radius: 15px;
   color: #323232;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
 }
 .about-wrapper {
   display: flex;
