@@ -238,9 +238,8 @@ margin-right: 24px;
 /* БЛОК ПОЛЬЗОВАТЕЛЬ НАВИГАЦИИ*/
 
 .user-navigation {
-  justify-self: end;
-
   display: flex;
+  justify-self: end;
 
   margin-top: 22px;
 
@@ -343,17 +342,20 @@ margin-right: 24px;
 }
 .main-contact p{
   padding-left: 17px;
+  margin: 0;
   margin-bottom: 6px;
 }
 .main-contact a {
   font-size: 22px;
   line-height: 24px;
+  margin: 0;
 }
 
 /* БЛОК Хлебных крошек */
 .breadcrumbs {
   display: flex;
   padding: 0;
+  margin: 0;
 }
 .breadcrumbs li {
   position: relative;
@@ -367,6 +369,15 @@ margin-right: 24px;
   top: px;
   right: 8px;
   padding: 0;
+}
+
+.main-head {
+  display: block;
+  font-size: 35px;
+  line-height: 41px;
+  font-weight: bold;
+  margin: 0;
+  margin-bottom: 24px;
 }
 
 /* БЛОК slider */
@@ -596,6 +607,7 @@ margin-right: 24px;
 
 /* БЛОК about */
 .about {
+  box-sizing: border-box;
   background-image: url(../img/promo-waffle-pat.jpg);
   width: 1146px;
   min-height: 306px;
@@ -604,7 +616,6 @@ margin-right: 24px;
   border-radius: 15px;
   color: #323232;
   background-repeat: no-repeat;
-  background-size: cover;
 }
 .about-wrapper {
   display: flex;
