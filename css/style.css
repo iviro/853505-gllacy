@@ -13,19 +13,20 @@ body {
 
 .body-wrapper {
   position: relative;
-
+  width: 1146px;
   margin: 0 auto;
 
 }
 
+/*
 .site-wrapper {
-  min-width: 940px;
   background-color: #849d8f;
   background-image: url(../img/slider-cream-1.png);
   background-repeat: no-repeat;
   background-position: top center;
   transition: background-image 0.5s ease, background-color 0.5s ease;
 }
+*/
 
 .site-wrapper::before,
 .site-wrapper::after {
@@ -378,7 +379,6 @@ margin-right: 24px;
 .breadcrumbs li::after {
   position: absolute;
   content: "»";
-  top: px;
   right: 8px;
   padding: 0;
 }
@@ -394,7 +394,18 @@ margin-right: 24px;
 
 /* БЛОК slider */
 .slider {
-  width: 1146px;
+  width: min-width: 940px;px;
+
+    position: relative;
+    top: -120px;
+    height: 652px;
+    z-index: -1;
+    background-color: #849d8f;
+    background-image: url(../img/slider-cream-1.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    transition: background-image 0.5s ease, background-color 0.5s ease;
+
 }
 
 .main-slider {
@@ -1534,7 +1545,7 @@ right: 15px;
 
 }
 
-/*
+
 .display-popup {
   display: none;
 }
