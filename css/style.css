@@ -13,7 +13,7 @@ body {
 
 .body-wrapper {
   position: relative;
-  width: 1146px;
+
   margin: 0 auto;
 
 }
@@ -393,6 +393,10 @@ margin-right: 24px;
 }
 
 /* БЛОК slider */
+.slider {
+  width: 1146px;
+}
+
 .main-slider {
   position: relative;
 
@@ -1530,6 +1534,8 @@ right: 15px;
 
 }
 
+/*
 .display-popup {
   display: none;
 }
+*/
