@@ -66,7 +66,7 @@ a:active {
   vertical-align: middle;
   color: #fefefe;
   background: linear-gradient(to top, #e74a35, #f26843);
-  box-shadow: 0px 1px 2px 0 #ac1000;
+  box-shadow: 0px 2px 2px 0 #ac1000;
   border: none;
   border-radius: 30px;
   cursor: pointer;
@@ -75,11 +75,52 @@ a:active {
 .button:hover,
 .button:focus {
   color: #fefefe;
+  background-image: linear-gradient(to top, #e74a35, #f26843),
+      linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));
+  box-shadow: 0px 2px 2px 0 #ac1000;
 }
 
-a.button:active {
+.button:active,
+a.button:active {  box-shadow: inset 0px 2px 2px 0 #942718;
+  background-image: linear-gradient(to bottom, #e74a35, #f26843),
+  linear-gradient(to bottom, rgba(0, 0, 0, 0.07), rgba(0, 0, 0, 0.07));
+}
+
+
+.button-min {
+  background: linear-gradient(to top, #ca3824, #f26843);
+  box-shadow: 0px 1px 2px 0 #ac1000;
+}
+
+
+.button-min:hover,
+.button-min:focus {
+  color: #fefefe;
+  background: linear-gradient(to top, #e74a35, #f26843);
+  box-shadow: 0px 1px 2px 0 #ac1000;
+}
+
+.button:active,
+a.button-min:active {
   color: #fceeec;
 }
+
+.button-min {
+  text-shadow: 0px 2px 5px var(--rusty-red-76);
+}
+
+
+.button-max:hover,
+.button-max:focus {
+}
+
+.button:active,
+a.button-max:active {
+  box-shadow: inset 0px 2px 2px 0 #942718;
+  background-image: linear-gradient(to bottom, #e74a35, #f26843),
+  linear-gradient(to bottom, rgba(0, 0, 0, 0.07), rgba(0, 0, 0, 0.07));
+}
+
 
 .button-light {
   background-color: hsla(0, 0%, 100%, 0.2);
@@ -88,7 +129,8 @@ a.button:active {
   cursor: pointer;
 }
 
-.button-light:hover {
+.button-light:hover,
+.button-light:focus  {
   color: #323232;
   background-color: #ffffff;
 }
@@ -107,9 +149,6 @@ a.button:active {
   width: 1146px;
   margin: 0 auto;
   margin-bottom: 10px;
-
-
-
 }
 
 /* БЛОК NAV */
@@ -119,7 +158,6 @@ a.button:active {
 
 /* БЛОК ЛОГО */
 .logo {
-/* Временно для сетки */
 display: block;
 justify-self: flex-start;
 width: 154px;
@@ -132,7 +170,6 @@ margin-right: 24px;
 .site-navigation {
   position: relative;
   display: flex;
-
   flex-grow: 1;
   width: 349px;
   margin-top: 30px;
@@ -141,24 +178,46 @@ margin-right: 24px;
   font-weight: bold;
 }
 
-.site-navigation>li {
+.nav-border {
+  display: block;
+  box-sizing: border-box;
+  padding: 7px 14px;
   padding-right: 30px;
   }
 
+.nav-border a {
+  border-bottom: 1px solid hsla(0, 0%, 100%, 0.2);
+  padding: 0;
+  }
+
 /*АКТИВНОСТЬ*/
-.site-navigation a:hover,
-.site-navigation a:focus {
+.nav-border  a:hover,
+.nav-border  a:focus {
   background-color: #fff;
+  padding: 7px 14px;
+border-radius: 20px;
   color: blueviolet; /* ПРОВЕРКА*/
 }
 
-.site-navigation a:active {
+.nav-border  a:active {
+  padding: 7px 14px;
+  border-radius: 20px;
+  box-shadow: inset 0px 2px 1px 0 #696969;
+}
 
+.nav-border a {
+  background-color: inherit;
+  border-radius: inherit;
 }
 
 .site-navigation-active {
+  padding: 7px 14px;
+border-radius: 20px;
+background-color: #d07058;
 
 }
+
+
 
 /*МЕНЮ выпадающее*/
 .site-navigation-att {
