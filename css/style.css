@@ -200,15 +200,15 @@ margin-right: 24px;
   }
 
 /*АКТИВНОСТЬ*/
-.nav-border  a:hover,
-.nav-border  a:focus {
+.nav-border a:hover,
+.nav-border a:focus {
   background-color: #fff;
   padding: 7px 14px;
 border-radius: 20px;
   color: blueviolet; /* ПРОВЕРКА*/
 }
 
-.nav-border  a:active {
+.nav-border a:active {
   padding: 7px 14px;
   border-radius: 20px;
   box-shadow: inset 0px 2px 1px 0 #696969;
@@ -1329,6 +1329,7 @@ background-color: #ffffff;
   position: absolute;
   content: "";
   width: 1146px;
+  top: 1px;
   height: 1px;
   margin: 0 auto;
   opacity: 0.3;
