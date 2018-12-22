@@ -11,6 +11,15 @@ body {
   background-color: #849d8f;
 }
 
+/* ТАК МОЖНО и нужно ли?
+button:focus,
+a.button:focus,
+a:focus,
+input:focus {
+outline: 3px solid hsla(7, 72%, 34%, 0.4);
+}
+*/
+
 .body-wrapper {
   position: relative;
   box-sizing: border-box;
@@ -909,6 +918,41 @@ border-radius: 26px;
   position: relative;
 }
 
+.catalog-card::before {
+  display: none;
+  position: absolute;
+  content: "";
+  width: 293px;
+  height: 405px;
+  top: -6px;
+  left: -13px;
+  opacity: 0.2;
+  box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+  background-color: #f8f7f4;
+  z-index: 2;
+}
+
+.button-popup {
+  display: none;
+  position: absolute;
+  top: 333px;
+  left: 33px;
+  z-index: 2;
+}
+
+.catalog-card:hover .ice-popup,
+.catalog-card:hover::before  {
+display: block;
+}
+
+
+/* как сделать фокус */
+ .catalog-card:focus .ice-popup,
+ .catalog-card:focus::before {
+
+ }
+
 .ice-cream-hit::after {
   position: absolute;
   content: "";
@@ -939,7 +983,6 @@ border-radius: 26px;
   padding: 0 5px;
    /* не работает  */
   border-bottom: 1px solid hsla(0, 0%, 100%, 0.2);
-
   text-align: center;
 }
 
