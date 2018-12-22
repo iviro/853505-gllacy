@@ -227,7 +227,7 @@ margin-right: 24px;
   z-index: 2;
 }
 
-.nav-border a {
+.nav-border>a {
   background-color: inherit;
   border-radius: inherit;
   color: inherit;
@@ -251,58 +251,82 @@ margin-right: 24px;
   position: absolute;
   top: 33px;
   left: -6px;
-  padding: 12px 20px;
+  padding-top: 5px;
   padding-bottom: 2px;
   border-radius: 5px;
   background-color: #f8f7f4;
   box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
-
 }
 
-.site-navigation-att a {
-  display: inline-block;
-  vertical-align: top;
-  margin-bottom: 13px;
+.nav-new {
+  position: relative;
+  display: block;
+  font-weight: bold;
+  padding: 6px 20px;
+  margin-bottom: 11px;
+}
+
+.nav-new::after {
+  position: absolute;
+  content: "";
+  flex-grow: 1;
+  flex-shrink: 0;
+  width: 90%;
+  height: 1px;
+  top: 34px;
+  left: 1px;
+  margin: 0 7px;
+  opacity: 0.2;
+  background: #000000;
+}
+
+.nav-att {
+  display: block;
+  margin-bottom: 6px;
+  padding: 6px 20px;
   font-size: 14px;
   line-height: 16px;
   font-weight: normal;
   color: #323232;
 }
 
-.site-navigation-new a {
-  position: relative;
-  font-weight: bold;
-}
-
-.site-navigation-new::after {
-  position: absolute;
-  content: "";
-  flex-grow: 1;
-  flex-shrink: 0;
-  width: 128px;
-  height: 1px;
-  top: 38px;
-  left: 6px;
-  opacity: 0.2;
-  background: #000;
-}
 
 /*АКТИВНОСТЬ*/
-.site-navigation-att a:hover,
-.site-navigation-att a:focus {
-    color: #fa2686; /* ПРОВЕРКА*/
+.nav-att-active {
+  display: block;
+  margin-bottom: 6px;
+  padding: 6px 20px;
+  font-weight: normal;
+  background-color: #d07058;
+  color: #ffffff;
 }
 
-.site-navigation-att a:active {
-
+.nav-att-active a  {
+  color: #ffffff;
 }
 
-.site-navigation-att-active a {
 
+
+.nav-att:hover,
+.nav-att:focus,
+.nav-new:hover,
+.nav-new:focus,
+.nav-att-active:hover,
+.nav-att-active:focus {
+  background-color: #fbded7;
+  border-bottom-color: transparent;
 }
+
+.nav-att:active,
+.nav-new:active,
+.nav-att-active:active {
+  background-color: #f6b5a5;
+  border-bottom-color: transparent;
+}
+
+
 
 /* БЛОК ПОЛЬЗОВАТЕЛЬ НАВИГАЦИИ*/
-
 .user-navigation {
   display: flex;
   justify-self: end;
