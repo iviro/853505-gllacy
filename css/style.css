@@ -561,7 +561,6 @@ color: #fceeec;
   height: 17px;
   margin-right: 8px;
   vertical-align: top;
-
   background-color: transparent;
   border: 2px solid #ffffff;
   border-radius: 50%;
@@ -575,300 +574,67 @@ label.slide-checked {
   width: 17px;
   height: 17px;
   margin-right: 8px;
-
   vertical-align: top;
-
   background-color: #ffffff;
   border: 2px solid #ffffff;
   border-radius: 50%;
   cursor: pointer;
 }
 
-/* БЛОК  сортировка*/
-.sort form {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  font-size: 0px;
+/* БЛОК СОРТИРОВКА */
+.sort-wrapper {
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+width: 1146px;
+box-sizing: border-box;
 }
 
-.sort input[type=text] {
-  font-size: 16px;
-  line-height: 18px;
-  font-weight: 500;
-  color: #ffffff;
-  border: none;
-  background: none;
+.sort-wrapper form {
+width: 100%;
 }
 
-.sort input[type=radio] {
-  display: none;
-}
-.sort input[type=checkbox] {
-  display: none;
-}
-
-.sort legend {
-  border: 0;
-  padding: 0;
-}
-
-.sort legend {
-  border: 0;
-  padding: 0;
-}
-
-.sort fieldset {
-  position: relative;
-  margin: 0px;
-  margin-top: 28px;
-  margin-bottom: 10px;
-  margin-left: 14px;
-  padding: 0px;
-  font-size: 16px;
-  line-height: 18px;
-  font-weight: 500;
-  color: #ffffff;
-  border: none;
-  background-color: rgba(225, 255, 255, 0.2);
-  border-radius: 17px;
-}
-
-.sort legend {
-  position: absolute;
-  top: -22px;
-  left: 0px;
-  margin: 0px;
-  padding: 0px 15px;
-  font-size: 14px;
-  line-height: 16px;
-  font-weight: 500;
-}
-
-
-/* СОРТИРОВКА */
 .catalog-sort {
-  display: block;
+width: 194px;
+}
+.catalog-sort-prise {
+width: 220px;
+}
+.catalog-sort-fat {
+width: 415px;
+}
+.catalog-sort-fil {
+width: 422px;
+}
+
+.sort-fat,
+.sort-fat-checked {
   position: relative;
-  margin: 0px;
-  padding: 0px;
-  padding-left: 13px;
-  padding-right: 25px;
-  width: 196px;
-  height: 37px;
-  font-size: 16px;
-  line-height: 18px;
-  font-weight: 500;
-  color: #ffffff;
-  border: none;
-  border-radius: 17px;
-  background: transparent;
-  cursor: pointer;
-  overflow: hidden;
-  outline: none;
+padding-left: 49px;
 }
 
-
-.catalog-sort option {
-  margin: 0px;
-  padding-top: 2px;
-  padding-bottom: 6px;
-  font-size: 14px;
-  line-height: 16px;
-  font-weight: 400;
-  color: #323232;
-  border: none;
-  background: #ffffff;
-}
-
-.catalog-sort:hover {
-  font-weight: 500;
-  color: #323232;
-  background-color: #ffffff;
-}
-
-.catalog-sort:hover option {
-  font-weight: 500;
-  color: #323232;
-  background-color: #ffffff;
-}
-
-.fcatalog-sort:hover + .filter-form__sort-icon {
-  background-image: url(../img/icon-down-dir.svg);
-  width: 9px;
-  height: 5px;
-}
-
-.catalog-sort-icon {
+.sort-fat::before {
   position: absolute;
-  top: 50%;
-  right: 11px;
-  background-image: url(../img/icon-down-dir.png);
-  width: 9px;
-  height: 5px;
-  transform: translate(-50%, -50%);
-}
-
-/* ЦЕНА */
-fieldset.catalog-sort-prise {
-
-  /* ДЛЯ СЕТКИ */
-
-
-  width: 220px;
-  height: 37px;
-}
-
-/* ЖИРНОСТЬ */
-.catalog-sort-fat ul {
-  margin: 0;
-  padding: 0px 9px;
-  font-size: 0px;
-  list-style-type: none;
-  text-align: left;
-}
-
-.catalog-sort-fat li {
-  display: inline-block;
-  vertical-align: top;
-  font-size: 16px;
-  line-height: 18px;
-  font-weight: 500;
-  color: #ffffff;
-}
-
-.catalog-fat-ctrl {
-  display: block;
-  position: relative;
-  padding: 9px 37px;
-  padding-right: 12px;
-  cursor: pointer;
-}
-
-
-/* НЕ РАБОТАЕТ!!!! */
-
-
-.catalog-fat-ctrl input[type="radio"]:checked + .filter-form__radio-icon::before {
-  display: block;
-}
-
-.catalog-fat-ctrl input[type="radio"]:disabled + .filter-form__radio-icon {
-  opacity: 0.4;
-}
-
-.catalog-fat-ctrl:hover input[type="radio"]:not(:disabled) + .filter-form__radio-icon {
-  border: 2px solid #ffffff;
-}
-
-.catalog-fat-icon {
-  position: absolute;
-  display: block;
-  box-sizing: border-box;
+  content: "";
   width: 22px;
   height: 22px;
-  top: 50%;
-  left: 6px;
-  margin-top: -11px;
-  background-color: transparent;
-  border: 3px solid #ffffff;
-  border-radius: 18px;
+  left: 18px;
+  background-image: url(../img/fotm-radio-off.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
-.catalog-fat-icon::before {
-  content: '';
-  display: none;
+.sort-fat-checked::after {
   position: absolute;
-  width: 12px;
-  height: 12px;
-  top: 50%;
-  left: 50%;
-  margin-top: -6px;
-  margin-left: -6px;
-  background-color: #ffffff;
-  border-radius: 18px;
+  content: "";
+  width: 22px;
+  height: 22px;
+  left: 18px;
+  background-image: url(/img/fotm-radio-on.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
-/* наполнители */
-.catalog-fil-ul {
-  display: flex;
-  margin: 0;
-  padding: 0px 8px;
-  font-size: 0px;
-  list-style-type: none;
-  text-align: left;
-}
-
-.catalog-fil-list {
-  display: inline-block;
-  vertical-align: top;
-  font-size: 16px;
-  line-height: 18px;
-  font-weight: 500;
-  color: #ffffff;
-}
-
-.catalog-fil-list {
-  display: block;
-  position: relative;
-  padding: 9px 40px;
-  padding-right: 13px;
-  cursor: pointer;
-}
-
-.catalog-fil-icon {
-  position: absolute;
-  display: block;
-  box-sizing: border-box;
-  width: 20px;
-  height: 20px;
-  left: 7px;
-  border: 2px solid;
-}
-
-
-/* кнопка */
-.catalog-button {
-  display: inline-block;
-  vertical-align: top;
-  box-sizing: border-box;
-  vertical-align: top;
-  flex-grow: 0;
-  flex-shrink: 1;
-  flex-basis: auto;
-  align-self: flex-end;
-  width: 144px;
-  height: 37px;
-  padding: 9px 29px;
-  margin-bottom: 10px;
-  height: 36px;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 18px;
-  text-align: center;
-  text-transform: none;
-  text-decoration: none;
-  white-space: normal;
-  background-color: rgba(255, 255, 255, 0.19);
-  color: #ffffff;
-  box-shadow: none;
-  border: 2px solid #ffffff;
-  border-radius: 18px;
-  cursor: pointer;
-  outline: none;
-}
-
-.catalog-button:hover {
-  color: #323232;
-  background-color: #ffffff;
-}
-
-.catalog-button:active {
-  color: #323232;
-  border: none;
-  background-color: #eaeaea;
-  box-shadow: inset 0px 2px 1px 0px #696969;
-}
 
 /* обертка для ПРОМО и БЛОГ-РАССЫЛКИ */
 .wraper-2 {
