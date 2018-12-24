@@ -584,11 +584,7 @@ label.slide-checked {
   cursor: pointer;
 }
 
-
-
 /* БЛОК  сортировка*/
-
-
 .sort form {
   display: flex;
   flex-wrap: wrap;
@@ -672,9 +668,6 @@ label.slide-checked {
   outline: none;
 }
 
-.catalog-sort::-ms-expand {
-  display: none;
-}
 
 .catalog-sort option {
   margin: 0px;
