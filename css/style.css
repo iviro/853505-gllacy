@@ -423,6 +423,12 @@ margin-right: 24px;
   background-repeat: no-repeat;
 }
 
+.wraper-nav-2 {
+display: flex;
+justify-content: space-between;
+align-items: flex-end;
+}
+
 /* КОНТАКТЫ  */
 
 .main-contact {
@@ -454,11 +460,9 @@ margin-right: 24px;
   padding-right: 22px;
 }
 
-/* НЕПОНЯТНО, не работает */
 .breadcrumbs li::after {
   position: absolute;
   content: "»";
-  top: px;
   right: 8px;
   padding: 0;
 }
@@ -470,6 +474,14 @@ margin-right: 24px;
   font-weight: bold;
   margin: 0;
   margin-bottom: 24px;
+}
+
+h1.header-main {
+  font-size: 35px;
+  line-height: 41px;
+font-weight: bold;
+padding: 0;
+margin: 0;
 }
 
 /* БЛОК slider */
@@ -1641,7 +1653,6 @@ section.reply {
 form.reply  {
 box-sizing: border-box;
 margin: 0;
-
 }
 
 .reply textarea,
@@ -1659,14 +1670,13 @@ margin: 0;
 .reply-mail,
 .reply-text {
   box-sizing: border-box;
-margin: 0;
+  margin: 0;
   margin-top: 20px;
 }
 
 .reply-name {
 margin-top: 15px;
 }
-
 
 .reply textarea {
   width: 428px;
@@ -1676,13 +1686,10 @@ margin-top: 15px;
   margin-bottom: 15px;
 }
 
-
 .button-send {
   box-sizing: border-box;
   margin-left: 299px;
 }
-
-
 
 .button-close {
   position: absolute;
