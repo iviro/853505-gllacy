@@ -271,25 +271,25 @@
           </div>
 
         <!--СВЯЗЬ-->
-          <div class=" display-popup">
+          <div class=" isplay-popup">
             <section class="reply">
               <h2 class="reply">Мы обязательно вам ответим</h2>
-              <form action="https://echo.htmlacademy.ru" method="post">
-                <p class="reply-input">
+              <form class="reply" action="https://echo.htmlacademy.ru" method="post">
+                <div class="reply-name">
                   <label class="visually-hidden" for="reply-name">Имя</label>
                   <input type="text" name="reply-name" id="reply-name" placeholder="Как вас зовут?">
-                </p>
-                <p class="reply-input">
+                </div>
+                <div class="reply-mail">
                   <label class="visually-hidden" for="reply-email">Электронная почта</label>
                   <input type="email" name="reply-email" id="reply-email" placeholder="Ваша почта для ответа?">
-                </p>
-                <p class="reply-input-text">
+                </div>
+                <div class="reply-text">
                   <label class="visually-hidden" for="reply-text">Сообщение</label>
                   <textarea name="reply-text" id="reply-text" cols="10" rows="3" placeholder="Напишите что-нибудь..."></textarea>
-                </p>
-                <button class="button" type="submit" value="">Отправить</button>
+                </div>
+                <button class="button button-send" type="submit" value="">Отправить</button>
               </form>
-              <button class="button-close" type="button" value="Закрыть">Закрыть</button>
+              <button class="button-close" id="button-close" type="button" value="Закрыть">Закрыть</button>
             </section>
           </div>
     </div>    <!-- /.body-wrapper -->

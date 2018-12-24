@@ -545,12 +545,9 @@ color: #fceeec;
 
 .slider-bottom  label {
   display: inline-block;
-  vertical-align: top;
-  vertical-align: top;
   width: 17px;
   height: 17px;
   margin-right: 8px;
-
   vertical-align: top;
 
   background-color: transparent;
@@ -1528,10 +1525,11 @@ margin-left: 2px;
 .search input,
 .login input,
 .reply input {
+  box-sizing: border-box;
   height: 44px;
   padding: 12px 15px;
-
- border-radius: 5px;
+  border: 1px solid #d3d3d2;
+  border-radius: 5px;
 }
 
 
@@ -1621,15 +1619,16 @@ section.login {
 
 /* БЛОК reply */
 section.reply {
-  position: absolute;
+  position: fixed;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
 
   top: 337px;
-  left: 349px;
-
+  left: 50%;
+  box-sizing: border-box;
   width: 478px;
-  height: 443px;
+  margin-left: -220px;
   padding: 24px;
 
   background-color: #f8f7f4;
@@ -1639,48 +1638,72 @@ section.reply {
   color: #999999;
 }
 
+form.reply  {
+box-sizing: border-box;
+margin: 0;
+
+}
+
 .reply textarea,
 .reply input {
+  box-sizing: border-box;
   width: 267px;
   padding-top: 12px;
   padding-bottom: 9px;
-  margin-top: 20px;
-    line-height: 24px; /*не работает*/
-
+  line-height: 24px;
+  border-radius: 5px;
+  border: 1px solid #d3d3d2;
 }
+
+.reply-name,
+.reply-mail,
+.reply-text {
+  box-sizing: border-box;
+margin: 0;
+  margin-top: 20px;
+}
+
+.reply-name {
+margin-top: 15px;
+}
+
 
 .reply textarea {
   width: 428px;
-  height: 151px;
+  height: 155px;
   padding: 11px 15px;
-
-
   border-radius: 5px;
+  margin-bottom: 15px;
 }
 
 
-section.reply .button {
-  align-self: flex-end;
-  margin: auto;
-}/* не работает */
+.button-send {
+  box-sizing: border-box;
+  margin-left: 299px;
+}
+
 
 
 .button-close {
   position: absolute;
+  content: "";
   background-image: url(../img/fotm-cross-big.svg);
   background-repeat: no-repeat;
   width: 18px;
   height: 18px;
   left: 443px;
-}/* КАК скрыть button "Закрыть" */
-
+  font-size: 0px;
+  border: 0;
+background-color: transparent;
+  cursor: pointer;
+}
 
 .reply h2 {
   margin: 0;
-    font-size: 24px;
-    line-height: 28px;
-    font-weight: 500;
-    color: #323232;
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 500;
+  color: #323232;
 }
 
 .reply p {
