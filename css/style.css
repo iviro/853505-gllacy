@@ -181,6 +181,7 @@ a.button-max:active {
 .site-navigation {
   position: relative;
   display: flex;
+  flex-wrap: wrap;
   margin-top: 22px;
   width: 349px;
   font-weight: bold;
@@ -475,6 +476,8 @@ align-items: flex-end;
 /* БЛОК Хлебных крошек */
 .breadcrumbs {
   display: flex;
+  flex-wrap: wrap;
+  width: 900px;
   margin: 0;
   padding: 0;
 }
@@ -841,17 +844,31 @@ select.sort-select {
   justify-content: space-between;
 }
 
+.wraper-4max {
+  position: relative;
+  display: flex;
+  width: 1172px;
+  left: -13px;
+
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 .catalog-card {
   position: relative;
-box-sizing: border-box;
+  box-sizing: border-box;
   padding-bottom: 20px;
   width: 267px;
+}
+
+.wraper-4max .catalog-card {
+  margin-right: 13px;
+  margin-left: 13px;
 }
 
 .catalog-card-row {
   padding-bottom: 40px;
 }
-
 
 /* БЛОК ice-cream */
 .ice-cream-hit {
