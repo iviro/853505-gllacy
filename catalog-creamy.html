@@ -73,13 +73,23 @@
                       <option value="4">по наполнителю</option>
                     </select>
                   </div> <!-- /.sort СОРТИРОВКА-->
-                  <div class="catalog-sort-prise catalog-sort-wrapper">
-                    <p><label for="catalog-sort-prise">Цена:</label></p>
-                    <div class="sort-prise sort-wrapper">
-                      <input name="catalog-sort-prise" id="catalog-sort-prise"
-                          type="range" min="50" max="800" step="50" value="500"> <!--что тут может быть в value -->
+                  <div class="catalog-sort-priсe catalog-sort-wrapper">
+                    <div class="catalog-sort-label">
+                      <p>Цена:
+                        <label class="min-price"><input type="text" name="min-price" value="100"> руб.</label>
+                        <label class="max-price"> – <input type="text" name="max-price" value="500"> руб.</label>
+                      </p>
                     </div>
-                  </div> <!-- /.prise ЦЕНА -->
+                    <div class="sort-wrapper">
+                      <div class="sort-price">
+                        <div class="scale">
+                          <div class="bar"></div>
+                        </div>
+                        <div class="range range-min"></div>
+                        <div class="range range-max"></div>
+                      </div>
+                    </div>
+                  </div> <!-- /.price ЦЕНА -->
                   <div class="catalog-sort-fat catalog-sort-wrapper">
                     <p>Жирность:</p>
                     <div class="sort-wrapper">

@@ -654,10 +654,6 @@ label.slide-checked {
   width: 194px;    /* для сетки элементы не сверстаны */
 }
 
-.catalog-sort-prise div {
-  width: 220px;   /* для сетки элементы не сверстаны */
-}
-
 .catalog-sort-fat div {
   padding-top: 11px;
   padding-right: 13px;
@@ -677,6 +673,7 @@ label.slide-checked {
   line-height: 16px;
 }
 
+
 .sort-wrapper p {
   margin: 0;
   font-weight: 500;
@@ -686,6 +683,91 @@ label.slide-checked {
 
 select.sort-select {
 }
+
+/* ЦЕНА */
+.catalog-sort-label label {
+  display: inline-block;
+
+  font-size: 14px;
+  line-height: 16px;
+  vertical-align: top;
+
+  cursor: pointer;
+}
+
+.catalog-sort-label input {
+  width: 25px;
+  margin: 0;
+
+  color: inherit;
+  font: inherit;
+
+  background: none;
+  border: none;
+  outline: none;
+}
+
+/*ЛИНИЯ*/
+.catalog-sort-priсe .sort-wrapper {
+  padding: 0;
+}
+
+.sort-price {
+  position: relative;
+  box-sizing: border-box;
+  width: 220px;
+  height: 37px;
+  padding: 0 22px;
+}
+
+/*ЛИНИИ сортировки*/
+.sort-price .scale {
+  position: relative;
+  height: 4px;
+  top: 17px;
+  background: hsla(0, 0%, 100%, 0.2);
+}
+
+.sort-price .bar {
+  position: relative;
+  width: 50%;
+  height: 4px;
+
+  left: 30px;
+
+  background: #f8f7f4;
+}
+
+/* БЕГУНКИ */
+.range {
+  position: absolute;
+  top: 10px;
+
+  width: 4px;
+  height: 4px;
+
+  background: #ababab;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  cursor: pointer;
+}
+
+.range:hover {
+  cursor: pointer;
+}
+
+.range-min {
+  left: 35px;
+}
+
+.range-max {
+  right: 67px;
+}
+
+
+
+
 
 /* ЖИРНОСТЬ */
 .sort-fat,
