@@ -516,10 +516,6 @@ h1.header-main {
   position: relative;
 }
 
-.display-slide-none {
-  display: none;
-}
-
 .main-slide-1 {
   display: flex;
   flex-direction: column;
@@ -608,8 +604,6 @@ label.slide-checked {
   border: 2px solid #ffffff;
   border-radius: 50%;
   background-color: #ffffff;
-  vertical-align: top;
-  vertical-align: top;
   vertical-align: top;
   cursor: pointer;
 }
@@ -797,10 +791,12 @@ select.sort-select {
 
 .promo-1 {
   margin-right: 26px;
+  background-color: #770512;
   background-image: url(../img/promo-raspberry-m.jpg);
 }
 
 .promo-2 {
+  background-color: #522412;
   background-image: url(../img/promo-chocolate-m.jpg);
 }
 
@@ -943,6 +939,7 @@ h3.ice-about {
   min-height: 306px;
   width: 1146px;
   border-radius: 15px;
+  background-color: #fae4b4;
   background-image: url(../img/promo-waffle-pat.jpg);
   background-repeat: repeat;
   color: #323232;
@@ -1065,6 +1062,7 @@ section.letters {
   box-sizing: border-box;
   margin-top: 40px;
   padding: 5px 5px;
+  background-color: #8ECEff;
   background-image: url(../img/promo-mail-bg.svg);
 }
 
@@ -1095,6 +1093,7 @@ section.letters {
   display: inline-block;
   margin: 0;
   color: #5a5a5a;
+  vertical-align: top;
 
   flex-grow: 1;
 }
@@ -1111,6 +1110,7 @@ section.letters {
   box-sizing: border-box;
   padding: 13px 14px;
   width: 100%;
+  vertical-align: top;
   border: 1px solid #d3d3d2;
   border-radius: 5px;
 }
@@ -1165,6 +1165,7 @@ section.letters {
 .contact span {
   display: inline-block;
   margin-right: 100px;
+  vertical-align: top;
 }
 
 
@@ -1417,6 +1418,7 @@ section.letters {
   position: relative;
   display: inline-block;
   margin: 0;
+  vertical-align: top;
   font-size: 12px;
   line-height: 18px;
 }
@@ -1736,4 +1738,10 @@ caption.basket-price-total {
   bottom: 18px;
   display: block;
   margin: 0;
+}
+
+
+
+.display-slide-none {
+  display: none;
 }
