@@ -340,7 +340,7 @@ a.button-max:active {
   justify-self: end;
 }
 
-.button-search {
+a.button-search {
   position: relative;
   display: inline-block;
   margin-right: 10px;
@@ -349,7 +349,7 @@ a.button-max:active {
   vertical-align: top;
 }
 
-.button-search::before {
+a.button-search::before {
   position: absolute;
   top: 8px;
   left: 8px;
@@ -362,12 +362,13 @@ a.button-max:active {
 }
 
 /*АКТИВНОСТЬ*/
-a.button-search:hover .search-popup {
+.search-nav-popup:hover .search-popup,
+.search-nav-popup:focus .search-popup  {
   z-index: 2;
   display: block;
 }
 
-.login-link {
+a.login-link {
   position: relative;
   display: inline-block;
   box-sizing: border-box;
@@ -379,7 +380,7 @@ a.button-search:hover .search-popup {
   vertical-align: top;
 }
 
-.login-link::before {
+a.login-link::before {
   position: absolute;
   top: -3px;
   left: 16px;
@@ -398,9 +399,9 @@ a.login-link:focus {
   color: #323232;
 }
 
-a.login-link:hover .login-popup,
-a.login-link:focus .login-popup {
-  z-index: 2;
+.login-nav-popup:hover .login-popup,
+.login-nav-popup:focus .login-popup {
+  z-index: 3;
   display: block;
 }
 
@@ -442,6 +443,13 @@ a.login-link:focus .login-popup {
   background-image: url(../img/header-basket-red.svg);
   background-repeat: no-repeat;
   content: "";
+}
+
+/*АКТИВНОСТЬ*/
+.basket-nav-popup:hover .basket-popup,
+.basket-nav-popup:focus .basket-popup {
+  display: block;
+  z-index: 3;
 }
 
 .wraper-nav-2 {
@@ -814,6 +822,7 @@ position: absolute;
 .sort-fat-checked {
   position: relative;
   padding-left: 49px;
+  z-index: 1;
 }
 
 .sort-fat::before {
@@ -1627,6 +1636,7 @@ section.login {
   color: #999999;
   font-size: 14px;
   line-height: 24px;
+  z-index: 3;
 }
 
 .login-wrapper {
