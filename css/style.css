@@ -362,6 +362,19 @@ a.button-search::before {
 }
 
 /*АКТИВНОСТЬ*/
+a.button-search:hover::before,
+a.button-search:focus::before {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  margin-right: 10px;
+  width: 17px;
+  height: 17px;
+  background-image: url(../img/header-seach-black.svg);
+  background-repeat: no-repeat;
+  content: "";
+}
+
 .search-nav-popup:hover .search-popup,
 .search-nav-popup:focus .search-popup  {
   z-index: 2;
@@ -393,6 +406,20 @@ a.login-link::before {
 }
 
 /*АКТИВНОСТЬ*/
+a.login-link:hover::before,
+a.login-link:focus::before  {
+  position: absolute;
+  top: -3px;
+  left: 16px;
+  margin-top: 9px;
+  width: 21px;
+  height: 19px;
+  background-image: url(../img/header-entrance-black.svg);
+  background-repeat: no-repeat;
+  content: "";
+}
+
+
 a.login-link:hover,
 a.login-link:focus {
   border-bottom-color: transparent;
