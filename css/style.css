@@ -1183,6 +1183,7 @@ position: absolute;
   text-align: center;
 }
 
+
 h3.ice-about {
   display: inline;
   border-bottom: 1px solid hsla(0, 0%, 100%, 0.2);
@@ -1309,13 +1310,30 @@ h3.ice-about {
   display: inline;
   margin: 12px 0;
   width: 290px;
-
-/* РАЗОБРАТЬСЯ */
   background-size: 1px 1em;
   box-shadow:
     inset 0 -1px #ffffff,
     inset 0 -4px #323232;
   color: #323232;
+  text-align: left;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+ }
+
+ .blog-new  h3:hover,
+ .blog-new  h3:focus,
+.blog-new  h3:active {
+  position: relative;
+  top: 4px;
+  display: inline;
+  margin: 12px 0;
+  width: 290px;
+  background-size: 1px 1em;
+  box-shadow:
+    inset 0 -1px #ffffff,
+    inset 0 -4px #e84d37;
+  color: #e84d37;
   text-align: left;
   font-weight: bold;
   font-size: 24px;
@@ -1453,6 +1471,17 @@ section.letters {
   margin-top: 6px;
   margin-bottom: 4px;
   color: #323232;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.contact a:hover,
+.contact a:focus,
+.contact a:active {
+  display: block;
+  margin-top: 6px;
+  margin-bottom: 4px;
+  color: #e84d37;
   font-weight: bold;
   font-size: 18px;
 }
