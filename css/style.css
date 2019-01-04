@@ -198,10 +198,24 @@ a.button-max:active {
   padding: 7px 14px;
 }
 
-.nav-border:hover,
-.nav-border:focus {
+.nav-border:hover {
   border-radius: 20px;
   background-color: #f7f6f3;
+}
+
+.nav-border > a {
+position: relative;
+}
+
+.nav-border:active {
+  border-radius: 20px;
+  box-shadow: inset 0px 2px 1px 0 #696969;
+  background-color: #ededed;
+}
+
+.nav-border > a:hover,
+.nav-border > a:active {
+  color: #323232;
 }
 
 .nav-border a {
