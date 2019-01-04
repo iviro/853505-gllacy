@@ -218,6 +218,7 @@ position: relative;
   color: #323232;
 }
 
+
 .nav-border a {
   border-bottom: 1px solid hsla(0, 0%, 100%, 0.2);
 }
@@ -1439,6 +1440,19 @@ section.letters {
   border-radius: 5px;
 }
 
+.letters input:hover {
+  resize: none;
+  border: 2px solid rgba(154, 154, 154, 0.52);
+  border-radius: 5px;
+}
+
+.letters input:focus {
+  resize: none;
+  border: 2px solid rgba(46, 136, 228, 0.52);
+  border-radius: 5px;
+  outline: none;
+}
+
 .letters button {
   margin-top: 0;
   margin-left: 12px;
@@ -1836,6 +1850,25 @@ section.letters {
 }
 
 
+.search input:hover,
+.login input:hover,
+.reply input:hover {
+  resize: none;
+  border: 2px solid rgba(154, 154, 154, 0.52);
+  border-radius: 5px;
+}
+
+
+.search input:focus,
+.login input:focus,
+.reply input:focus {
+  resize: none;
+  border: 2px solid rgba(46, 136, 228, 0.52);
+  border-radius: 5px;
+  outline: none;
+}
+
+
 .login section,
 .reply section {
   border-radius: 5px;
@@ -1944,6 +1977,21 @@ form.reply  {
   border: 1px solid #d3d3d2;
   border-radius: 5px;
   line-height: 24px;
+}
+
+.reply textarea:hover,
+.reply input:hover {
+  resize: none;
+  border: 2px solid rgba(154, 154, 154, 0.52);
+  border-radius: 5px;
+}
+
+.reply textarea:focus,
+.reply input:focus {
+  resize: none;
+  border: 2px solid rgba(46, 136, 228, 0.52);
+  border-radius: 5px;
+  outline: none;
 }
 
 .reply-name,
