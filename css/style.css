@@ -1618,7 +1618,63 @@ section.letters {
   border-radius: 19px;
   background-image: url(../img/soc-vk.svg);
   background-repeat: no-repeat;
+}
+
+
+/* АКТИВНОСТЬ  */
+.social-wrapper li:hover:nth-child(1),
+.social-wrapper li:focus:nth-child(1),
+.social-wrapper li:active:nth-child(1) {
+  box-sizing: border-box;
+  margin-right: 11px;
+  width: 38px;
+  height: 38px;
+  border: 3px solid hsla(0, 0%, 100%);
+  border-radius: 19px;
+  background-image: url(../img/soc-twitter.svg);
+  background-repeat: no-repeat;
   opacity: 0.8;
+}
+
+.social-wrapper li:hover:nth-child(2),
+.social-wrapper li:focus:nth-child(2),
+.social-wrapper li:active:nth-child(2) {
+  box-sizing: border-box;
+  margin-right: 11px;
+  width: 38px;
+  height: 38px;
+  border: 3px solid hsla(0, 0%, 100%);
+  border-radius: 19px;
+  background-image: url(../img/soc-instagram.svg);
+  background-repeat: no-repeat;
+  opacity: 0.8;
+}
+
+.social-wrapper li:hover:nth-child(3),
+.social-wrapper li:focus:nth-child(3),
+.social-wrapper li:active:nth-child(3) {
+  box-sizing: border-box;
+  margin-right: 11px;
+  width: 38px;
+  height: 38px;
+  border: 3px solid hsla(0, 0%, 100%);
+  border-radius: 19px;
+  background-image: url(../img/soc-fb.svg);
+  background-repeat: no-repeat;
+  opacity: 0.8;
+}
+
+.social-wrapper li:hover:nth-child(4),
+.social-wrapper li:focus:nth-child(4),
+.social-wrapper li:active:nth-child(4) {
+  box-sizing: border-box;
+  width: 38px;
+  height: 38px;
+  border: 3px solid hsla(0, 0%, 100%);
+  border-radius: 19px;
+  background-image: url(../img/soc-vk.svg);
+  background-repeat: no-repeat;
+
 }
 
 
