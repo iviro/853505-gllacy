@@ -6,10 +6,6 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
-    <!-- временно, для различения в браузере-->
-
-<link rel="shortcut icon" href="i1.ico" type="image/x-icon">
-
   </head>
   <body>
     <input class="visually-hidden" type="radio" id="slide-product-1" name="toggle" checked> <!-- СЛАЙД-1-->
@@ -17,6 +13,7 @@
     <input class="visually-hidden" type="radio" id="slide-product-3" name="toggle"> <!-- СЛАЙД-3-->
     <div class="body-wrapper">
       <div class="slider-bottom">
+        <div class="ie11-bottom"></div>
         <label class="slide-checked" for="slide-product-1">Первый</label> <!-- СЛАЙД-1-->
         <label for="slide-product-2">Второй</label> <!-- СЛАЙД-2-->
         <label for="slide-product-3">Третий</label> <!-- СЛАЙД-3-->
@@ -35,16 +32,49 @@
               </ul> <!-- /ПОДМЕНЮ-->
             </li>
             <li class="nav-border"><a href="shipping.html">Доставка и оплата</a></li>
-            <li class="nav-border"><a href="about.html">О компании</a></li>
+            <li class="nav-border"><a href="about.html">О Компании</a></li>
           </ul> <!-- /МЕНЮ-->
           <div class="user-navigation"> <!-- ПОЛЬЗ-МЕНЮ-->
-            <a class="button-search button-light" href="#">
-              <span class="visually-hidden">Поиск</span>
-            </a>
-            <a class="login-link button-light" href="#">Вход</a>
+            <div class="search-nav-popup"><!--ПОИСК-->
+              <a class="button-search button-light" href="/search.html">
+                <span class="visually-hidden">Поиск</span>
+              </a>
+              <div  class="search-popup display-popup"><!--ПОИСК окно-->
+                <section class="search">
+                  <h2 class="visually-hidden">Форма поиск</h2>
+                    <form action="https://echo.htmlacademy.ru" method="get">
+                    <input class="search" type="search" name="search" placeholder="Что ищем?">
+                    <button class="visually-hidden" type="submit" name="submit-search" value="">Найти</button>
+                    </form>
+                </section>
+              </div> <!-- /ПОИСК окно -->
+            </div><!-- /ПОИСК-->
+            <div class="login-nav-popup"><!--ВХОД окно -->
+              <a class="login-link button-light" href="/login.html">Вход</a>
+              <div  class="login-popup display-popup"> <!--ВХОД-->
+                <section class="login">
+                  <h2 class="visually-hidden">Вход</h2>
+                  <form action="https://echo.htmlacademy.ru" method="post">
+                    <p class="login-input-email">
+                      <label class="visually-hidden" for="login-email">Электронная почта</label>
+                      <input type="email" name="login-email" id="login-email" placeholder="Электронная почта" required>
+                    </p>
+                    <p class="login-input-password">
+                      <label class="visually-hidden" for="password">Пароль</label>
+                      <input type="password" name="password" id="password" placeholder="Пароль" required>
+                    </p>
+                    <div class="login-wrapper">
+                      <button class="button" type="submit" name="login-submit" value="">Войти</button>
+                      <p><a href="/restore.html">Забыли пароль?</a>
+                      <a href="/registration.html">Новая регистрация</a></p>
+                    </div>
+                  </form>
+                </section>
+              </div> <!--/ВХОД окно -->
+            </div> <!--/ВХОД-->
             <section class="basket-nav button-light">
               <h2 class="visually-hidden">Корзина</h2>
-              <a class="basket" href="#">Пусто</a>
+              <a class="basket" href="/basket.html">Пусто</a>
             </section>
           </div> <!-- /ПОЛЬЗ-МЕНЮ-->
         </nav>
@@ -60,21 +90,21 @@
             <div class="main-slider"> <!-- СЛАЙД-1-->
               <div class="main-slide-1">
                 <img src="img/slider-cream-1.png" alt="Крем-брюле и пломбир с малиновым джемом" width="1045" height="881">
+
+                  <div class="ie11"></div>
                 <p>Крем-брюле и пломбир с малиновым джемом</p>
                 <a href="#" class="button button-max">Давайте оба!</a>
-              </div>  <!-- СЛАЙД-1-->
-                      <!--
-                      <div class="main-slide-1">
-                        <img src="img/slider-cream-2.png" alt="Шоколадный пломбир и лимонный сорбет" width="1065" height="859">
-                        <p>Шоколадный пломбир и лимонный сорбет </p>
-                        <a href="#" class="button button-max">Давайте оба!</a>
-                      </div>
-                      <div class="main-slide-1">
-                        <img src="img/slider-cream-3.png" alt="Пломбир с помадкой и клубничный щербет" width="1079" height="854">
-                        <p>Пломбир с помадкой и клубничный щербет</p>
-                        <a href="#" class="button button-max">Давайте оба!</a>
-                      </div>
-                      -->
+              </div>  <!-- /СЛАЙД-1-->
+              <div class="main-slide-1 display-slide-none">  <!-- СЛАЙД-2-->
+                <img src="img/slider-cream-2.png" alt="Шоколадный пломбир и лимонный сорбет" width="1065" height="859">
+                <p>Шоколадный пломбир и лимонный сорбет </p>
+                <a href="#" class="button button-max">Давайте оба!</a>
+              </div>  <!-- /СЛАЙД-2-->
+              <div class="main-slide-1 display-slide-none">  <!-- СЛАЙД-3-->
+                <img src="img/slider-cream-3.png" alt="Пломбир с помадкой и клубничный щербет" width="1079" height="854">
+                <p>Пломбир с помадкой и клубничный щербет</p>
+                <a href="#" class="button button-max">Давайте оба!</a>
+              </div>  <!-- /СЛАЙД-3-->
             </div>    <!-- /.main-slider-->
           </section> <!-- /СЛАЙДЕР-->
           <section class="wraper-2"> <!-- ПРОМО-->
@@ -82,11 +112,13 @@
             <section class="promo promo-1">
               <h3>Малинка даром!</h3>
               <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
+              <div class="ie11-promo"></div>
               <a href="#" class="button button-min">Хочу варенье!</a>
             </section> <!-- /.promo-1-->
             <section class="promo promo-2">
               <h3>Шоколадки даром!</h3>
               <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
+              <div class="ie11-promo"></div>
               <a href="#" class="button button-min">Хочу шоколадку!</a>
             </section> <!-- /.promo-2-->
           </section> <!-- /ПРОМО-->
@@ -95,7 +127,7 @@
             <div class="ice-cream-hit">
               <div class="catalog-card">
                 <img class="ice" src="img/cream-11.png" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой" width="267" height="267">
-                <p class="price"><span>310₽</span>/кг</p>
+                <p class="price"><span>310</span><span>₽</span>/кг</p>
                 <a class="ice-about-link" href="#">
                   <h3 class="ice-about">Сливочное с апельсиновым джемом и цитрусовой стружкой</h3>
                 </a>
@@ -105,7 +137,7 @@
             <div class="ice-cream-hit">
               <div class="catalog-card">
                 <img class="ice" src="img/cream-12.png" alt="Сливочно-кофейное с кусочками шоколада" width="267" height="267">
-                <p class="price"><span>380₽</span>/кг</p>
+                <p class="price"><span>380</span><span>₽</span>/кг</p>
                 <a class="ice-about-link" href="#">
                   <h3 class="ice-about">Сливочно-кофейное с кусочками шоколада</h3>
                 </a>
@@ -115,7 +147,7 @@
             <div class="ice-cream-hit">
               <div class="catalog-card ice-popup">
                 <img class="ice" src="img/cream-13.png" alt="Сливочно-клубничное с присыпкой из белого шоколада" width="267" height="267">
-                <p class="price"><span>355₽</span>/кг</p>
+                <p class="price"><span>355</span><span>₽</span>/кг</p>
                 <a class="ice-about-link" href="#">
                   <h3 class="ice-about">Сливочно-клубничное с присыпкой из белого шоколада</h3>
                 </a>
@@ -125,13 +157,13 @@
             <div class="ice-cream-hit">
               <div class="catalog-card">
                 <img class="ice" src="img/cream-14.png" alt="Сливочное крем-брюле с карамельной подливкой" width="267" height="267">
-                <p class="price"><span>415₽</span>/кг</p>
+                <p class="price"><span>415</span><span>₽</span>/кг</p>
                 <a class="ice-about-link" href="#">
                   <h3 class="ice-about">Сливочное крем-брюле с карамельной подливкой</h3>
                 </a>
                 <a href="#" class="button button-popup ice-popup">Быстрый просмотр</a>
               </div>
-            </div> <!-- /КАРТ-1-->4
+            </div> <!-- /КАРТ-4-->
           </section>  <!-- /КАТАЛОГ-->
           <section class="about">
             <h2>Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</h2>
@@ -156,7 +188,7 @@
                 <form action="https://echo.htmlacademy.ru" method="post">
                   <p class="letters-input">
                     <label class="visually-hidden" for="letters-email">Электронная почта</label>
-                    <input type="email" name="letters-email" id="letters-email" placeholder="Электронная почта">
+                    <input type="email" name="letters-email" id="letters-email" placeholder="Электронная почта" required>
                   </p>
                   <button class="button" type="submit" value="">Отправить</button>
                 </form>
@@ -171,11 +203,10 @@
               <p>Для заказов по телефону:
               <a href="tel:88124502525">8 812 450-25-25</a>
               (с 10 до 20 ежедневно)</p>
-              <a class="button" href="#">Форма обратной связи</a> <!--Тут же ж должна быть связь через id с section class="reply" ?-->
+              <a class="button" href="/contact.html">Форма обратной связи</a> <!--Тут же ж должна быть связь через id с section class="reply" ?-->
             </div>
           </section> <!-- /.map-->
         </main>
-
         <footer class="footer-wrapper">
           <section class="social">
           <h2 class="visually-hidden">Соцсети</h2>
@@ -196,7 +227,7 @@
           </ul>
           </section> <!-- /.about-us-->
           <div class="copyright copyright-wrapper">
-            <a href="https://htmlacademy.ru/intensive/html">
+            <a href="https://htmlacademy.ru/intensive/htmlcss">
               <img src="img/footer-logo-htmlacademy.svg" alt="Лого «HTML Academy»" width="108" height="39">
               <p>Сделано в <span>HTML Academy</span> © 2017</p>
             </a>
@@ -204,43 +235,10 @@
         </footer>
       </div>  <!-- .wrapper-->
 
-      <!--ПОИСК-->
-      <div  class="search-popup display-popup">
-        <section class="search">
-          <h2 class="visually-hidden">Форма поиск</h2>
-            <form action="https://echo.htmlacademy.ru" method="get">
-            <input type="search" name="search" placeholder="Что ищем" class="search">
-            <button type="submit" name="submit-search" value="" class="visually-hidden">Найти</button>
-            </form>
-        </section>
-      </div> <!-- /ПОИСК-->
-
-      <!--ВХОД-->
-      <div  class="login-popup display-popup">
-        <section class="login">
-          <h2 class="visually-hidden">Вход</h2>
-          <form action="https://echo.htmlacademy.ru" method="post">
-            <p class="login-input-email">
-              <label class="visually-hidden" for="login-email">Электронная почта</label>
-              <input type="email" name="login-email" id="login-email" placeholder="Электронная почта" >
-            </p>
-            <p class="login-input-password">
-              <label class="visually-hidden" for="password">Пароль</label>
-              <input type="password" name="password" id="password" placeholder="Пароль">
-            </p>
-            <div class="login-wrapper">
-              <button class="button" type="submit" name="login-submit" value="">Войти</button>
-              <p><a href="#">Забыли пароль?</a>
-              <a href="#">Новая регистрация</a></p>
-            </div>
-          </form>
-        </section>
-      </div> <!--/ВХОД-->
-
       <!--СВЯЗЬ-->
       <div class="display-popup">
         <section class="reply">
-          <h2 class="reply">Мы обязательно вам ответим</h2>
+          <h2 class="reply">Мы обязательно вам ответим!</h2>
           <form class="reply" action="https://echo.htmlacademy.ru" method="post">
             <div class="reply-name">
               <label class="visually-hidden" for="reply-name">Имя</label>
