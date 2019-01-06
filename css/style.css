@@ -610,7 +610,9 @@ h1.header-main {
   padding: 12px 39px;
   padding-top: 8px;
 
-  align-self: center;
+  -ms-grid-row-align: center;
+
+      align-self: center;
 }
 
 .main-slider a {
@@ -1644,7 +1646,8 @@ ul.catalog-paginator-list  {
   background-image: url(../img/icon-right-small.svg);
   background-repeat: no-repeat;
   content: "";
-  transform: rotate(180deg)
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg)
 }
 
 .catalog-paginator-next::after {
@@ -1966,7 +1969,9 @@ section.login {
   font-size: 13px;
   line-height: 24px;
 
-  text-decoration-line: underline;
+  -webkit-text-decoration-line: underline;
+
+          text-decoration-line: underline;
 }
 
 .login-wrapper p {
