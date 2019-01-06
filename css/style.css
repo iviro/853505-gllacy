@@ -462,6 +462,15 @@ a.login-link:focus {
   height: 33px;
 }
 
+.basket-nav a:hover {
+color: #ffffff;
+}
+
+.basket-nav:hover {
+  background-color: hsla(0, 0%, 100%, 0.2);
+  }
+
+
 .basket-nav::before {
   position: absolute;
   top: -3px;
