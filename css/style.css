@@ -583,16 +583,33 @@ h1.header-main {
   min-height: 518px;
   width: 1146px;
 
+  -ms-flex-pack: end;
   justify-content: flex-end;
+
   align-items: center;
   flex-wrap: wrap;
 }
 
+.main-slide-1::-ms-browse {
+display: block;
+}
+
+
 .main-slider img {
   position: absolute;
   top: -129px;
+  right: -523px;
+  margin: 0 50%;
   z-index: -1;
 }
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  /* IE11+ CSS styles go here */
+  .ie11 {
+    height: 200px;
+  }
+}
+
 
 .main-slider p {
   display: inline-block;
@@ -645,6 +662,13 @@ color: #fceeec;
   left: 27px;
   z-index: 20;
   font-size: 0;
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  /* IE11+ CSS styles go here */
+  .ie11-bottom {
+    height: 15px;
+  }
 }
 
 .slider-bottom label {
