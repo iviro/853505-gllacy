@@ -832,7 +832,7 @@ position: absolute;
 }
 
 /*ЛИНИЯ*/
-.catalog-sort-priсe .sort-wrapper {
+.catalog-sort-price .sort-wrapper {
   padding: 0;
 }
 
@@ -2248,8 +2248,6 @@ form.reply  {
     text-align: left;
   }
 }
-
-
 
 /* Цена и стоимость сверстаны
  с учетом возможного переполнения
