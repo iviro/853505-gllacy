@@ -85,7 +85,7 @@ a:active {
 .button:hover,
 .button:focus {
   background-image: linear-gradient(to top, #e74a35, #f26843),
-      linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));
+                    linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));
   box-shadow: 0px 2px 2px 0 #ac1000;
   color: #fefefe;
 }
@@ -93,7 +93,7 @@ a:active {
 .button:active,
 a.button:active {
   background-image: linear-gradient(to bottom, #e74a35, #f26843),
-  linear-gradient(to bottom, rgba(0, 0, 0, 0.07), rgba(0, 0, 0, 0.07));  box-shadow: inset 0px 2px 2px 0 #942718;
+                    linear-gradient(to bottom, rgba(0, 0, 0, 0.07), rgba(0, 0, 0, 0.07));  box-shadow: inset 0px 2px 2px 0 #942718;
 }
 
 
@@ -127,7 +127,7 @@ a.button-min:active {
 .button:active,
 a.button-max:active {
   background-image: linear-gradient(to bottom, #e74a35, #f26843),
-  linear-gradient(to bottom, rgba(0, 0, 0, 0.07), rgba(0, 0, 0, 0.07));
+                    linear-gradient(to bottom, rgba(0, 0, 0, 0.07), rgba(0, 0, 0, 0.07));
   box-shadow: inset 0px 2px 2px 0 #942718;
 }
 
@@ -157,7 +157,7 @@ a.button-max:active {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-  margin-bottom: 8px;
+  margin-bottom: 13px;
   width: 1146px;
 }
 
@@ -170,7 +170,7 @@ a.button-max:active {
 .logo {
   display: block;
   margin-top: 9px;
-  margin-right: 24px;
+  margin-right: 10px;
   width: 154px;
 
   justify-self: flex-start;
@@ -182,6 +182,7 @@ a.button-max:active {
   position: relative;
   display: flex;
   flex-wrap: wrap;
+  margin: 0;
   margin-top: 22px;
   width: 349px;
   font-weight: bold;
@@ -194,7 +195,7 @@ a.button-max:active {
 .nav-border {
   display: block;
   box-sizing: border-box;
-  margin-right: 30px;
+  margin-right: 1px;
   padding: 7px 14px;
 }
 
@@ -204,7 +205,7 @@ a.button-max:active {
 }
 
 .nav-border > a {
-position: relative;
+  position: relative;
 }
 
 .nav-border:active {
@@ -234,6 +235,12 @@ position: relative;
   box-shadow: inset 0px 2px 1px 0 #696969;
 }
 
+.nav-border-1::before {
+  position: absolute;
+  content: "";
+  padding: 30px;
+}
+
 .nav-border-1:hover .site-navigation-att {
   z-index: 2;
   display: block;
@@ -248,7 +255,7 @@ position: relative;
 .site-navigation-active {
   display: block;
   box-sizing: border-box;
-  margin-right: 30px;
+  margin-right: 1px;
   padding: 7px 14px;
   border-radius: 20px;
   background-color: #d07058;
@@ -261,10 +268,9 @@ position: relative;
 /*МЕНЮ выпадающее*/
 .site-navigation-att {
   position: absolute;
-  top: 33px;
+  top: 38px;
   left: -6px;
-  padding-top: 5px;
-  padding-bottom: 2px;
+  padding-top: 4px;
   border-radius: 5px;
   background-color: #f8f7f4;
   box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
@@ -300,7 +306,7 @@ position: relative;
 .nav-att {
   display: block;
   margin-bottom: 6px;
-  padding: 6px 20px;
+  padding: 5px 20px;
   color: #323232;
   font-weight: normal;
   font-size: 14px;
@@ -495,10 +501,10 @@ a.login-link:focus {
 }
 
 .wraper-nav-2 {
-display: flex;
+  display: flex;
 
-justify-content: space-between;
-align-items: flex-end;
+  justify-content: space-between;
+  align-items: flex-end;
 }
 
 /* КОНТАКТЫ  */
@@ -558,6 +564,8 @@ align-items: flex-end;
 
 h1.header-main {
   margin: 0;
+  margin-top: -10px;
+  margin-left: -1px;
   padding: 0;
   font-weight: bold;
   font-size: 35px;
@@ -664,7 +672,7 @@ label.slide-checked {
 /* БЛОК СОРТИРОВКА */
 .sort {
   margin-top: 12px;
-  margin-bottom: 40px;
+  margin-bottom: 39px;
 }
 
 .all-sort-wrapper {
@@ -745,7 +753,7 @@ div.catalog-sort-all {
   background-color: transparent;
   width: 220px;
   padding: 10px 15px;
-padding-right: 35px;
+  padding-right: 35px;
   font-size: 16px;
   border: 0;
   height: 34px;
@@ -814,7 +822,7 @@ position: absolute;
 .sort-price .scale {
   position: relative;
   height: 4px;
-  top: 17px;
+  top: 16px;
   background: hsla(0, 0%, 100%, 0.2);
 }
 
@@ -831,7 +839,7 @@ position: absolute;
 /* БЕГУНКИ */
 .range {
   position: absolute;
-  top: 10px;
+  top: 7px;
 
   width: 4px;
   height: 4px;
@@ -1040,8 +1048,9 @@ position: absolute;
 }
 
 .button-sort {
-  padding: 12px 30px;
-  padding-bottom: 9px;
+  margin-left: 2px;
+  padding: 12px 31px;
+  padding-bottom: 8px;
   border: 2px solid #ffffff;
   border-radius: 20px;
   color: #ffffff;
@@ -1157,7 +1166,7 @@ position: absolute;
 }
 
 .catalog-card-row {
-  padding-bottom: 40px;
+  padding-bottom: 41px;
 }
 
 /* БЛОК ice-cream */
@@ -1184,6 +1193,7 @@ position: absolute;
   position: absolute;
   top: 333px;
   left: 33px;
+  padding: 10px 16px;
   z-index: 2;
   display: none;
 }
@@ -1207,7 +1217,7 @@ position: absolute;
 
 .price {
   position: absolute;
-  top: 178px;
+  top: 179px;
   left: -2px;
   font-weight: bold;
   font-size: 30px;
@@ -1217,10 +1227,20 @@ position: absolute;
 .price span {
   font-size: 45px;
 }
+p.price span:nth-child(2) {
+  padding-left: 4px;
+}
 
 .ice-about-link {
   display: block;
-  margin: 0 auto;
+  margin: 8px auto;
+  padding: 0 5px;
+  text-align: center;
+}
+
+.ice-about-link-max {
+  display: block;
+  margin: 0px auto;
   padding: 0 5px;
   text-align: center;
 }
@@ -1241,7 +1261,7 @@ h3.ice-about {
 /* БЛОК about */
 .about {
   box-sizing: border-box;
-  margin-top: 25px;
+  margin-top: 10px;
   padding: 25px 20px;
   padding-bottom: 23px;
   min-height: 306px;
@@ -1261,7 +1281,7 @@ h3.ice-about {
 
 .about h2 {
   margin: 0;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 24px;
   line-height: 30px;
 }
@@ -1553,8 +1573,8 @@ section.letters {
 
 /* БЛОК листалки*/
 .catalog-paginator {
-  margin-top: 40px;
-  margin-bottom: 30px;
+  margin-top: 43px;
+  margin-bottom: 25px;
   width: 1146px;
 }
 
@@ -1563,17 +1583,26 @@ section.letters {
   justify-content: flex-end;
 }
 
+ul.catalog-paginator-list  {
+  padding: 0;
+  padding-right: 21px;
+
+}
+
 .catalog-paginator a {
   display: block;
 }
 .catalog-paginator-current {
-  margin-right: 8px;
+  box-sizing: border-box;
+  margin-right: 3px;
   padding-top: 4px;
   width: 26px;
   height: 26px;
   border-radius: 15px;
   text-align: center;
 }
+
+
 
 .catalog-paginator-current:hover,
 .catalog-paginator-current:focus {
@@ -1593,6 +1622,7 @@ section.letters {
 }
 
 .catalog-paginator-c-active {
+  box-sizing: border-box;
   width: 26px;
   height: 26px;
   background-color: #ffffff;
@@ -1608,8 +1638,8 @@ section.letters {
 .catalog-paginator-prev::before {
   position: absolute;
   top: -5px;
-  left: -42px;
-  width: 26px;
+  left: -33px;
+  width: 21px;
   height: 26px;
   background-image: url(../img/icon-right-small.svg);
   background-repeat: no-repeat;
@@ -1620,8 +1650,8 @@ section.letters {
 .catalog-paginator-next::after {
   position: absolute;
   top: 8px;
-  right: -24px;
-  width: 26px;
+  right: -35px;
+  width: 21px;
   height: 26px;
   background-image: url(../img/icon-right-small.svg);
   background-repeat: no-repeat;
@@ -1650,7 +1680,7 @@ section.letters {
 .social-wrapper {
   display: flex;
   margin: 0;
-  margin-top: 36px;
+  margin-top: 39px;
   margin-bottom: 29px;
   padding: 0;
   width: 382px;
@@ -1776,7 +1806,7 @@ section.letters {
 }
 
 .about-us ul {
-  margin-top: 30px;
+  margin-top: 36px;
 }
 
 .about-us li {
@@ -1809,7 +1839,7 @@ section.letters {
 
 /* БЛОК copyright */
 .copyright {
-  margin-top: 16px;
+  margin-top: 24px;
   margin-bottom: 20px;
   width: 200px;
 }
@@ -1878,11 +1908,12 @@ section.letters {
 /* БЛОК search */
 section.search {
   position: absolute;
+  box-sizing: border-box;
   top: 59px;
-  left: 569px;
+  left: 620px;
   display: flex;
   padding: 20px 15px;
-  width: 340px;
+  width: 341px;
   border-radius: 5px;
   background-color: #f8f7f4;
   box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
@@ -1899,14 +1930,15 @@ section.search {
 /* БЛОК login */
 section.login {
   position: absolute;
+  box-sizing: border-box;
   top: 59px;
-  left: 733px;
+  left: 788px;
   display: flex;
-  padding: 20px 19px;
-  padding-left: 17px;
-  min-height: 216px;
+  padding: 7px 17px;
+  padding-left: 18px;
+  min-height: 214px;
   width: 277px;
-  border-radius: 10px;
+  border-radius: 5px;
   background-color: #f8f7f4;
   box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
   color: #999999;
@@ -1926,6 +1958,7 @@ section.login {
 
 .login-input-password {
   margin: 20px 0;
+  margin-bottom: 18px;
 }
 
 .login a {
@@ -1936,8 +1969,16 @@ section.login {
   text-decoration-line: underline;
 }
 
+.login-wrapper p {
+  margin: 0;
+  line-height: 0.1%;
+}
+
 .login .button {
-  margin-right: 20px;
+  box-sizing: border-box;
+  margin-top: 1px;
+  margin-left: 1px;
+  margin-right: 23px;
   padding: 12px 23px;
   padding-top: 10px;
   width: 100px;
@@ -1945,22 +1986,37 @@ section.login {
 }
 
 /* БЛОК reply */
+
+section.reply::before {
+  content: '';
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.3);
+
+  z-index: -2;
+}
+
 section.reply {
   position: fixed;
-  top: 337px;
+  top: 338px;
   left: 50%;
   display: flex;
   flex-direction: row;
   box-sizing: border-box;
   margin-left: -220px;
-  padding: 24px;
+  padding: 16px 24px;
+  padding-bottom: 28px;
   width: 478px;
   border-radius: 10px;
   background-color: #f8f7f4;
-  box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
-  color: #999999;
+ color: #999999;
 
   flex-wrap: wrap;
+  z-index: 20;
 }
 
 form.reply  {
@@ -1971,12 +2027,19 @@ form.reply  {
 .reply textarea,
 .reply input {
   box-sizing: border-box;
-  padding-top: 12px;
+  padding-top: 10px;
   padding-bottom: 9px;
   width: 267px;
   border: 1px solid #d3d3d2;
   border-radius: 5px;
   line-height: 24px;
+}
+.reply textarea {
+  margin-bottom: 19px;
+  padding: 8px 15px;
+  width: 428px;
+  height: 155px;
+  border-radius: 5px;
 }
 
 .reply textarea:hover,
@@ -2003,25 +2066,20 @@ form.reply  {
 }
 
 .reply-name {
-  margin-top: 15px;
-}
-
-.reply textarea {
-  margin-bottom: 15px;
-  padding: 11px 15px;
-  width: 428px;
-  height: 155px;
-  border-radius: 5px;
+  margin-top: px;
 }
 
 .button-send {
   box-sizing: border-box;
-  margin-left: 299px;
+  margin-left: 291px;
+  min-width: 139px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .button-close {
   position: absolute;
-  left: 443px;
+  left: 444px;
   width: 18px;
   height: 18px;
   border: 0;
@@ -2051,7 +2109,7 @@ form.reply  {
 }
 
 .basket-nav-buy {
-    background-color: #f8f7f4;
+  background-color: #f8f7f4;
 }
 
 .basket-nav-buy a {
@@ -2063,10 +2121,11 @@ form.reply  {
 /* БЛОК корзина basket-buy */
 .basket-buy {
   position: absolute;
+  box-sizing: border-box;
   top: 59px;
   right: 27px;
   padding: 0px 0px;
-  padding-left: 0;
+  padding-left: 0px;
   min-height: 242px;
   width: 540px;
   border-radius: 5px;
@@ -2088,14 +2147,15 @@ form.reply  {
   position: relative;
   display: flex;
   margin: 0;
-  margin-top: 25px;
+  margin-top: 35px;
   width: 510px;
+  text-align: left;
 
   justify-content: space-between;
 }
 
 .basket-buy tr:nth-child(1) {
-  margin-top: 29px;
+  margin-top: 27px;
 }
 
 .basket-buy td,
@@ -2114,6 +2174,7 @@ form.reply  {
   border: 0;
   background-color: hsla(100, 100%, 100%, 0);
   background-image: url(../img/fotm-cross-small.svg);
+  background-repeat: no-repeat;
   text-indent: -9999px;
   line-height: 0px;
   cursor: pointer;
@@ -2129,12 +2190,18 @@ form.reply  {
 }
 
 .basket-buy-ice {
-  margin-right: 20px;
-  margin-left: 88px;
+  margin-right: 18px;
+  margin-left: 85px;
   width: 230px;
   font-size: 13px;
   line-height: 16px;
 }
+
+/* Цена и стоимость сверстаны
+ с учетом возможного переполнения
+ при большом заказе
+ ("увеличены" размеры предполагаемых ячеек
+ использована отбивка по правому краю*/
 
 .basket-buy-weight,
 .basket-buy-cost {
@@ -2152,7 +2219,7 @@ form.reply  {
 
 .basket-buy hr {
   position: absolute;
-  bottom: 111px;
+  bottom: 93px;
   left: 15px;
   margin: 16px auto;
   width: 510px;
@@ -2162,8 +2229,8 @@ form.reply  {
 
 caption.basket-price-total {
   position: absolute;
-  right: 1px;
-  bottom: -58px;
+  right: -14px;
+  bottom: -48px;
   display: block;
   margin: 0;
   color: #323232;
@@ -2175,9 +2242,12 @@ caption.basket-price-total {
 .basket-buy button {
   position: absolute;
   right: 15px;
-  bottom: 18px;
+  bottom: 22px;
   display: block;
   margin: 0;
+  padding: 11px 15px;
+  padding-top: 9px;
+  padding-left: 14px;
 }
 
 
