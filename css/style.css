@@ -2241,6 +2241,16 @@ form.reply  {
   line-height: 16px;
 }
 
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  /* IE11+ CSS styles go here */
+  .ie11-ice {
+    width: 85px;
+    text-align: left;
+  }
+}
+
+
+
 /* Цена и стоимость сверстаны
  с учетом возможного переполнения
  при большом заказе
