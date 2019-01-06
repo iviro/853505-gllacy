@@ -1145,6 +1145,13 @@ position: absolute;
   font-size: 18px;
 }
 
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  /* IE11+ CSS styles go here */
+  .ie11-promo {
+    height: 35px;
+  }
+}
+
 .promo .button {
   margin-top: auto;
   margin-right: 0px;
@@ -2000,7 +2007,15 @@ section.login {
 
 .login-wrapper p {
   margin: 0;
+  margin-right: 5px;
   line-height: 0.1%;
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  /* IE11+ CSS styles go here */
+  .login-wrapper p  {
+    width: 120px;
+  }
 }
 
 .login .button {
