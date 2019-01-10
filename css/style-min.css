@@ -162,7 +162,6 @@ a.button-max:active {
   color: #323232;
 }
 
-  /* БЛОК header */
 .main-header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -176,14 +175,12 @@ a.button-max:active {
   width: 1146px;
 }
 
-/* БЛОК NAV */
 .main-navigation {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-/* БЛОК ЛОГО */
 .logo {
   display: block;
   margin-top: 9px;
@@ -193,7 +190,6 @@ a.button-max:active {
   justify-self: flex-start;
 }
 
-  /*МЕНЮ основное*/
 .site-navigation {
   position: relative;
   display: -webkit-box;
@@ -250,7 +246,6 @@ a.button-max:active {
   border-bottom: 1px solid hsla(0, 0%, 100%, 0.2);
 }
 
-/*АКТИВНОСТЬ*/
 .nav-border:hover > a,
 .nav-border:focus > a {
   border-bottom-color: transparent;
@@ -293,7 +288,6 @@ a.button-max:active {
   border-bottom: 0px solid transparent;
 }
 
-/*МЕНЮ выпадающее*/
 .site-navigation-att {
   position: absolute;
   top: 38px;
@@ -347,7 +341,6 @@ a.button-max:active {
   line-height: 16px;
 }
 
-/*АКТИВНОСТЬ*/
 .nav-att-active {
   display: block;
   margin-bottom: 6px;
@@ -384,7 +377,6 @@ a.button-max:active {
   background-color: #f6b5a5;
 }
 
-/* БЛОК ПОЛЬЗОВАТЕЛЬ НАВИГАЦИИ*/
 .user-navigation {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -418,7 +410,6 @@ a.button-search::before {
   content: "";
 }
 
-/*АКТИВНОСТЬ*/
 a.button-search:hover::before,
 a.button-search:focus::before {
   position: absolute;
@@ -463,7 +454,6 @@ a.login-link::before {
   content: "";
 }
 
-/*АКТИВНОСТЬ*/
 a.login-link:hover::before,
 a.login-link:focus::before  {
   position: absolute;
@@ -539,7 +529,6 @@ a.login-link:focus {
   content: "";
 }
 
-/*АКТИВНОСТЬ*/
 .basket-nav-popup:hover .basket-popup,
 .basket-nav-popup:focus .basket-popup {
   display: block;
@@ -561,7 +550,6 @@ a.login-link:focus {
           align-items: flex-end;
 }
 
-/* КОНТАКТЫ */
 .main-contact {
   margin: 0;
   font-weight: bold;
@@ -585,7 +573,6 @@ a.login-link:focus {
   line-height: 24px;
 }
 
-/* БЛОК Хлебных крошек */
 .breadcrumbs {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -631,7 +618,6 @@ h1.header-main {
   line-height: 41px;
 }
 
-/* БЛОК slider */
 .main-slider {
   position: relative;
 }
@@ -764,7 +750,6 @@ label.slide-checked {
   cursor: pointer;
 }
 
-/* БЛОК СОРТИРОВКА */
 .sort {
   margin-top: 12px;
   margin-bottom: 39px;
@@ -845,7 +830,6 @@ label.slide-checked {
   line-height: 18px;
 }
 
-/* СОРТИРОВКА */
 div.catalog-sort-all {
   width: 194px;
   margin-right: 14px;
@@ -891,7 +875,6 @@ div.catalog-sort-all {
   background-repeat: no-repeat;
 }
 
-/* ЦЕНА */
 .catalog-sort-label label {
   display: inline-block;
 
@@ -914,7 +897,6 @@ div.catalog-sort-all {
   outline: none;
 }
 
-/*ЛИНИЯ*/
 .catalog-sort-price .sort-wrapper {
   padding: 0;
 }
@@ -928,7 +910,6 @@ div.catalog-sort-all {
   padding: 0 22px;
 }
 
-/*ЛИНИИ сортировки*/
 .sort-price .scale {
   position: relative;
   height: 4px;
@@ -946,7 +927,6 @@ div.catalog-sort-all {
   background: #f8f7f4;
 }
 
-/* БЕГУНКИ */
 .range {
   position: absolute;
   top: 7px;
@@ -974,7 +954,6 @@ div.catalog-sort-all {
   right: 67px;
 }
 
-/* ЖИРНОСТЬ */
 .sort-fat,
 .sort-fat-checked {
   position: relative;
@@ -1074,7 +1053,6 @@ div.catalog-sort-all {
   cursor: default;
 }
 
-/* НАПОЛНИТЕЛИ */
 .sort-fil,
 .sort-fil-checked {
   position: relative;
@@ -1178,7 +1156,6 @@ div.catalog-sort-all {
       align-self: flex-end;
 }
 
-/* обертка для ПРОМО и БЛОГ-РАССЫЛКИ */
 .wraper-2 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1271,7 +1248,6 @@ div.catalog-sort-all {
       align-self: flex-end;
 }
 
-/* обертка для КАТАЛОГА */
 .wraper-4 {
   position: relative;
   display: -webkit-box;
@@ -1320,7 +1296,6 @@ div.catalog-sort-all {
   padding-bottom: 41px;
 }
 
-/* БЛОК ice-cream */
 .ice-cream-hit {
   position: relative;
 }
@@ -1354,8 +1329,6 @@ div.catalog-sort-all {
 .catalog-card:hover::before  {
   display: block;
 }
-
-/* сделать фокус = js */
 
 .ice-cream-hit::after {
   position: absolute;
@@ -1410,7 +1383,6 @@ h3.ice-about {
   padding-bottom: 6px;
 }
 
-/* БЛОК about */
 .about {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -1444,7 +1416,6 @@ h3.ice-about {
   line-height: 30px;
 }
 
-/* ПРОВЕРИТЬ РАЗМЕРЫ */
 .about p {
   position: relative;
   display: block;
@@ -1499,7 +1470,6 @@ h3.ice-about {
   content: "";
 }
 
-/* БЛОК blog-new */
 .blog-new {
   position: relative;
   display: block;
@@ -1567,7 +1537,6 @@ h3.ice-about {
   line-height: 30px;
   }
 
-/* БЛОК letters */
 section.letters {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -1683,7 +1652,6 @@ section.letters {
           flex-grow: 0;
 }
 
-/* БЛОК map */
 .map {
   position: relative;
   left: -27px;
@@ -1766,7 +1734,6 @@ section.letters {
   line-height: 24px;
 }
 
-  /* БЛОК листалки*/
 .catalog-paginator {
   margin-top: 43px;
   margin-bottom: 25px;
@@ -1859,7 +1826,6 @@ ul.catalog-paginator-list  {
   content: "";
 }
 
-/* ---------- БЛОК footer */
 .footer-wrapper {
   position: relative;
   display: -webkit-box;
@@ -1879,7 +1845,6 @@ ul.catalog-paginator-list  {
   opacity: 0.3;
 }
 
-/* БЛОК social */
 .social-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1948,7 +1913,6 @@ ul.catalog-paginator-list  {
   opacity: 0.8;
 }
 
-  /* АКТИВНОСТЬ */
 .social-wrapper li:hover:nth-child(1),
 .social-wrapper li:focus:nth-child(1) {
   -webkit-box-sizing: border-box;
@@ -2004,7 +1968,6 @@ ul.catalog-paginator-list  {
   cursor: pointer;
 }
 
-/* АКТИВНОСТЬ */
 .social-wrapper li:active:nth-child(1) {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -2060,7 +2023,6 @@ ul.catalog-paginator-list  {
   cursor: pointer;
 }
 
-/* БЛОК about-us */
 .about-us {
   width: 605px;
 }
@@ -2114,7 +2076,6 @@ ul.catalog-paginator-list  {
   content: "";
 }
 
-/* БЛОК copyright */
 .copyright {
   margin-top: 24px;
   margin-bottom: 20px;
@@ -2145,7 +2106,6 @@ ul.catalog-paginator-list  {
   content: "";
 }
 
-/* ---------- ФОРМЫ */
 .search input,
 .login input,
 .reply input {
@@ -2185,7 +2145,6 @@ ul.catalog-paginator-list  {
           box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
 }
 
-/* БЛОК search */
 section.search {
   position: absolute;
   -webkit-box-sizing: border-box;
@@ -2211,7 +2170,6 @@ section.search {
   background-color: #ffffff;
 }
 
-/* БЛОК login */
 section.login {
   position: absolute;
   -webkit-box-sizing: border-box;
@@ -2413,7 +2371,6 @@ form.reply  {
   margin: 0;
 }
 
-/* БЛОК basket */
 .basket {
   line-height: 16px;
 }
@@ -2428,7 +2385,6 @@ form.reply  {
   line-height: 16px;
 }
 
-/* БЛОК корзина basket-buy */
 .basket-buy {
   position: absolute;
   -webkit-box-sizing: border-box;
