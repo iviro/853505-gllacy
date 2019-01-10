@@ -1763,7 +1763,7 @@ section.letters {
 
 .contact a.button {
   margin-top: 24px;
-  padding: 11px 28px;
+  padding: 11px 25px;
   color: #fefefe;
   line-height: 24px;
 }
@@ -1962,6 +1962,7 @@ ul.catalog-paginator-list  {
   border-radius: 19px;
   background-image: url(../img/soc-twitter.svg);
   background-repeat: no-repeat;
+  cursor: pointer;
 }
 
 .social-wrapper li:hover:nth-child(2),
@@ -1975,6 +1976,7 @@ ul.catalog-paginator-list  {
   border-radius: 19px;
   background-image: url(../img/soc-instagram.svg);
   background-repeat: no-repeat;
+  cursor: pointer;
 }
 
 .social-wrapper li:hover:nth-child(3),
@@ -1988,6 +1990,7 @@ ul.catalog-paginator-list  {
   border-radius: 19px;
   background-image: url(../img/soc-fb.svg);
   background-repeat: no-repeat;
+  cursor: pointer;
 }
 
 .social-wrapper li:hover:nth-child(4),
@@ -2000,6 +2003,7 @@ ul.catalog-paginator-list  {
   border-radius: 19px;
   background-image: url(../img/soc-vk.svg);
   background-repeat: no-repeat;
+  cursor: pointer;
 }
 
 /* АКТИВНОСТЬ */
@@ -2014,6 +2018,7 @@ ul.catalog-paginator-list  {
   background-image: url(../img/soc-twitter.svg);
   background-repeat: no-repeat;
   opacity: 0.7;
+  cursor: pointer;
 }
 
 .social-wrapper li:active:nth-child(2) {
@@ -2027,6 +2032,7 @@ ul.catalog-paginator-list  {
   background-image: url(../img/soc-instagram.svg);
   background-repeat: no-repeat;
   opacity: 0.7;
+  cursor: pointer;
 }
 
 .social-wrapper li:active:nth-child(3) {
@@ -2040,6 +2046,7 @@ ul.catalog-paginator-list  {
   background-image: url(../img/soc-fb.svg);
   background-repeat: no-repeat;
   opacity: 0.7;
+  cursor: pointer;
 }
 
 .social-wrapper li:active:nth-child(4) {
@@ -2052,6 +2059,7 @@ ul.catalog-paginator-list  {
   background-image: url(../img/soc-vk.svg);
   background-repeat: no-repeat;
   opacity: 0.7;
+  cursor: pointer;
 }
 
 /* БЛОК about-us */
