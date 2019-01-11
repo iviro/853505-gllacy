@@ -1071,7 +1071,7 @@ li.fil-sort {
   width: 20px;
   height: 20px;
   border: 2px solid #ffffff;
-  border-radius: 5px;
+  border-radius: 2px;
   opacity: 0.8;
   content: "";
 }
@@ -1080,16 +1080,16 @@ li.fil-sort {
   position: absolute;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  top: -4px;
-  left: -27px;
-  width: 4px;
-  height: 3px;
-  color: #ffffff;
-  font-weight: bold;
-  font-size: 20px;
-  box-shadow: 13px 3px 0px 1px #9eb2a6;
+  top: -2px;
+  left: -30px;
+  width: 24px;
+  height: 20px;
+  border: none;
+  background-image: url(../img/fotm-checkbox-on.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
   opacity: 0.8;
-  content: "✔";
+  content: "";
 }
 
 /* АКТИВНОСТЬ  */
@@ -1103,7 +1103,7 @@ li.fil-sort {
   width: 20px;
   height: 20px;
   border: 2px solid #ffffff;
-  border-radius: 5px;
+  border-radius: 2px;
   content: "";
 }
 
@@ -1112,16 +1112,16 @@ li.fil-sort {
   position: absolute;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  top: -4px;
-  left: -27px;
-  width: 10px;
-  height: 10px;
-  color: #ffffff;
-  font-weight: bold;
-  font-size: 20px;
-  text-shadow: 1px 0 0 1px red;
-
-  content: "✔";
+  top: -2px;
+  left: -30px;
+  width: 24px;
+  height: 20px;
+  border: 0px solid transparent;
+  background-image: url(../img/fotm-checkbox-on.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0.8;
+  content: "";
 }
 
 /* НАПОЛНИТЕЛИ
