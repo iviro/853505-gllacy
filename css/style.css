@@ -44,6 +44,7 @@ a:active {
   color: #ffbc9e;
 }
 
+.sort li,
 .social li,
 .about-us li,
 .breadcrumbs li,
@@ -770,6 +771,12 @@ label.slide-checked {
   margin-bottom: 39px;
 }
 
+.sort fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
 .all-sort-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -819,17 +826,18 @@ label.slide-checked {
   background-color: rgba(255, 255, 255, 0.2);
 }
 
-.catalog-sort-fat div {
+.catalog-sort-fat ul {
   padding-top: 11px;
   padding-right: 13px;
   padding-bottom: 9px;
 }
 
-.catalog-sort-fil div {
+.catalog-sort-fil ul {
   padding-top: 11px;
   padding-right: 20px;
 }
 
+.catalog-sort-wrapper legend,
 .catalog-sort-wrapper p {
   margin: 13px 16px;
   margin-bottom: 7px;
@@ -850,7 +858,6 @@ div.catalog-sort-all {
   width: 194px;
   margin-right: 14px;
   overflow: hidden;
-
 }
 
 .catalog-sort {
@@ -924,7 +931,7 @@ div.catalog-sort-all {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   width: 220px;
-  height: 37px;
+  height: 17px;
   padding: 0 22px;
 }
 
@@ -932,7 +939,7 @@ div.catalog-sort-all {
 .sort-price .scale {
   position: relative;
   height: 4px;
-  top: 16px;
+  top: 8px;
   background: hsla(0, 0%, 100%, 0.2);
 }
 
@@ -949,7 +956,7 @@ div.catalog-sort-all {
 /* БЕГУНКИ */
 .range {
   position: absolute;
-  top: 7px;
+  top: 0px;
 
   width: 4px;
   height: 4px;
@@ -974,107 +981,150 @@ div.catalog-sort-all {
   right: 67px;
 }
 
-/* ЖИРНОСТЬ */
-.sort-fat,
-.sort-fat-checked {
-  position: relative;
+/* ЖИРНОСТЬ*/
+li.fat-sort {
   padding-left: 49px;
-  z-index: 1;
 }
 
-.sort-fat::before {
+.fat-sort label {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  user-select: none;
+}
+
+.sort-fat + label::before {
   position: absolute;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   top: -2px;
-  left: 15px;
+  left: -30px;
   width: 22px;
   height: 22px;
-  background-image: url(../img/fotm-radio-off.svg);
-  background-size: contain;
-  background-repeat: no-repeat;
+  border: 3px solid #ffffff;
+  border-radius: 25px;
   opacity: 0.8;
   content: "";
 }
 
-.sort-fat-checked::after {
+.sort-fat:checked + label::after {
   position: absolute;
-  top: -2px;
-  left: 15px;
-  width: 22px;
-  height: 22px;
-  background-image: url(../img/fotm-radio-on.svg);
-  background-size: contain;
-  background-repeat: no-repeat;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  top: 4px;
+  left: -24px;
+  width: 10px;
+  height: 10px;
+  border: 5px solid #ffffff;
+  border-radius: 25px;
   opacity: 0.8;
   content: "";
 }
 
-.sort-fat:hover::before,
-.sort-fat:focus::before {
+/* АКТИВНОСТЬ  */
+.sort-fat + label:hover::before,
+.sort-fat + label:focus::before {
   position: absolute;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   top: -2px;
-  left: 15px;
+  left: -30px;
   width: 22px;
   height: 22px;
-  background-image: url(../img/fotm-radio-off.svg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  opacity: 1;
+  border: 4px solid #ffffff;
+  border-radius: 25px;
   content: "";
-  cursor: pointer;
 }
 
-.sort-fat-checked:hover::after,
-.sort-fat-checked:focus::after {
+.sort-fat:checked + label:hover::after,
+.sort-fat:checked + label:focus::after {
   position: absolute;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  top: -2px;
-  left: 15px;
-  width: 22px;
-  height: 22px;
-  background-image: url(../img/fotm-radio-on.svg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  opacity: 1;
+  top: 4px;
+  left: -24px;
+  width: 10px;
+  height: 10px;
+  border: 5px solid #ffffff;
+  border-radius: 25px;
   content: "";
-  cursor: pointer;
-}
-
-.sort-fat-disabled::before {
-  position: absolute;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  top: -2px;
-  left: 15px;
-  width: 22px;
-  height: 22px;
-  background-image: url(../img/fotm-radio-off.svg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  opacity: 0.4;
-  content: "";
-  cursor: default;
-}
-
-.sort-fat-checked-disabled::after {
-  position: absolute;
-  top: -2px;
-  left: 15px;
-  width: 22px;
-  height: 22px;
-  background-image: url(../img/fotm-radio-on.svg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  opacity: 0.4;
-  content: "";
-  cursor: default;
 }
 
 /* НАПОЛНИТЕЛИ */
+li.fil-sort {
+  padding-left: 49px;
+}
+
+.fil-sort label {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  user-select: none;
+}
+
+.sort-fil + label::before {
+  position: absolute;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  top: -2px;
+  left: -30px;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #ffffff;
+  border-radius: 5px;
+  opacity: 0.8;
+  content: "";
+}
+
+.sort-fil:checked + label::after {
+  position: absolute;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  top: -4px;
+  left: -27px;
+  width: 4px;
+  height: 3px;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 20px;
+  box-shadow: 13px 3px 0px 1px #9eb2a6;
+  opacity: 0.8;
+  content: "✔";
+}
+
+/* АКТИВНОСТЬ  */
+.sort-fil + label:hover::before,
+.sort-fil + label:focus::before {
+  position: absolute;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  top: -2px;
+  left: -30px;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #ffffff;
+  border-radius: 5px;
+  content: "";
+}
+
+.sort-fil:checked + label:hover::after,
+.sort-fil:checked + label:focus::after {
+  position: absolute;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  top: -4px;
+  left: -27px;
+  width: 10px;
+  height: 10px;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 20px;
+  text-shadow: 1px 0 0 1px red;
+
+  content: "✔";
+}
+
+/* НАПОЛНИТЕЛИ
 .sort-fil,
 .sort-fil-checked {
   position: relative;
@@ -1161,6 +1211,7 @@ div.catalog-sort-all {
   content: "";
   cursor: default;
 }
+*/
 
 .button-sort {
   margin-left: 2px;
@@ -1177,6 +1228,7 @@ div.catalog-sort-all {
 
       align-self: flex-end;
 }
+
 
 /* обертка для ПРОМО и БЛОГ-РАССЫЛКИ */
 .wraper-2 {

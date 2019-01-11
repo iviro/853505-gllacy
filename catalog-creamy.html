@@ -5,7 +5,7 @@
     <title>HTML Academy: Проект «Глэйси»</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style-min.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
 
   <body>
@@ -130,7 +130,7 @@
               <h2 class="visually-hidden">Выбор</h2>
               <form action="https://echo.htmlacademy.ru" method="get">
                 <div class="all-sort-wrapper">
-                  <div class="catalog-sort-all catalog-sort-wrapper">
+                  <div class="catalog-sort-all catalog-sort-wrapper"> <!-- .sort СОРТИРОВКА-->
                     <p><label for="catalog-sort">Соритровка:</label></p>
                     <div class="catalog-sort">
                       <select class="sort-select" name="catalog-sort" id="catalog-sort" multiple size="1">
@@ -141,12 +141,12 @@
                       </select>
                     </div>
                   </div> <!-- /.sort СОРТИРОВКА-->
-                  <div class="catalog-sort-priсe catalog-sort-wrapper">
+                  <fieldset class="catalog-sort-priсe catalog-sort-wrapper"> <!-- .price ЦЕНА -->
                     <div class="catalog-sort-label">
-                      <p>Цена:
+                      <legend>Цена:
                         <label class="min-price"><input type="text" name="min-price" value="100"> руб.</label>
                         <label class="max-price"> – <input type="text" name="max-price" value="500"> руб.</label>
-                      </p>
+                      </legend>
                     </div>
                     <div class="sort-wrapper">
                       <div class="sort-price">
@@ -157,35 +157,53 @@
                         <div class="range range-max"></div>
                       </div>
                     </div>
-                  </div> <!-- /.price ЦЕНА -->
-                  <div class="catalog-sort-fat catalog-sort-wrapper">
-                    <p>Жирность:</p>
-                    <div class="sort-wrapper">
-                      <p><label class="sort-fat" for="fat-0">0%</label></p>
-                      <input class="visually-hidden" type="radio" name="catalog-sort-fat" id="fat-0">
-                      <p><label class="sort-fat sort-fat-checked" for="fat-10">до 10%</label></p>
-                      <input class="visually-hidden" type="radio" name="catalog-sort-fat" id="fat-10" checked>
-                      <p><label class="sort-fat" for="fat-30">до 30%</label></p>
-                      <input class="visually-hidden" type="radio" name="catalog-sort-fat" id="fat-30">
-                      <p><label class="sort-fat" for="fat-30max">выше 30%</label></p>
-                      <input class="visually-hidden" type="radio" name="catalog-sort-fat" id="fat-30max">
-                    </div>
+                  </fieldset> <!-- /.price ЦЕНА -->
+                  <fieldset class="catalog-sort-fat catalog-sort-wrapper"><!-- .fat ЖИРНОРСТЬ -->
+                    <legend>Жирность:</legend>
+                    <ul class="sort-wrapper">
+                      <li class="fat-sort">
+                        <input class="sort-fat visually-hidden" type="radio" name="catalog-sort-fat" id="fat-0">
+                        <label for="fat-0">0%</label>
+                      </li>
+                      <li class="fat-sort">
+                        <input class="sort-fat visually-hidden" type="radio" name="catalog-sort-fat" id="fat-10" checked>
+                        <label for="fat-10">до 10%</label>
+                      </li>
+                      <li class="fat-sort">
+                        <input class="sort-fat visually-hidden" type="radio" name="catalog-sort-fat" id="fat-30">
+                        <label for="fat-30">до 30%</label>
+                      </li>
+                      <li class="fat-sort">
+                        <input class="sort-fat visually-hidden" type="radio" name="catalog-sort-fat" id="fat-30max">
+                        <label for="fat-30max">выше 30%</label>
+                      </li>
+                    </ul>
                   </div> <!-- /.fat ЖИРНОРСТЬ -->
-                  <div class="catalog-sort-fil catalog-sort-wrapper">
-                    <p>Наполнители:</p>
-                    <div class="sort-wrapper">
-                      <p><label class="sort-fil sort-fil-checked" for="fil-chocolate">шоколадные</label></p>
-                      <input class="visually-hidden" type="checkbox" name="catalog-sort-fil" id="fil-chocolate" checked>
-                      <p><label class="sort-fil sort-fil-checked" for="fil-sugar">сахарные присыпки</label></p>
-                      <input class="visually-hidden" type="checkbox" name="catalog-sort-fil" id="fil-sugar" checked>
-                      <p><label class="sort-fil" for="fil-fruit">фрукты</label></p>
-                      <input class="visually-hidden" type="checkbox" name="catalog-sort-fil" id="fil-fruit">
-                      <p><label class="sort-fil" for="fil-syrup">сиропы</label></p>
-                      <input class="visually-hidden" type="checkbox" name="catalog-sort-fil" id="fil-syrup">
-                      <p><label class="sort-fil" for="fil-jam">джемы</label></p>
-                      <input class="visually-hidden" type="checkbox" name="catalog-sort-fil" id="fil-jam">
-                    </div>
-                  </div>  <!-- /.fil НАПОЛНИТЕЛИ -->
+                  <fieldset class="catalog-sort-fil catalog-sort-wrapper">  <!-- /.fil НАПОЛНИТЕЛИ -->
+                    <legend>Наполнители:</legend>
+                    <ul class="sort-wrapper">
+                      <li class="fil-sort">
+                        <input class="sort-fil visually-hidden" type="checkbox" name="catalog-sort-fil" id="fil-chocolate" checked>
+                        <label for="fil-chocolate">шоколадные</label>
+                      </li>
+                      <li class="fil-sort">
+                        <input class="sort-fil visually-hidden" type="checkbox" name="catalog-sort-fil" id="fil-sugar" checked>
+                        <label for="fil-sugar">сахарные присыпки</label>
+                      </li>
+                      <li class="fil-sort">
+                        <input class="sort-fil visually-hidden" type="checkbox" name="catalog-sort-fil" id="fil-fruit">
+                        <label for="fil-fruit">фрукты</label>
+                      </li>
+                      <li class="fil-sort">
+                        <input class="sort-fil visually-hidden" type="checkbox" name="catalog-sort-fil" id="fil-syrup">
+                        <label for="fil-syrup">сиропы</label>
+                      </li>
+                      <li class="fil-sort">
+                        <input class="sort-fil visually-hidden" type="checkbox" name="catalog-sort-fil" id="fil-jam">
+                        <label for="fil-jam">джемы</label>
+                      </li>
+                    </ul>
+                  </fieldset>  <!-- /.fil НАПОЛНИТЕЛИ -->
                   <button class="button-sort button-light" type="submit" name="catalog-sort-button" value="">Применить</button>
                 </div>
               </form>
