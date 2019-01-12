@@ -680,7 +680,7 @@ h1.header-main {
   }
 }
 
-  .main-slider p {
+.main-slider p {
   display: inline-block;
   margin-bottom: 30px;
   max-width: 700px;
@@ -723,10 +723,7 @@ h1.header-main {
   color: #ffffff;
 }
 
-.main-slider .button:active {
-}
-
-  .slider-bottom {
+.slider-bottom {
   position: absolute;
   top: 562px;
   left: 27px;
@@ -825,7 +822,17 @@ label.slide-checked {
   width: 194px;
   border-radius: 30px;
   background-color: rgba(255, 255, 255, 0.2);
+  appearance: none;
 }
+
+select.sort-select option {
+  background-color: #f8f7f4;
+}
+
+select.sort-select option.sort-selected {
+  background-color: #1e90ff;
+}
+
 
 .catalog-sort-wrapper legend,
 .catalog-sort-wrapper p {
@@ -890,7 +897,7 @@ div.catalog-sort-all {
 
 /* ЦЕНА */
 .catalog-sort-priсe legend {
-margin-bottom:4px;
+  margin-bottom:4px;
 }
 
 .catalog-sort-label label {
@@ -933,7 +940,7 @@ margin-bottom:4px;
 .sort-price .scale {
   position: relative;
   height: 4px;
-  top: 4px;
+  top: 7px;
   background: hsla(0, 0%, 100%, 0.2);
 }
 
@@ -941,16 +948,14 @@ margin-bottom:4px;
   position: relative;
   width: 50%;
   height: 4px;
-
   left: 30px;
-
   background: #f8f7f4;
 }
 
 /* БЕГУНКИ */
 .range {
   position: absolute;
-  top: -4px;
+  top: -1px;
 
   width: 4px;
   height: 4px;
@@ -1001,7 +1006,10 @@ li.fat-sort {
   position: relative;
   display: block;
   cursor: pointer;
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .sort-fat + label::before {
@@ -1129,7 +1137,10 @@ li.fil-sort {
   position: relative;
   display: block;
   cursor: pointer;
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .sort-fil:not(:checked) + label::after {
@@ -1159,7 +1170,8 @@ li.fil-sort {
   background-size: contain;
   background-repeat: no-repeat;
   opacity: 0.8;
-  box-shadow: 1px 5px 0px 5px #9eb2a6;
+  -webkit-box-shadow: 1px 5px 0px 5px #9eb2a6;
+          box-shadow: 1px 5px 0px 5px #9eb2a6;
   content: "";
 }
 
@@ -1222,7 +1234,8 @@ li.fil-sort {
   background-size: contain;
   background-repeat: no-repeat;
   opacity: 0.4;
-  box-shadow: 1px 5px 0px 5px #9eb2a6;
+  -webkit-box-shadow: 1px 5px 0px 5px #9eb2a6;
+          box-shadow: 1px 5px 0px 5px #9eb2a6;
   content: "";
 }
 
@@ -1239,7 +1252,6 @@ li.fil-sort {
 
       align-self: flex-end;
 }
-
 
 /* обертка для ПРОМО и БЛОГ-РАССЫЛКИ */
 .wraper-2 {
@@ -1380,7 +1392,7 @@ li.fil-sort {
 }
 
 .catalog-card-row {
-  padding-bottom: 41px;
+  padding-bottom: 39px;
 }
 
 /* БЛОК ice-cream */
@@ -1848,7 +1860,6 @@ section.letters {
 ul.catalog-paginator-list  {
   padding: 0;
   padding-right: 21px;
-
 }
 
 .catalog-paginator a {
