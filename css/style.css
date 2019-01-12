@@ -1090,7 +1090,7 @@ li.fil-sort {
   user-select: none;
 }
 
-.sort-fil + label::after {
+.sort-fil:not(:checked) + label::after {
   position: absolute;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -1122,8 +1122,8 @@ li.fil-sort {
 }
 
 /* АКТИВНОСТЬ  */
-.sort-fil + label:hover::before,
-.sort-fil + label:focus::before {
+.sort-fil:not(:checked) + label:hover::before,
+.sort-fil:not(:checked) + label:focus::before {
   position: absolute;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -1153,7 +1153,7 @@ li.fil-sort {
   content: "";
 }
 
-.sort-fil:disabled + label::after {
+.sort-fil:not(:checked):disabled + label::after {
   position: absolute;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
