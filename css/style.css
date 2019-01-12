@@ -816,24 +816,6 @@ label.slide-checked {
   width: 100%;
 }
 
-.sort-select {
-  margin-right: 14px;
-  padding: 9px 0px;
-  width: 194px;
-  border-radius: 30px;
-  background-color: rgba(255, 255, 255, 0.2);
-  appearance: none;
-}
-
-select.sort-select option {
-  background-color: #f8f7f4;
-}
-
-select.sort-select option.sort-selected {
-  background-color: #1e90ff;
-}
-
-
 .catalog-sort-wrapper legend,
 .catalog-sort-wrapper p {
   margin: 13px 16px;
@@ -875,12 +857,33 @@ div.catalog-sort-all {
   height: 34px;
 }
 
+.sort-select {
+  margin-right: 14px;
+  padding: 9px 0px;
+  width: 194px;
+  border-radius: 30px;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+select.sort-select option {
+  background-color: #f8f7f4;
+}
+
+select.sort-select option.sort-selected {
+  background-color: #1e90ff;
+}
+
 .catalog-sort option {
   background: transparent;
 }
 
-.catalog-sort selected {
-  background: transparent;
+.sort-select:hover {
+  margin-right: 14px;
+  padding: 9px 0px;
+  width: 194px;
+  border-radius: 30px;
+  background-color: #f8f7f4;
+
 }
 
 .catalog-sort::before {
