@@ -834,6 +834,8 @@ label.slide-checked {
 
 /* СОРТИРОВКА */
 div.catalog-sort-all {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   width: 194px;
   margin-right: 14px;
   overflow: hidden;
@@ -850,43 +852,65 @@ div.catalog-sort-all {
 .catalog-sort select {
   background-color: transparent;
   width: 220px;
-  padding: 10px 15px;
-  padding-right: 35px;
+  padding: 5px 15px;
+  padding-right: 30px;
   font-size: 16px;
   border: 0;
   height: 34px;
-}
-
-.sort-select {
-  margin-right: 14px;
-  padding: 9px 0px;
-  width: 194px;
   border-radius: 30px;
-  background-color: rgba(255, 255, 255, 0.2);
+  color: #ffffff;
 }
 
 select.sort-select option {
+  padding: 0;
   background-color: #f8f7f4;
+  font-size: 16px;
+  line-height: 18px;
 }
 
 select.sort-select option.sort-selected {
   background-color: #1e90ff;
+  color: #ffffff;
 }
 
 .catalog-sort option {
   background: transparent;
 }
 
-.sort-select:hover {
-  margin-right: 14px;
-  padding: 9px 0px;
+div.catalog-sort-all select:hover,
+div.catalog-sort-all select:focus {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   width: 194px;
-  border-radius: 30px;
-  background-color: #f8f7f4;
+  margin-right: 14px;
+  overflow: hidden;
+}
 
+.catalog-sort select:hover,
+.catalog-sort select:focus {
+  width: 240px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-color: #f8f7f4;
+  color: #323232;
 }
 
 .catalog-sort::before {
+  position: absolute;
+  content: "";
+  width: 15px;
+  height: 15px;
+  top: 12px;
+  right: 10px;
+  overflow: hidden;
+  background-image: url(../img/icon-down-w.svg);
+  background-repeat: no-repeat;
+}
+
+.catalog-sort:hover::before,
+.catalog-sort:focus::before,
+.catalog-sort:active::before {
   position: absolute;
   content: "";
   width: 15px;
